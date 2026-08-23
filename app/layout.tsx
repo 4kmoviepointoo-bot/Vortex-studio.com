@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   creator: 'Vortex Studio',
   publisher: 'Vortex Studio',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.svg',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
@@ -111,6 +111,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
