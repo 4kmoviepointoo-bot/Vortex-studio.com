@@ -13,11 +13,11 @@ const siteUrl = 'https://vortexstudio.com'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Vortex Studio — Enterprise Web Software & Design Systems',
+    default: 'Vortex Studio | Premium Web Agency',
     template: '%s | Vortex Studio',
   },
   description:
-    'High-performance Next.js application development, UI/UX systems, and enterprise product automation for market leaders.',
+    'High-performance web applications and digital experiences.',
   keywords: [
     'Next.js',
     'React',
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   publisher: 'Vortex Studio',
   icons: {
     icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
@@ -40,9 +41,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteUrl,
     siteName: 'Vortex Studio',
-    title: 'Vortex Studio — Enterprise Web Software & Design Systems',
+    title: 'Vortex Studio | Premium Web Agency',
     description:
-      'Crafting modern web software with engineering rigor and high-impact design.',
+      'High-performance web applications and digital experiences.',
     images: [
       {
         url: '/og-image.jpg',
@@ -54,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vortex Studio — Enterprise Web Software & Design Systems',
+    title: 'Vortex Studio | Premium Web Agency',
     description:
-      'Crafting modern web software with engineering rigor and high-impact design.',
+      'High-performance web applications and digital experiences.',
     images: ['/og-image.jpg'],
     creator: '@vortexstudio',
   },
@@ -82,9 +83,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Vortex Studio',
-    description: 'Enterprise web software and UI/UX design studio.',
+    description: 'High-performance web applications and digital experiences.',
     url: siteUrl,
-    logo: `${siteUrl}/logo.png`,
     sameAs: [
       'https://twitter.com/vortexstudio',
       'https://linkedin.com/company/vortexstudio',
