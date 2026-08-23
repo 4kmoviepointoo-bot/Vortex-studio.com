@@ -1,0 +1,1958 @@
+
+> vortex-studio@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use by process 22168, using available port 3001 instead.
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.5.107:3001
+
+ ✓ Starting...
+ ✓ Ready in 3.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 13.3s (616 modules)
+ GET / 200 in 14710ms
+ ✓ Compiled in 1553ms (241 modules)
+ GET / 200 in 283ms
+ GET / 200 in 72ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 824ms (598 modules)
+ GET /services 404 in 1166ms
+ GET /services 404 in 459ms
+ GET / 200 in 145ms
+ ✓ Compiled in 314ms (227 modules)
+ ✓ Compiled in 6.4s (1411 modules)
+ GET / 200 in 391ms
+ ✓ Compiled in 786ms (1411 modules)
+ GET / 200 in 227ms
+ GET / 200 in 603ms
+ ✓ Compiled in 1121ms (1411 modules)
+ GET / 200 in 356ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1216ms (1402 modules)
+ GET /work 404 in 2264ms
+ GET / 200 in 187ms
+ GET / 200 in 260ms
+ ✓ Compiled in 2.3s (1411 modules)
+ GET / 200 in 568ms
+ GET / 200 in 586ms
+ GET / 200 in 117ms
+ ✓ Compiled in 1557ms (1411 modules)
+ GET / 200 in 367ms
+ ✓ Compiled in 788ms (643 modules)
+ GET / 200 in 193ms
+ ✓ Compiled in 1121ms (1397 modules)
+ GET / 200 in 432ms
+ ○ Compiling /signup ...
+ ✓ Compiled /signup in 1722ms (1404 modules)
+ GET /signup 200 in 2669ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 984ms (1409 modules)
+ GET /login 404 in 1212ms
+ GET /login 404 in 67ms
+ GET /login 404 in 524ms
+ GET /signup 200 in 186ms
+ ✓ Compiled in 494ms (649 modules)
+ GET /signup 200 in 100ms
+ ✓ Compiled in 2.1s (1418 modules)
+ GET /signup 200 in 1871ms
+ GET /signup 200 in 85ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 1015ms (1411 modules)
+ GET /login 200 in 1364ms
+ GET /signup 200 in 94ms
+ GET / 200 in 108ms
+ GET /login 200 in 818ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 677ms (1416 modules)
+ GET /forgot-password 404 in 884ms
+ GET /forgot-password 404 in 423ms
+ GET /login 200 in 227ms
+ ✓ Compiled in 465ms (651 modules)
+ GET /login 200 in 81ms
+ ✓ Compiled in 1540ms (1411 modules)
+ GET /login 200 in 1458ms
+ GET /login 200 in 67ms
+ ○ Compiling /forgot-password ...
+ ✓ Compiled /forgot-password in 1068ms (1418 modules)
+ GET /forgot-password 200 in 1410ms
+ GET /login 200 in 76ms
+ GET / 200 in 95ms
+ GET / 200 in 84ms
+ ✓ Compiled in 813ms (649 modules)
+ ✓ Compiled in 401ms (649 modules)
+ GET / 200 in 400ms
+ GET / 200 in 91ms
+ ✓ Compiled in 1787ms (1418 modules)
+ GET / 200 in 1772ms
+ GET / 200 in 60ms
+ ✓ Compiled in 1004ms (1418 modules)
+ GET / 200 in 158ms
+ ✓ Compiled in 1232ms (1418 modules)
+ GET / 200 in 1097ms
+ GET / 200 in 65ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.6s (1423 modules)
+ GET / 404 in 2141ms
+ GET / 200 in 91ms
+ GET / 200 in 1027ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 2s (1429 modules)
+ GET /services 200 in 3065ms
+ GET / 200 in 90ms
+ ○ Compiling /work ...
+ ✓ Compiled /work in 1250ms (1431 modules)
+ GET /work 200 in 2078ms
+ GET / 200 in 81ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 1256ms (1433 modules)
+ GET /about 200 in 1895ms
+ ○ Compiling /pricing ...
+ ✓ Compiled /pricing in 1266ms (1420 modules)
+ GET /pricing 200 in 1896ms
+ GET / 200 in 85ms
+ GET / 200 in 138ms
+ GET / 200 in 67ms
+ ✓ Compiled in 3.7s (1434 modules)
+ GET / 200 in 2658ms
+ GET / 200 in 141ms
+ GET /pricing 200 in 1054ms
+ ○ Compiling /signup ...
+ ✓ Compiled /signup in 736ms (787 modules)
+ GET /signup 200 in 955ms
+ GET / 200 in 142ms
+ GET /pricing 200 in 737ms
+ GET /signup 200 in 92ms
+ GET / 200 in 65ms
+ ✓ Compiled in 2s (1437 modules)
+ GET / 200 in 294ms
+ GET / 200 in 76ms
+ GET /pricing 200 in 917ms
+ ✓ Compiled in 1705ms (1437 modules)
+ GET /pricing 200 in 343ms
+ GET /signup 200 in 98ms
+ GET / 200 in 111ms
+ GET /pricing 200 in 769ms
+ GET /signup 200 in 71ms
+ GET / 200 in 64ms
+ ✓ Compiled in 1989ms (1439 modules)
+ GET / 200 in 729ms
+ GET /pricing 200 in 1172ms
+ GET /signup 200 in 143ms
+ GET / 200 in 79ms
+ ✓ Compiled in 5.6s (1441 modules)
+ ✓ Compiled in 986ms (654 modules)
+ GET / 200 in 977ms
+ GET / 200 in 145ms
+ ✓ Compiled in 2.6s (1441 modules)
+ GET / 200 in 506ms
+ GET /pricing 200 in 3669ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 2.7s (789 modules)
+ GET /services 200 in 3187ms
+ ✓ Compiled in 3.2s (1441 modules)
+ GET /services 200 in 639ms
+ GET /services 200 in 1911ms
+ GET / 200 in 131ms
+ GET /signup 200 in 118ms
+ GET / 200 in 78ms
+ GET /services 200 in 91ms
+ GET / 200 in 66ms
+ GET /services 200 in 77ms
+ GET / 200 in 54ms
+ GET / 200 in 228ms
+ GET / 200 in 187ms
+ ✓ Compiled in 3.7s (1441 modules)
+ GET / 200 in 606ms
+ GET / 200 in 579ms
+ ✓ Compiled in 1672ms (1441 modules)
+ GET / 200 in 375ms
+ GET / 200 in 830ms
+ ✓ Compiled in 3.1s (1441 modules)
+ GET / 200 in 598ms
+ ✓ Compiled in 1144ms (1441 modules)
+ GET / 200 in 524ms
+ GET / 200 in 2019ms
+ ✓ Compiled in 3s (1441 modules)
+ GET / 200 in 508ms
+ ✓ Compiled in 1316ms (1441 modules)
+ GET / 200 in 183ms
+ ✓ Compiled in 4.4s (1441 modules)
+ GET / 200 in 1589ms
+ GET /pricing 200 in 1076ms
+ GET / 200 in 30ms
+ GET /services 200 in 61ms
+ GET / 200 in 31ms
+ GET /services 200 in 135ms
+ GET / 200 in 26ms
+ GET /services 200 in 53ms
+ GET /services 200 in 54ms
+ GET /services 200 in 35ms
+ ✓ Compiled in 1010ms (1441 modules)
+ ✓ Compiled in 454ms (654 modules)
+ GET / 200 in 445ms
+ GET / 200 in 37ms
+ ✓ Compiled in 1027ms (1441 modules)
+ GET / 200 in 156ms
+ ✓ Compiled in 421ms (1441 modules)
+ GET / 200 in 86ms
+ ✓ Compiled in 541ms (1441 modules)
+ GET / 200 in 156ms
+ ✓ Compiled in 1113ms (1441 modules)
+ GET / 200 in 209ms
+ ✓ Compiled in 550ms (1441 modules)
+ GET / 200 in 70ms
+ GET / 200 in 400ms
+ GET /services 200 in 68ms
+ GET / 200 in 48ms
+ ✓ Compiled in 1440ms (1441 modules)
+ GET / 200 in 286ms
+ ✓ Compiled in 827ms (1441 modules)
+ GET / 200 in 221ms
+ ✓ Compiled in 561ms (1441 modules)
+ GET / 200 in 126ms
+ ✓ Compiled in 618ms (1441 modules)
+ GET / 200 in 111ms
+ ✓ Compiled in 1249ms (1441 modules)
+ GET / 200 in 156ms
+ ✓ Compiled in 2.5s (1446 modules)
+ GET / 200 in 168ms
+ ✓ Compiled in 902ms (1446 modules)
+ GET / 200 in 218ms
+ ✓ Compiled in 1995ms (1446 modules)
+ GET / 200 in 109ms
+ ✓ Compiled in 830ms (1446 modules)
+ GET / 200 in 96ms
+ GET / 200 in 492ms
+ GET /services 200 in 44ms
+ GET /services 200 in 45ms
+ GET /services 200 in 37ms
+ ✓ Compiled in 3.1s (1446 modules)
+ GET / 200 in 358ms
+ ✓ Compiled in 644ms (1446 modules)
+ GET / 200 in 219ms
+ ✓ Compiled in 715ms (1446 modules)
+ GET / 200 in 146ms
+ GET /services 200 in 82ms
+ ✓ Compiled in 779ms (1446 modules)
+ GET / 200 in 139ms
+ GET /services 200 in 56ms
+ GET / 200 in 472ms
+ GET /services 200 in 42ms
+ ✓ Compiled in 1210ms (1446 modules)
+ GET / 200 in 246ms
+ ✓ Compiled in 761ms (1446 modules)
+ GET / 200 in 118ms
+ ✓ Compiled in 543ms (1446 modules)
+ GET / 200 in 94ms
+ ✓ Compiled in 786ms (1446 modules)
+ GET / 200 in 91ms
+ GET / 200 in 362ms
+ GET /services 200 in 47ms
+ GET /services 200 in 58ms
+ ✓ Compiled in 1630ms (1446 modules)
+ GET / 200 in 326ms
+ ✓ Compiled in 1091ms (1446 modules)
+ GET / 200 in 147ms
+ GET / 200 in 326ms
+ ✓ Compiled in 1092ms (1446 modules)
+ GET / 200 in 93ms
+ ✓ Compiled in 487ms (1446 modules)
+ GET / 200 in 98ms
+ ✓ Compiled in 415ms (1446 modules)
+ GET / 200 in 93ms
+ ✓ Compiled in 810ms (1446 modules)
+ GET / 200 in 128ms
+ GET / 200 in 1368ms
+ GET /services 200 in 84ms
+ GET / 200 in 118ms
+ GET /pricing 200 in 178ms
+ GET /signup 200 in 56ms
+ GET / 200 in 39ms
+ ✓ Compiled in 4.5s (1446 modules)
+ GET / 200 in 303ms
+ ✓ Compiled in 682ms (1446 modules)
+ GET / 200 in 165ms
+ ✓ Compiled in 2.7s (1446 modules)
+ GET / 200 in 242ms
+ ✓ Compiled in 1683ms (1446 modules)
+ GET / 200 in 267ms
+ ✓ Compiled in 873ms (1446 modules)
+ GET / 200 in 176ms
+ GET / 200 in 1133ms
+ GET /services 200 in 110ms
+ ✓ Compiled in 1146ms (656 modules)
+ GET /services 200 in 100ms
+ GET / 200 in 51ms
+ ✓ Compiled in 539ms (656 modules)
+ GET / 200 in 97ms
+ ✓ Compiled in 597ms (656 modules)
+ GET / 200 in 135ms
+ ✓ Compiled in 574ms (656 modules)
+ GET / 200 in 118ms
+ ✓ Compiled in 429ms (656 modules)
+ GET / 200 in 70ms
+ ○ Compiling /work ...
+ ✓ Compiled /work in 2.7s (792 modules)
+ GET / 200 in 1111ms
+ GET /work 200 in 3944ms
+ GET / 200 in 58ms
+ ✓ Compiled in 3.6s (1448 modules)
+ GET / 200 in 780ms
+ GET /work 200 in 140ms
+ GET / 200 in 138ms
+ GET /work 200 in 118ms
+ GET / 200 in 65ms
+ ✓ Compiled in 2.9s (1446 modules)
+ GET / 200 in 446ms
+ ✓ Compiled in 1201ms (1446 modules)
+ GET / 200 in 195ms
+ ✓ Compiled in 402ms (656 modules)
+ GET / 200 in 93ms
+ GET / 200 in 1818ms
+ ○ Compiling /work ...
+ ✓ Compiled /work in 4.6s (1439 modules)
+ GET /work 200 in 5101ms
+ GET /work 200 in 105ms
+ GET /work 200 in 63ms
+ GET / 200 in 89ms
+ GET /work 200 in 83ms
+ GET / 200 in 51ms
+ GET /work 200 in 78ms
+ GET /work 200 in 1475ms
+ GET / 200 in 106ms
+ GET /work 200 in 84ms
+ GET / 200 in 64ms
+ ✓ Compiled in 6.4s (1448 modules)
+ ✓ Compiled in 1362ms (658 modules)
+ GET / 200 in 1349ms
+ GET / 200 in 112ms
+ GET /pricing 200 in 458ms
+ GET / 200 in 69ms
+ GET /pricing 200 in 214ms
+ GET / 200 in 95ms
+ GET /pricing 200 in 85ms
+ GET / 200 in 54ms
+ GET /pricing 200 in 131ms
+ GET / 200 in 81ms
+ GET /pricing 200 in 424ms
+ ✓ Compiled in 7.1s (1448 modules)
+ GET /pricing 200 in 824ms
+ GET / 200 in 136ms
+ GET /pricing 200 in 293ms
+Received `true` for a non-boolean attribute `scroll-mt-24`.
+
+If you want to write it to the DOM, pass a string instead: scroll-mt-24="true" or scroll-mt-24={value.toString()}.
+ GET /pricing 200 in 1466ms
+ ✓ Compiled in 3.1s (1448 modules)
+ GET /pricing 200 in 314ms
+ GET /pricing 200 in 751ms
+ ⨯ ./app/pricing/page.tsx
+Error:   [31mx[0m Expected '</', got 'className'
+     ,-[[36;1;4mF:\Vortex studio\app\pricing\page.tsx[0m:117:1]
+ [2m114[0m |                 id={tier.id}
+ [2m115[0m |                 className={`relative flex flex-col p-8 rounded-2xl border transition-opacity duration-300 scroll-mt-24 ${
+ [2m116[0m |                 transition={spring}
+ [2m117[0m |                 className={`relative flex flex-col p-8 rounded-2xl border transition-opacity duration-300 ${
+     : [35;1m                ^^^^^^^^^[0m
+ [2m118[0m |                   tier.highlighted
+ [2m119[0m |                     ? 'border-slate-800 shadow-lg shadow-black/5 bg-white'
+ [2m120[0m |                     : 'border-slate-200 bg-white'
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/pricing/page.tsx
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 9.2s (1780 modules)
+ GET /pricing 500 in 17448ms
+ GET /pricing 200 in 1505ms
+ GET /pricing 200 in 67ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /pricing 200 in 1001ms
+ GET /pricing 200 in 1013ms
+ GET / 200 in 132ms
+ GET /pricing 200 in 83ms
+ GET /signup 200 in 122ms
+ GET / 200 in 84ms
+ ✓ Compiled in 13.9s (1698 modules)
+ GET / 200 in 752ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 2.2s (894 modules)
+ GET /about 200 in 2719ms
+ GET /about 200 in 119ms
+ GET / 200 in 68ms
+ GET /pricing 200 in 112ms
+ GET / 200 in 65ms
+ ✓ Compiled in 15.2s (1685 modules)
+ GET / 200 in 993ms
+ GET /about 200 in 659ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 5.5s (1690 modules)
+ GET /contact 404 in 6032ms
+ GET /contact 404 in 63ms
+ GET /contact 404 in 1274ms
+ GET / 200 in 116ms
+ GET /about 200 in 272ms
+ GET / 200 in 74ms
+ ✓ Compiled in 5.9s (810 modules)
+ GET / 200 in 264ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 6s (1690 modules)
+ GET / 404 in 6254ms
+ GET / 200 in 155ms
+ GET / 200 in 1215ms
+ ○ Compiling /contact ...
+ ⨯ ./app/contact/page.tsx
+Error:   [31mx[0m Expected '</', got 'py'
+    ,-[[36;1;4mF:\Vortex studio\app\contact\page.tsx[0m:85:1]
+ [2m82[0m |               <div className="flex flex-wrap gap-2">
+ [2m83[0m |                 {services.map((service) => (
+ [2m84[0m |                   <motion.button key={service} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.94 }} transition={spring} onClick={() => toggleService(service)}
+ [2m85[0m |                     className={px-4 py-2 rounded-full text-xs font-medium border transition-all duration-200 cursor-pointer }>
+    : [35;1m                                    ^^[0m
+ [2m86[0m |                     {service}
+ [2m87[0m |                   </motion.button>
+ [2m88[0m |                 ))}
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/contact/page.tsx
+ ⨯ ./app/contact/page.tsx
+Error:   [31mx[0m Expected '</', got 'py'
+    ,-[[36;1;4mF:\Vortex studio\app\contact\page.tsx[0m:85:1]
+ [2m82[0m |               <div className="flex flex-wrap gap-2">
+ [2m83[0m |                 {services.map((service) => (
+ [2m84[0m |                   <motion.button key={service} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.94 }} transition={spring} onClick={() => toggleService(service)}
+ [2m85[0m |                     className={px-4 py-2 rounded-full text-xs font-medium border transition-all duration-200 cursor-pointer }>
+    : [35;1m                                    ^^[0m
+ [2m86[0m |                     {service}
+ [2m87[0m |                   </motion.button>
+ [2m88[0m |                 ))}
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/contact/page.tsx
+ ⨯ ./app/contact/page.tsx
+Error:   [31mx[0m Expected '</', got 'py'
+    ,-[[36;1;4mF:\Vortex studio\app\contact\page.tsx[0m:85:1]
+ [2m82[0m |               <div className="flex flex-wrap gap-2">
+ [2m83[0m |                 {services.map((service) => (
+ [2m84[0m |                   <motion.button key={service} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.94 }} transition={spring} onClick={() => toggleService(service)}
+ [2m85[0m |                     className={px-4 py-2 rounded-full text-xs font-medium border transition-all duration-200 cursor-pointer }>
+    : [35;1m                                    ^^[0m
+ [2m86[0m |                     {service}
+ [2m87[0m |                   </motion.button>
+ [2m88[0m |                 ))}
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/contact/page.tsx
+ GET /contact 500 in 8987ms
+ GET /contact 500 in 56ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./app/contact/page.tsx
+Error:   [31mx[0m Expected '</', got 'py'
+     ,-[[36;1;4mF:\Vortex studio\app\contact\page.tsx[0m:97:1]
+ [2m 94[0m |               <div className="flex flex-wrap gap-2">
+ [2m 95[0m |                 {budgets.map((budget) => (
+ [2m 96[0m |                   <motion.button key={budget} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.94 }} transition={spring} onClick={() => setSelectedBudget(budget)}
+ [2m 97[0m |                     className={px-4 py-2 rounded-full text-xs font-medium border transition-all duration-200 cursor-pointer }>
+     : [35;1m                                    ^^[0m
+ [2m 98[0m |                     {budget}
+ [2m 99[0m |                   </motion.button>
+ [2m100[0m |                 ))}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/contact/page.tsx
+ GET /contact 500 in 65ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./app/contact/page.tsx
+Error:   [31mx[0m Expected '</', got 'rounded'
+     ,-[[36;1;4mF:\Vortex studio\app\contact\page.tsx[0m:136:1]
+ [2m133[0m |               <div className="grid grid-cols-3 gap-3 mb-6">
+ [2m134[0m |                 {timeSlots.map((slot) => (
+ [2m135[0m |                   <motion.button key={slot} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.94 }} transition={spring} onClick={() => setSelectedSlot(slot)}
+ [2m136[0m |                     className={py-3 rounded-xl text-sm font-medium border transition-all duration-200 cursor-pointer }>
+     : [35;1m                                    ^^^^^^^[0m
+ [2m137[0m |                     {slot}
+ [2m138[0m |                   </motion.button>
+ [2m139[0m |                 ))}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/contact/page.tsx
+ GET /contact 500 in 53ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /_error in 3s (1793 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /contact 200 in 4230ms
+ GET /contact 200 in 1895ms
+ GET / 200 in 1978ms
+ GET / 200 in 81ms
+ GET /contact 200 in 89ms
+ GET /pricing 200 in 160ms
+ GET / 200 in 80ms
+ ✓ Compiled in 10.4s (1797 modules)
+ GET / 200 in 795ms
+ GET / 200 in 1304ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 743ms (989 modules)
+ GET /services 200 in 1444ms
+ GET /work 200 in 340ms
+ GET /pricing 200 in 287ms
+ GET /contact 200 in 344ms
+ GET /pricing 200 in 249ms
+ GET /work 200 in 211ms
+ GET /services 200 in 227ms
+ GET /contact 200 in 977ms
+ ✓ Compiled in 3.7s (1797 modules)
+ GET /contact 200 in 411ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 774ms (1788 modules)
+ GET /favicon-16x16.png 404 in 1819ms
+ GET /contact 200 in 1022ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.5s (989 modules)
+ GET / 200 in 2878ms
+ GET / 200 in 91ms
+ GET / 200 in 101ms
+ GET / 200 in 98ms
+ GET / 200 in 92ms
+ GET /contact 200 in 874ms
+ GET / 200 in 64ms
+ GET / 200 in 77ms
+ ✓ Compiled in 9.3s (1783 modules)
+ ✓ Compiled in 2.1s (813 modules)
+ GET / 200 in 652ms
+ ✓ Compiled in 1726ms (1797 modules)
+ GET / 200 in 295ms
+ ✓ Compiled in 7.2s (1804 modules)
+ GET / 200 in 237ms
+ ✓ Compiled in 2.2s (1804 modules)
+ GET / 200 in 186ms
+ ✓ Compiled in 27.2s (1804 modules)
+ ✓ Compiled in 1768ms (816 modules)
+ ✓ Compiled in 624ms (816 modules)
+ ✓ Compiled in 6.9s (1804 modules)
+ GET / 200 in 1965ms
+ ⚠ ./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+ GET / 200 in 420ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 1052ms
+ ⚠ ./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'OGL' is not exported from 'ogl' (imported as 'OGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+ GET / 200 in 1045ms
+ GET / 200 in 397ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 3.3s (1806 modules)
+ GET / 200 in 3271ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1347ms (1806 modules)
+ GET / 200 in 1612ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ ./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+ ⚠ ./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+ ⚠ ./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+ GET / 200 in 2545ms
+ ⚠ ./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+
+./components/ui/light-tunnel.tsx
+Attempted import error: 'WebGL' is not exported from 'ogl' (imported as 'WebGL').
+
+Import trace for requested module:
+./components/ui/light-tunnel.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 6.6s (1934 modules)
+ ✓ Compiled in 762ms (1934 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 2ms (1053 modules)
+ GET / 200 in 6904ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 2.4s (1934 modules)
+ GET / 200 in 2529ms
+ GET / 200 in 577ms
+ GET / 200 in 501ms
+ ✓ Compiled in 4.1s (1934 modules)
+ GET / 200 in 975ms
+ ✓ Compiled in 3s (1934 modules)
+ GET / 200 in 191ms
+ ✓ Compiled in 1137ms (1934 modules)
+ GET / 200 in 202ms
+ GET / 200 in 3244ms
+ ✓ Compiled in 6.1s (1934 modules)
+ GET / 200 in 438ms
+ ✓ Compiled in 1169ms (1934 modules)
+ GET / 200 in 212ms
+ ✓ Compiled in 1992ms (1934 modules)
+ GET / 200 in 276ms
+ ✓ Compiled in 1163ms (1934 modules)
+ GET / 200 in 210ms
+ ✓ Compiled in 1095ms (1934 modules)
+ GET / 200 in 238ms
+ GET / 200 in 1599ms
+ ✓ Compiled in 1711ms (1934 modules)
+ GET / 200 in 1292ms
+ ✓ Compiled in 1658ms (1934 modules)
+ GET / 200 in 228ms
+ ✓ Compiled in 1164ms (1934 modules)
+ GET / 200 in 218ms
+ ✓ Compiled in 2.1s (1934 modules)
+ GET / 200 in 208ms
+ ✓ Compiled in 1132ms (1934 modules)
+ GET / 200 in 190ms
+ GET / 200 in 940ms
+ ✓ Compiled in 1739ms (1934 modules)
+ GET / 200 in 209ms
+ ✓ Compiled in 2s (1934 modules)
+ GET / 200 in 210ms
+ ✓ Compiled in 3.6s (1804 modules)
+ GET / 200 in 403ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: LightTunnel is not defined
+    at Home (app\page.tsx:45:12)
+  43 |       <section className="relative overflow-hidden pt-36 pb-20 px-4 max-w-5xl mx-auto text-center flex flex-col items-center justify-center">
+  44 |         <div className="absolute inset-0 z-0 pointer-events-none">
+> 45 |           <LightTunnel
+     |            ^
+  46 |             cableColor="#10b981"
+  47 |             pulseColor="#34d399"
+  48 |             tunnelColor="#020617" {
+  digest: '3060840152'
+}
+ GET / 500 in 1341ms
+ ✓ Compiled in 1334ms (1804 modules)
+ GET / 200 in 648ms
+ GET / 200 in 263ms
+ ✓ Compiled in 5.3s (1948 modules)
+ GET / 200 in 267ms
+ ✓ Compiled in 1004ms (1948 modules)
+ GET / 200 in 330ms
+ ✓ Compiled in 1877ms (1948 modules)
+ GET / 200 in 108ms
+ ✓ Compiled in 1107ms (1948 modules)
+ GET / 200 in 183ms
+ GET / 200 in 918ms
+ ✓ Compiled in 1488ms (889 modules)
+ ✓ Compiled in 458ms (889 modules)
+ GET / 200 in 445ms
+ GET / 200 in 76ms
+ ✓ Compiled in 5.9s (1951 modules)
+ GET / 200 in 393ms
+ ✓ Compiled in 1566ms (1951 modules)
+ GET / 200 in 114ms
+ ✓ Compiled in 2.8s (1951 modules)
+ GET / 200 in 290ms
+ GET / 200 in 868ms
+ ✓ Compiled in 2.9s (1951 modules)
+ GET / 200 in 221ms
+ ✓ Compiled in 1907ms (891 modules)
+ ✓ Compiled in 513ms (891 modules)
+ GET / 200 in 512ms
+ GET / 200 in 115ms
+ GET / 200 in 38ms
+ ✓ Compiled in 1531ms (1951 modules)
+ GET / 200 in 185ms
+ ✓ Compiled in 1001ms (1951 modules)
+ GET / 200 in 137ms
+ ✓ Compiled in 2.3s (1953 modules)
+ GET / 200 in 134ms
+ ✓ Compiled in 1299ms (1953 modules)
+ GET / 200 in 227ms
+ ✓ Compiled in 586ms (1953 modules)
+ GET / 200 in 138ms
+ ✓ Compiled in 972ms (1953 modules)
+ GET / 200 in 454ms
+ ✓ Compiled in 822ms (1953 modules)
+ GET / 200 in 130ms
+ ✓ Compiled in 3.9s (1953 modules)
+ GET / 200 in 243ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 3.5s (1066 modules)
+ GET /login 200 in 3677ms
+ GET /login 200 in 98ms
+ GET / 200 in 44ms
+ GET / 200 in 770ms
+ ✓ Compiled in 1151ms (892 modules)
+ GET / 200 in 65ms
+ ✓ Compiled in 1559ms (1953 modules)
+ GET / 200 in 176ms
+ ✓ Compiled in 3s (1955 modules)
+ GET / 200 in 164ms
+ GET /pricing 200 in 59ms
+ GET / 200 in 33ms
+ GET /pricing 200 in 34ms
+ GET / 200 in 32ms
+ ✓ Compiled in 3s (1955 modules)
+ GET / 200 in 180ms
+ GET / 200 in 632ms
+ GET / 200 in 216ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 5.3s (1946 modules)
+ GET /llms.txt 404 in 6018ms
+ GET /robots.txt 404 in 1057ms
+ GET / 200 in 812ms
+ GET / 200 in 338ms
+ GET / 200 in 375ms
+ ✓ Compiled in 3.4s (1955 modules)
+ GET / 200 in 186ms
+ ✓ Compiled in 1588ms (1808 modules)
+ GET / 200 in 666ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: LightTunnel is not defined
+    at Home (app\page.tsx:50:12)
+  48 |           style={{ maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}
+  49 |         >
+> 50 |           <LightTunnel
+     |            ^
+  51 |             cableColor="#10b981"
+  52 |             pulseColor="#34d399"
+  53 |             tunnelColor="#0f172a" {
+  digest: '1938086096'
+}
+ GET / 500 in 567ms
+ ✓ Compiled in 825ms (1808 modules)
+ GET / 200 in 439ms
+ ✓ Compiled in 296ms (818 modules)
+ GET / 200 in 76ms
+ ✓ Compiled in 4.3s (818 modules)
+ ✓ Compiled in 777ms (818 modules)
+ GET / 200 in 785ms
+ GET / 200 in 151ms
+ ✓ Compiled in 986ms (818 modules)
+ ✓ Compiled in 907ms (818 modules)
+ GET / 200 in 916ms
+ GET / 200 in 233ms
+ ✓ Compiled in 629ms (818 modules)
+ ✓ Compiled in 467ms (818 modules)
+ GET / 200 in 469ms
+ GET / 200 in 110ms
+ ✓ Compiled in 410ms (818 modules)
+ ✓ Compiled in 486ms (818 modules)
+ GET / 200 in 479ms
+ GET / 200 in 150ms
+ ✓ Compiled in 384ms (818 modules)
+ ✓ Compiled in 452ms (818 modules)
+ GET / 200 in 441ms
+ GET / 200 in 92ms
+ ✓ Compiled in 8.1s (1832 modules)
+ GET / 200 in 884ms
+ ✓ Compiled in 2.6s (1832 modules)
+ GET / 200 in 224ms
+ ✓ Compiled in 1299ms (1832 modules)
+ GET / 200 in 197ms
+ ✓ Compiled in 4.5s (1832 modules)
+ GET / 200 in 704ms
+ GET / 200 in 1585ms
+ ✓ Compiled in 1523ms (1832 modules)
+ GET / 200 in 231ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: techTags is not defined
+    at Home (app\page.tsx:180:20)
+  178 |                 <p className="text-xs font-medium text-slate-400 uppercase tracking-wide mb-3">Tech Architecture</p>
+  179 |                 <div className="flex flex-wrap gap-2">
+> 180 |                   {techTags.map((tag) => (
+      |                    ^
+  181 |                     <motion.span
+  182 |                       key={tag}
+  183 |                       whileHover={{ scale: 1.05, rotate: 1 }} {
+  digest: '1122973247'
+}
+ GET / 500 in 526ms
+ ✓ Compiled in 1977ms (1832 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 1000ms
+ GET / 200 in 308ms
+ ✓ Compiled in 10s (1832 modules)
+ GET / 200 in 693ms
+ GET / 200 in 2465ms
+ ✓ Compiled in 9.8s (831 modules)
+ ✓ Compiled in 6.1s (831 modules)
+ GET / 200 in 5839ms
+ GET / 200 in 231ms
+ ✓ Compiled in 6.5s (1832 modules)
+ GET / 200 in 793ms
+ ✓ Compiled in 3.5s (1835 modules)
+ GET / 200 in 275ms
+ GET / 200 in 1237ms
+ GET / 200 in 278ms
+ ✓ Compiled in 8.6s (832 modules)
+ GET / 200 in 1122ms
+ GET / 200 in 139ms
+ ⨯ ./app/work/page.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4mF:\Vortex studio\app\work\page.tsx[0m:165:1]
+ [2m162[0m |       </div>
+ [2m163[0m |     </div>
+ [2m164[0m |   )
+ [2m165[0m | }
+     : [35;1m^[0m
+     `----
+  [31mx[0m Unexpected eof
+     ,-[[36;1;4mF:\Vortex studio\app\work\page.tsx[0m:165:1]
+ [2m162[0m |       </div>
+ [2m163[0m |     </div>
+ [2m164[0m |   )
+ [2m165[0m | }
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/work/page.tsx
+ GET / 500 in 75ms
+ GET / 500 in 37ms
+ GET / 500 in 43ms
+ GET / 500 in 41ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 384ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 8.9s (1823 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 2802ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 259ms
+ GET / 200 in 544ms
+ GET / 200 in 329ms
+ GET /work 200 in 479ms
+ ✓ Compiled in 7.3s (1837 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /work 200 in 786ms
+ GET / 200 in 1969ms
+ GET /work 200 in 1288ms
+ ✓ Compiled in 12.9s (1837 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1453ms (833 modules)
+ GET / 200 in 1432ms
+ GET /work 200 in 1426ms
+ GET /work 200 in 1377ms
+ GET / 200 in 1319ms
+ ✓ Compiled in 5s (1837 modules)
+ GET / 200 in 886ms
+ GET /work 200 in 872ms
+ GET /work 200 in 106ms
+ GET /work 200 in 103ms
+ GET /work 200 in 79ms
+ GET /work 200 in 91ms
+ ✓ Compiled in 7.7s (1837 modules)
+ GET /work 200 in 771ms
+ GET / 200 in 773ms
+ ✓ Compiled in 15.5s (1837 modules)
+ GET /work 200 in 786ms
+ GET / 200 in 767ms
+ GET /work 200 in 1814ms
+ ⨯ ./components/work.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4mF:\Vortex studio\components\work.tsx[0m:207:1]
+ [2m204[0m |                 </Link>
+ [2m205[0m |               </div>
+ [2m206[0m |             </motion.div>
+ [2m207[0m |           ))}
+     : [35;1m            ^[0m
+ [2m208[0m |         </motion.div>
+ [2m209[0m | 
+ [2m210[0m |         <div className="flex items-center justify-center gap-2 mt-6 z-10">
+     `----
+  [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m           ))}
+  [31m|[0m         )'
+     ,-[[36;1;4mF:\Vortex studio\components\work.tsx[0m:206:1]
+ [2m203[0m |                       </motion.span>
+ [2m204[0m |                     </Link>
+ [2m205[0m |                   </div>
+ [2m206[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m             </motion.div>
+ [2m207[0m | [35;1m|[0m             ))}
+ [2m208[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         </motion.div>
+ [2m209[0m |     
+ [2m210[0m |             <div className="flex items-center justify-center gap-2 mt-6 z-10">
+ [2m211[0m |               {[0, 1, 2, 3].map((i) => {
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/work.tsx
+./app/work/page.tsx
+ ✓ Compiled in 3.2s (1837 modules)
+ GET / 200 in 966ms
+ GET /work 200 in 193ms
+ GET /work 200 in 922ms
+ ✓ Compiled in 4.4s (1837 modules)
+ GET / 200 in 507ms
+ GET /work 200 in 503ms
+ ✓ Compiled in 3.4s (1837 modules)
+ GET /work 200 in 540ms
+ GET / 200 in 533ms
+ ✓ Compiled in 1192ms (1837 modules)
+ GET /work 200 in 478ms
+ GET / 200 in 467ms
+ GET /work 200 in 1150ms
+ ✓ Compiled in 8.8s (1837 modules)
+ GET /work 200 in 998ms
+ GET / 200 in 959ms
+ GET /work 200 in 2455ms
+ ✓ Compiled in 2.5s (1837 modules)
+ GET / 200 in 456ms
+ GET /work 200 in 452ms
+ ✓ Compiled in 2.6s (1837 modules)
+ GET / 200 in 706ms
+ GET /work 200 in 715ms
+ GET /work 200 in 629ms
+ ✓ Compiled in 2.6s (1837 modules)
+ GET /work 200 in 325ms
+ GET / 200 in 327ms
+ GET /work 200 in 416ms
+ ✓ Compiled in 2.8s (1837 modules)
+ GET / 200 in 450ms
+ GET /work 200 in 449ms
+ GET / 200 in 46ms
+ ✓ Compiled in 7.1s (833 modules)
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/'
+}
+ ✓ Compiled in 2.3s (1823 modules)
+ GET / 500 in 2675ms
+ GET / 200 in 338ms
+ GET / 200 in 77ms
+ GET / 200 in 55ms
+ GET / 200 in 633ms
+ ✓ Compiled in 660ms (833 modules)
+ ✓ Compiled in 605ms (833 modules)
+ GET / 200 in 603ms
+ GET / 200 in 464ms
+ GET / 200 in 139ms
+ GET / 200 in 84ms
+ GET / 200 in 429ms
+ ✓ Compiled in 13.8s (1837 modules)
+ GET / 200 in 1104ms
+ GET / 200 in 263ms
+ ✓ Compiled in 5.6s (1855 modules)
+ GET / 200 in 273ms
+ GET / 200 in 82ms
+ ✓ Compiled in 1523ms (1842 modules)
+ GET / 200 in 149ms
+ GET / 200 in 61ms
+ ✓ Compiled in 579ms (1842 modules)
+ GET / 200 in 135ms
+ GET / 200 in 55ms
+ ✓ Compiled in 8.8s (1842 modules)
+ ✓ Compiled in 832ms (836 modules)
+ GET / 200 in 831ms
+ GET / 200 in 509ms
+ GET / 200 in 186ms
+ GET / 200 in 122ms
+ ✓ Compiled in 682ms (1842 modules)
+ GET / 200 in 134ms
+ GET / 200 in 67ms
+ ✓ Compiled in 4.8s (1842 modules)
+ GET / 200 in 412ms
+ GET / 200 in 131ms
+ ✓ Compiled in 696ms (1842 modules)
+ GET / 200 in 84ms
+ GET / 200 in 48ms
+ GET / 200 in 3467ms
+ GET / 200 in 708ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 19.7s (1833 modules)
+ GET /llms.txt 404 in 20885ms
+ GET /robots.txt 404 in 9428ms
+ GET / 200 in 1180ms
+ GET / 200 in 3545ms
+ GET / 200 in 338ms
+ ✓ Compiled in 14.4s (1847 modules)
+ GET / 200 in 853ms
+ GET / 200 in 143ms
+ ✓ Compiled in 3s (838 modules)
+ GET / 200 in 213ms
+ GET / 200 in 116ms
+ ✓ Compiled in 6.6s (1833 modules)
+ GET / 200 in 6131ms
+ GET / 200 in 132ms
+ GET / 200 in 113ms
+ GET / 200 in 104ms
+ ✓ Compiled in 619ms (838 modules)
+ GET / 200 in 146ms
+ GET / 200 in 103ms
+ ✓ Compiled in 2.7s (1833 modules)
+ GET / 200 in 2175ms
+ GET / 200 in 112ms
+ GET / 200 in 106ms
+ GET / 200 in 102ms
+ ✓ Compiled in 668ms (838 modules)
+ GET / 200 in 174ms
+ GET / 200 in 184ms
+ ✓ Compiled in 3.2s (1847 modules)
+ GET / 200 in 334ms
+ ✓ Compiled in 4.4s (1850 modules)
+ GET / 200 in 4432ms
+ GET / 200 in 119ms
+ GET / 200 in 133ms
+ ✓ Compiled in 950ms (1850 modules)
+ GET / 200 in 232ms
+ GET / 200 in 103ms
+ ✓ Compiled in 2.3s (1850 modules)
+ GET / 200 in 229ms
+ GET / 200 in 98ms
+ ✓ Compiled in 1223ms (1850 modules)
+ GET / 200 in 231ms
+ GET / 200 in 106ms
+ ✓ Compiled in 4.6s (1850 modules)
+ GET / 200 in 218ms
+ GET / 200 in 91ms
+ ✓ Compiled in 1024ms (1850 modules)
+ GET / 200 in 346ms
+ GET / 200 in 128ms
+ ✓ Compiled in 7.3s (1850 modules)
+ GET / 200 in 407ms
+ GET / 200 in 127ms
+ ✓ Compiled in 1250ms (1850 modules)
+ GET / 200 in 237ms
+ GET / 200 in 107ms
+ ✓ Compiled in 1344ms (1850 modules)
+ GET / 200 in 213ms
+ GET / 200 in 110ms
+ ✓ Compiled in 3.3s (1850 modules)
+ GET / 200 in 271ms
+ GET / 200 in 112ms
+ ✓ Compiled in 5.2s (839 modules)
+ ⨯ [Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ GET / 500 in 2867ms
+ GET / 500 in 231ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ GET / 500 in 1839ms
+ GET / 500 in 158ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ GET / 500 in 3999ms
+ GET / 500 in 275ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ GET / 500 in 13313ms
+ GET / 500 in 11921ms
+ ○ Compiling /privacy ...
+ ✓ Compiled /privacy in 27s (1841 modules)
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async M (F:\Vortex studio\.next\server\app\privacy\page.js:1:5267) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/privacy'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async M (F:\Vortex studio\.next\server\app\page.js:1:1832) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async M (F:\Vortex studio\.next\server\app\page.js:1:1832) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async (F:\Vortex studio\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async (F:\Vortex studio\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async M (F:\Vortex studio\.next\server\app\privacy\page.js:1:5267) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/privacy'
+}
+Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async M (F:\Vortex studio\.next\server\app\page.js:1:1832) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async (F:\Vortex studio\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async M (F:\Vortex studio\.next\server\app\page.js:1:1832) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json',
+  page: '/'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async (F:\Vortex studio\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async (F:\Vortex studio\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ GET /privacy 500 in 17061ms
+ GET /privacy 500 in 1040ms
+ GET / 500 in 15976ms
+ GET / 500 in 1040ms
+ ⨯ Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'
+    at async (F:\Vortex studio\.next\server\pages\_error.js:1:6810) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ GET / 500 in 4552ms
+ GET / 500 in 658ms
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ ✓ Compiled in 701ms (840 modules)
+ ⨯ [Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\server\next-font-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\server\\next-font-manifest.json',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\server\next-font-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\server\\next-font-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\server\next-font-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\server\\next-font-manifest.json',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\server\next-font-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\server\\next-font-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'F:\Vortex studio\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\Vortex studio\\.next\\routes-manifest.json'
+}
+ GET / 500 in 2241ms
+ GET / 500 in 677ms
+ GET / 200 in 353ms
+ ○ Compiling /signup ...
+ ✓ Compiled /signup in 5.4s (1016 modules)
+ ⨯ Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\services\page.js:2:7416)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\services\page.js:2:7466) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\services\page.js:2:7416)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\services\page.js:2:7466) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ GET /signup 200 in 7403ms
+ ⨯ Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\work\page.js:2:7732)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\work\page.js:2:7782) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/work'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ GET /services 500 in 7687ms
+ GET /services 500 in 732ms
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\work\page.js:2:7732)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\work\page.js:2:7782) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/work'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ GET /work 500 in 1828ms
+ GET /work 500 in 230ms
+ ⨯ Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\pricing\page.js:2:7509)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\pricing\page.js:2:7559) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/pricing'
+}
+ ⨯ Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\contact\page.js:2:8360)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\contact\page.js:2:8410) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/contact'
+}
+ ○ Compiling /about ...
+ ✓ Compiled /about in 5.8s (1847 modules)
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\pages\_document.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\pages\_document.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\pricing\page.js:2:7509)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\pricing\page.js:2:7559) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/pricing'
+}
+Error: Cannot find module './254.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\app\services\page.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\app\contact\page.js:2:8360)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\app\contact\page.js:2:8410) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/contact'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\pages\_document.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- F:\Vortex studio\.next\server\webpack-runtime.js
+- F:\Vortex studio\.next\server\pages\_document.js
+- F:\Vortex studio\node_modules\next\dist\server\require.js
+- F:\Vortex studio\node_modules\next\dist\server\load-components.js
+- F:\Vortex studio\node_modules\next\dist\build\utils.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\options.js
+- F:\Vortex studio\node_modules\next\dist\build\swc\index.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\parse-module.js
+- F:\Vortex studio\node_modules\next\dist\build\analysis\get-page-static-info.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\router-server.js
+- F:\Vortex studio\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (F:\Vortex studio\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (F:\Vortex studio\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ ⨯ TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+TypeError: Cannot read properties of undefined (reading '/_app')
+    at new Promise (<anonymous>)
+ GET /pricing 500 in 7669ms
+ GET /pricing 500 in 478ms
+ GET /contact 500 in 7562ms
+ GET /contact 500 in 477ms
+ GET /about 200 in 7282ms
+ ✓ Compiled in 922ms (840 modules)
+ ✓ Compiled in 938ms (840 modules)
+ ✓ Compiled in 7.8s (1837 modules)
+ ✓ Compiled in 11.9s (1851 modules)
