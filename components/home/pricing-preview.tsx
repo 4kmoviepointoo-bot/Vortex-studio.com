@@ -7,7 +7,16 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 export default function PricingPreview() {
   return (
-    <section className="relative py-24 px-4 bg-gradient-to-b from-emerald-600/20 via-emerald-600/10 to-transparent overflow-hidden">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-rose-600/20 via-rose-600/10 to-transparent overflow-hidden">
+      {/* Rose / Pink Radial Glow */}
+      <div
+        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/30 via-pink-500/10 to-transparent"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-rose-400/15 rounded-full blur-[120px] pointer-events-none -z-10"
+        aria-hidden="true"
+      />
       <div className="text-center mb-16 relative z-10">
         <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-4 inline-block">
           Investment & Plans

@@ -142,7 +142,16 @@ export default function WorkShowcase() {
   const progressWidth = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
 
   return (
-    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#e2e8f0]">
+    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#e2e8f0] overflow-hidden">
+      {/* Deep Violet / Purple Radial Glow */}
+      <div
+        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-600/25 via-indigo-500/10 to-transparent"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-purple-500/15 rounded-full blur-[130px] pointer-events-none -z-10"
+        aria-hidden="true"
+      />
       <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
         <div className="flex items-center justify-between px-6 sm:px-12 mb-4 z-10">
           <span className="text-xs font-bold tracking-[0.2em] uppercase flex items-center gap-2">

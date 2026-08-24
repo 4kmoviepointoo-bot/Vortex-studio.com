@@ -7,8 +7,17 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16 bg-[#e6f4ea]">
-      <div className="max-w-5xl mx-auto">
+    <div className="relative min-h-screen px-4 pt-24 pb-16 bg-[#e6f4ea] overflow-hidden">
+      {/* Emerald Radial Glow */}
+      <div
+        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/30 via-emerald-500/10 to-transparent"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-emerald-500/20 rounded-full blur-[120px] pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+      <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-20">
           <span className="inline-flex items-center px-3 py-1 text-xs font-medium text-[#0F172A] bg-slate-100 rounded-full mb-6">
             Services
