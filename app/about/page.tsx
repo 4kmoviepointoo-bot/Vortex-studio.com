@@ -55,15 +55,14 @@ const techStack = [
 
 export default function AboutPage() {
   return (
-    <div className="relative overflow-hidden bg-slate-50 min-h-screen px-4 pt-24 pb-16">
-      {/* Centered Warm Amber Radial Glow */}
+    <div className="relative overflow-hidden bg-slate-50 min-h-screen px-4 pt-24 pb-16 z-0">
+      {/* High-Visibility Warm Amber Radial Glow */}
       <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-amber-500/20 rounded-full blur-[140px] pointer-events-none -z-10"
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-400/35 via-orange-300/15 to-transparent blur-3xl pointer-events-none -z-10"
         aria-hidden="true"
       />
-      {/* Secondary Subtle Orange Tint for Depth */}
       <div
-        className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-orange-400/10 rounded-full blur-[120px] pointer-events-none -z-10"
+        className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[750px] h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/25 via-yellow-400/10 to-transparent blur-3xl pointer-events-none -z-10"
         aria-hidden="true"
       />
       <div className="max-w-4xl mx-auto relative z-10">
