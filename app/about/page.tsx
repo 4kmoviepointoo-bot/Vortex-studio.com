@@ -85,7 +85,7 @@ export default function AboutPage() {
           <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-4 inline-block">
             Who We Are
           </span>
-          <h1 className="text-3xl sm:text-5xl font-bold text-slate-950 tracking-tight mb-6">
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6 bg-[linear-gradient(110deg,#0f172a,45%,#f59e0b,55%,#0f172a)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer">
             Crafting modern web software with engineering rigor
           </h1>
           <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
