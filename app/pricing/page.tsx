@@ -87,14 +87,23 @@ export default function PricingPage() {
   }
 
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16">
-      <div className="max-w-6xl mx-auto">
+    <div className="relative overflow-hidden bg-slate-50 min-h-screen px-4 pt-24 pb-16 z-0">
+      {/* Centered Rose & Purple Radial Background Layer */}
+      <div
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/25 via-pink-500/10 to-transparent blur-3xl pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-indigo-400/10 to-transparent blur-3xl pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <span className="inline-flex items-center px-3 py-1 text-xs font-medium text-[#0F172A] bg-slate-100 rounded-full mb-6">
             Investment & Plans
           </span>
 
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight bg-[linear-gradient(110deg,#0f172a,45%,#e11d48,55%,#0f172a)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer">
             Transparent models for every ambition
           </h1>
 
