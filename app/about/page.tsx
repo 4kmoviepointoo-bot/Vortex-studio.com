@@ -55,8 +55,18 @@ const techStack = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16 bg-white">
-      <div className="max-w-4xl mx-auto">
+    <div className="relative overflow-hidden bg-slate-50 min-h-screen px-4 pt-24 pb-16">
+      {/* Centered Warm Amber Radial Glow */}
+      <div
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[550px] bg-amber-500/20 rounded-full blur-[140px] pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+      {/* Secondary Subtle Orange Tint for Depth */}
+      <div
+        className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-orange-400/10 rounded-full blur-[120px] pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+      <div className="max-w-4xl mx-auto relative z-10">
 
         <div className="mb-8">
           <Link href="/">
