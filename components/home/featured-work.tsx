@@ -8,13 +8,14 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 export default function FeaturedWork() {
   return (
     <section className="relative py-20 px-4 bg-slate-50 overflow-hidden">
-      {/* Cyan / Electric Blue Radial Glow */}
+      {/* Centered Medium Blue Radial Layer */}
       <div
-        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/30 via-cyan-500/10 to-transparent"
+        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/20 via-blue-500/10 to-transparent"
         aria-hidden="true"
       />
+      {/* Ambient Center Light Orb */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-blue-500/15 rounded-full blur-[120px] pointer-events-none -z-10"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-blue-500/15 rounded-full blur-[130px] pointer-events-none -z-10"
         aria-hidden="true"
       />
       <div className="text-center mb-16 relative z-10">

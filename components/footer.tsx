@@ -46,17 +46,8 @@ function FooterLink({ href, label, external = false }: { href: string; label: st
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-slate-200 bg-[#cbd5e1] pt-16 pb-12 max-w-6xl mx-auto px-4 overflow-hidden">
-      {/* Indigo Radial Glow */}
-      <div
-        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-600/25 via-slate-500/10 to-transparent"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-indigo-400/15 rounded-full blur-[120px] pointer-events-none -z-10"
-        aria-hidden="true"
-      />
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
+    <footer className="border-t border-slate-200 bg-[#cbd5e1] pt-16 pb-12 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <h3 className="text-lg font-bold text-slate-950 mb-3">Vortex Studio <span className="text-slate-400 font-normal text-sm">v1</span></h3>
           <p className="text-sm text-slate-600 leading-relaxed mb-4">

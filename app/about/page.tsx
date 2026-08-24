@@ -55,17 +55,8 @@ const techStack = [
 
 export default function AboutPage() {
   return (
-    <div className="relative min-h-screen px-4 pt-24 pb-16 bg-white overflow-hidden">
-      {/* Amber / Sunset Gold Radial Glow */}
-      <div
-        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/25 via-orange-400/10 to-transparent"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-amber-400/15 rounded-full blur-[120px] pointer-events-none -z-10"
-        aria-hidden="true"
-      />
-      <div className="max-w-4xl mx-auto relative z-10">
+    <div className="min-h-screen px-4 pt-24 pb-16 bg-white">
+      <div className="max-w-4xl mx-auto">
 
         <div className="mb-8">
           <Link href="/">
