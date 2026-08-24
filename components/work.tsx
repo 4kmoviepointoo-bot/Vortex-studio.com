@@ -142,17 +142,7 @@ export default function WorkShowcase() {
   const progressWidth = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
 
   return (
-    <div ref={targetRef} className="relative h-[300vh] w-full bg-slate-50 overflow-hidden">
-      {/* Centered Medium Blue Radial Background Layer */}
-      <div
-        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/25 via-blue-500/10 to-transparent"
-        aria-hidden="true"
-      />
-      {/* Ambient Center Light Orb */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none -z-10"
-        aria-hidden="true"
-      />
+    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#e2e8f0]">
       <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
         <div className="flex items-center justify-between px-6 sm:px-12 mb-4 z-10">
           <span className="text-xs font-bold tracking-[0.2em] uppercase flex items-center gap-2">
