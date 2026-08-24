@@ -237,11 +237,11 @@ export default function Home() {
       {/* Services - Emerald Glow */}
       <section className="relative overflow-hidden">
         <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/30 via-emerald-500/10 to-transparent"
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/45 via-emerald-400/20 to-transparent"
           aria-hidden="true"
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-emerald-500/20 rounded-full blur-[120px] pointer-events-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-emerald-500/40 rounded-full blur-[160px] pointer-events-none"
           aria-hidden="true"
         />
         <div className="relative z-10">
@@ -254,11 +254,11 @@ export default function Home() {
       {/* Featured Projects Grid - Electric Blue Glow */}
       <section className="relative overflow-hidden">
         <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/30 via-cyan-500/10 to-transparent"
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/45 via-cyan-400/20 to-transparent"
           aria-hidden="true"
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-blue-500/15 rounded-full blur-[120px] pointer-events-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-blue-500/40 rounded-full blur-[160px] pointer-events-none"
           aria-hidden="true"
         />
         <div className="relative z-10">
@@ -271,11 +271,11 @@ export default function Home() {
       {/* Pricing - Vibrant Rose Glow */}
       <section className="relative overflow-hidden">
         <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/30 via-pink-500/10 to-transparent"
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/45 via-pink-400/20 to-transparent"
           aria-hidden="true"
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-rose-400/15 rounded-full blur-[120px] pointer-events-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-rose-500/40 rounded-full blur-[160px] pointer-events-none"
           aria-hidden="true"
         />
         <div className="relative z-10">
@@ -288,11 +288,11 @@ export default function Home() {
       {/* CTA & Footer - Indigo Glow */}
       <section className="relative overflow-hidden">
         <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-600/25 via-slate-500/10 to-transparent"
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-600/45 via-slate-400/20 to-transparent"
           aria-hidden="true"
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-indigo-500/15 rounded-full blur-[120px] pointer-events-none"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-indigo-500/40 rounded-full blur-[160px] pointer-events-none"
           aria-hidden="true"
         />
         <div className="relative z-10">

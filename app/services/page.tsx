@@ -117,7 +117,7 @@ export default function ServicesPage() {
     <div className="relative overflow-hidden bg-slate-50 min-h-screen py-20">
       {/* Centered Emerald Radial Glow */}
       <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-emerald-500/20 rounded-full blur-[140px] pointer-events-none -z-10"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-emerald-500/45 rounded-full blur-[160px] pointer-events-none -z-10"
         aria-hidden="true"
       />
 

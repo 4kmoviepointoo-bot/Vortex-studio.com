@@ -90,11 +90,11 @@ export default function PricingPage() {
     <div className="relative overflow-hidden bg-slate-50 min-h-screen px-4 pt-24 pb-16 z-0">
       {/* Centered Rose & Purple Radial Background Layer */}
       <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/25 via-pink-500/10 to-transparent blur-3xl pointer-events-none -z-10"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/45 via-pink-400/20 to-transparent blur-[160px] pointer-events-none -z-10"
         aria-hidden="true"
       />
       <div
-        className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-indigo-400/10 to-transparent blur-3xl pointer-events-none -z-10"
+        className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/40 via-indigo-400/15 to-transparent blur-[160px] pointer-events-none -z-10"
         aria-hidden="true"
       />
       <div className="max-w-6xl mx-auto relative z-10">

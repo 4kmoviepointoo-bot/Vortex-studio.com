@@ -58,11 +58,11 @@ export default function AboutPage() {
     <div className="relative overflow-hidden bg-slate-50 min-h-screen px-4 pt-24 pb-16 z-0">
       {/* High-Visibility Warm Amber Radial Glow */}
       <div
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-400/35 via-orange-300/15 to-transparent blur-3xl pointer-events-none -z-10"
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/45 via-orange-400/20 to-transparent blur-[160px] pointer-events-none -z-10"
         aria-hidden="true"
       />
       <div
-        className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[750px] h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/25 via-yellow-400/10 to-transparent blur-3xl pointer-events-none -z-10"
+        className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/35 via-yellow-400/15 to-transparent blur-[160px] pointer-events-none -z-10"
         aria-hidden="true"
       />
       <div className="max-w-4xl mx-auto relative z-10">
