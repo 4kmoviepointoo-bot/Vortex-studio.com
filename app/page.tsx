@@ -234,21 +234,72 @@ export default function Home() {
 
       <SectionDivider />
 
-      <ShowcaseGrid />
+      {/* Services - Emerald Glow */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/30 via-emerald-500/10 to-transparent"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-emerald-500/20 rounded-full blur-[120px] pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="relative z-10">
+          <ShowcaseGrid />
+        </div>
+      </section>
 
       <SectionDivider />
 
-      <FeaturedWork />
+      {/* Featured Projects Grid - Electric Blue Glow */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/30 via-cyan-500/10 to-transparent"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-blue-500/15 rounded-full blur-[120px] pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="relative z-10">
+          <FeaturedWork />
+        </div>
+      </section>
 
       <SectionDivider />
 
-      <PricingPreview />
+      {/* Pricing - Vibrant Rose Glow */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/30 via-pink-500/10 to-transparent"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-rose-400/15 rounded-full blur-[120px] pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="relative z-10">
+          <PricingPreview />
+        </div>
+      </section>
 
       <SectionDivider />
 
-      <ContactCTA />
-
-      <Footer />
+      {/* CTA & Footer - Indigo Glow */}
+      <section className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-600/25 via-slate-500/10 to-transparent"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-indigo-500/15 rounded-full blur-[120px] pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="relative z-10">
+          <ContactCTA />
+          <Footer />
+        </div>
+      </section>
     </>
   )
 }
