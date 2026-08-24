@@ -7,8 +7,18 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 export default function FeaturedWork() {
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto">
-      <div className="text-center mb-16">
+    <section className="relative py-20 px-4 bg-slate-50 overflow-hidden">
+      {/* Centered Medium Blue Radial Layer */}
+      <div
+        className="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/20 via-blue-500/10 to-transparent"
+        aria-hidden="true"
+      />
+      {/* Ambient Center Light Orb */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-blue-500/15 rounded-full blur-[130px] pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+      <div className="text-center mb-16 relative z-10">
         <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-4 inline-block">
           Selected Work
         </span>
@@ -20,7 +30,7 @@ export default function FeaturedWork() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +132,7 @@ export default function FeaturedWork() {
         </motion.div>
       </div>
 
-      <div className="text-center mt-16">
+      <div className="text-center mt-16 relative z-10">
         <Link href="/work">
           <motion.span
             whileHover={{ scale: 1.03, y: -1 }}
