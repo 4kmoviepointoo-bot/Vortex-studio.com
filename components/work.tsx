@@ -142,7 +142,7 @@ export default function WorkShowcase() {
   const progressWidth = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
 
   return (
-    <div ref={targetRef} className="relative h-[300vh] w-full bg-slate-50">
+    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#f1f5f9]">
       <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
         <div className="flex items-center justify-between px-6 sm:px-12 mb-4 z-10">
           <span className="text-xs font-bold tracking-[0.2em] uppercase flex items-center gap-2">

@@ -55,7 +55,7 @@ const techStack = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16">
+    <div className="min-h-screen px-4 pt-24 pb-16 bg-white">
       <div className="max-w-4xl mx-auto">
 
         <div className="mb-8">

@@ -46,7 +46,7 @@ function FooterLink({ href, label, external = false }: { href: string; label: st
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white/60 pt-16 pb-12 max-w-6xl mx-auto px-4">
+    <footer className="border-t border-slate-200 bg-slate-100/60 pt-16 pb-12 max-w-6xl mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <h3 className="text-lg font-bold text-slate-950 mb-3">Vortex Studio <span className="text-slate-400 font-normal text-sm">v1</span></h3>
