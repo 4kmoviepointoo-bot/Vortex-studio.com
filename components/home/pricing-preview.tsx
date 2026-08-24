@@ -7,8 +7,8 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 export default function PricingPreview() {
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto">
-      <div className="text-center mb-16">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-emerald-600/20 via-emerald-600/10 to-transparent overflow-hidden">
+      <div className="text-center mb-16 relative z-10">
         <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-4 inline-block">
           Investment & Plans
         </span>
@@ -20,7 +20,7 @@ export default function PricingPreview() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -134,6 +134,12 @@ export default function PricingPreview() {
           </Link>
         </motion.div>
       </div>
+
+      {/* Smooth Bottom Fade Transition */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-50 via-slate-50/80 to-transparent pointer-events-none"
+        aria-hidden="true"
+      />
     </section>
   )
 }
