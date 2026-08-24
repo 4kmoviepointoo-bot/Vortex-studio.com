@@ -7,7 +7,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 export default function ContactCTA() {
   return (
-    <section className="my-20 px-4 bg-slate-100/60">
+    <section className="my-20 px-4 bg-[#cbd5e1]">
       <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-14 max-w-5xl mx-auto shadow-2xl relative overflow-hidden border border-slate-800">
         <div className="bg-emerald-500/10 blur-3xl rounded-full absolute -top-20 -right-20 w-80 h-80 pointer-events-none" />
         <span className="px-3.5 py-1.5 rounded-full border border-slate-700 bg-slate-800 text-xs text-slate-300 font-medium mb-4 inline-block relative z-10">

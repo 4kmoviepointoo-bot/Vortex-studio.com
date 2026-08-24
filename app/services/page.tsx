@@ -7,7 +7,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16 bg-[#f4fbf7]">
+    <div className="min-h-screen px-4 pt-24 pb-16 bg-[#e6f4ea]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-20">
           <span className="inline-flex items-center px-3 py-1 text-xs font-medium text-[#0F172A] bg-slate-100 rounded-full mb-6">
