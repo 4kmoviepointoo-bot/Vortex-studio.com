@@ -143,15 +143,15 @@ export default function ShowcaseGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ ...spring, delay: i * 0.1 }}
-            className="bg-white/90 backdrop-blur-md rounded-[32px] p-8 sm:p-10 border border-slate-200/80 shadow-[0_0_40px_-10px_rgba(16,185,129,0.18)] hover:shadow-[0_0_50px_-5px_rgba(147,51,234,0.22)] transition-all duration-300 group"
+            className="bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-300 group"
           >
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
               <div className="flex-1">
-                <span className="bg-emerald-200/70 text-emerald-900 text-xs font-bold px-3 py-1 rounded-full mb-4 inline-block">
+                <span className="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-emerald-200/60">
                   {service.index}
                 </span>
 
-                <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-emerald-500 via-teal-500 to-purple-600 bg-clip-text text-transparent mb-3">
+                <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
                   {service.title}
                 </h3>
 
