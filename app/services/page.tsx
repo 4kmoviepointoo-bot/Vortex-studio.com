@@ -114,83 +114,90 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="relative overflow-hidden bg-slate-50 min-h-screen py-20">
-      {/* Centered Emerald Radial Glow */}
-      <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-emerald-500/45 rounded-full blur-[160px] pointer-events-none -z-10"
-        aria-hidden="true"
-      />
-
-      <div className="px-4 max-w-5xl mx-auto relative z-10">
-        <div className="text-center mb-20 pt-8">
-          <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-6 inline-block">
-            Services
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4 tracking-tight">
-            What We Do
-          </h1>
-          <p className="max-w-xl text-slate-600 text-lg mx-auto">
-            We design and build digital products that scale. From brand identity to full-stack applications,
-            our team delivers end-to-end solutions for ambitious companies.
-          </p>
+    <div className="min-h-screen py-20">
+      {/* Section 1: Page Top - Very Light Mint */}
+      <div className="relative overflow-hidden bg-[#EBF5EE] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)] py-12">
+        <div className="px-4 max-w-5xl mx-auto relative z-10">
+          <div className="text-center pt-8">
+            <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-6 inline-block">
+              Services
+            </span>
+            <h1 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4 tracking-tight">
+              What We Do
+            </h1>
+            <p className="max-w-xl text-slate-600 text-lg mx-auto">
+              We design and build digital products that scale. From brand identity to full-stack applications,
+              our team delivers end-to-end solutions for ambitious companies.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div className="flex flex-col gap-6">
-          {services.map((service, i) => (
-            <motion.div
-              key={service.index}
-              id={service.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ ...spring, delay: i * 0.1 }}
-              className="scroll-mt-24 bg-white/90 backdrop-blur-md rounded-[32px] p-8 sm:p-10 border border-slate-200/80 shadow-[0_0_40px_-10px_rgba(16,185,129,0.18)] hover:shadow-[0_0_50px_-5px_rgba(147,51,234,0.22)] transition-all duration-300 group"
-            >
-              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
-                <div className="flex-1">
-                  <span className="bg-emerald-200/70 text-emerald-900 text-xs font-bold px-3 py-1 rounded-full mb-4 inline-block">
-                    {service.index}
-                  </span>
+      {/* Section 2: Main Grid - Soft Sage Green */}
+      <div className="relative overflow-hidden bg-[#A6D8B5] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+        <div className="px-4 max-w-5xl mx-auto relative z-10">
+          <div className="flex flex-col gap-6 py-16">
+            {services.map((service, i) => (
+              <motion.div
+                key={service.index}
+                id={service.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ ...spring, delay: i * 0.1 }}
+                className="scroll-mt-24 bg-white/95 backdrop-blur-md rounded-[32px] p-8 sm:p-10 border border-slate-200/80 shadow-[0_0_40px_-10px_rgba(16,185,129,0.18)] hover:shadow-[0_0_50px_-5px_rgba(147,51,234,0.22)] transition-all duration-300 group"
+              >
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+                  <div className="flex-1">
+                    <span className="bg-emerald-200/70 text-emerald-900 text-xs font-bold px-3 py-1 rounded-full mb-4 inline-block">
+                      {service.index}
+                    </span>
 
-                  <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-emerald-500 via-teal-500 to-purple-600 bg-clip-text text-transparent mb-3">
-                    {service.title}
-                  </h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-emerald-500 via-teal-500 to-purple-600 bg-clip-text text-transparent mb-3">
+                      {service.title}
+                    </h2>
 
-                  <p className="text-slate-600 text-base leading-relaxed max-w-2xl mb-6">
-                    {service.description}
-                  </p>
+                    <p className="text-slate-600 text-base leading-relaxed max-w-2xl mb-6">
+                      {service.description}
+                    </p>
 
-                  <div className="flex flex-wrap gap-2 sm:gap-3 items-center">
-                    {service.tags.map((tag, ti) => (
-                      <span
-                        key={tag}
-                        className={`${tagColors[ti % tagColors.length]} text-xs font-medium px-3.5 py-1.5 rounded-full`}
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                    <div className="flex flex-wrap gap-2 sm:gap-3 items-center">
+                      {service.tags.map((tag, ti) => (
+                        <span
+                          key={tag}
+                          className={`${tagColors[ti % tagColors.length]} text-xs font-medium px-3.5 py-1.5 rounded-full`}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="hidden lg:block shrink-0 pointer-events-none">
+                    {service.graphic}
                   </div>
                 </div>
-
-                <div className="hidden lg:block shrink-0 pointer-events-none">
-                  {service.graphic}
-                </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
+      </div>
 
-        <div className="text-center mt-16">
-          <Link href="/">
-            <motion.span
-              whileHover={{ scale: 1.02, y: -1 }}
-              whileTap={{ scale: 0.94 }}
-              transition={spring}
-              className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-[#0F172A] hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
-            >
-              Back to Home
-            </motion.span>
-          </Link>
+      {/* Section 3: Bottom CTA - Medium Emerald Green */}
+      <div className="relative overflow-hidden bg-[#54B074] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+        <div className="px-4 max-w-5xl mx-auto relative z-10">
+          <div className="text-center py-16">
+            <Link href="/">
+              <motion.span
+                whileHover={{ scale: 1.02, y: -1 }}
+                whileTap={{ scale: 0.94 }}
+                transition={spring}
+                className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-[#0F172A] hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+              >
+                Back to Home
+              </motion.span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

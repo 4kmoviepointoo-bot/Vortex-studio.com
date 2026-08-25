@@ -38,7 +38,8 @@ const techTags = [
 export default function Home() {
   return (
     <>
-      <section className="relative overflow-hidden min-h-[600px] flex flex-col justify-center items-center pt-36 pb-20 px-4 max-w-5xl mx-auto text-center">
+      {/* Section 1: Hero - Off-White Base */}
+      <section className="relative overflow-hidden min-h-[600px] flex flex-col justify-center items-center pt-36 pb-20 px-4 max-w-5xl mx-auto text-center bg-[#F9F8F3] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
         <div className="hero-pulse" />
         {[...Array(8)].map((_, i) => (
           <div
@@ -230,71 +231,27 @@ export default function Home() {
 
       <SectionDivider accent />
 
-      <ClientLogos />
-
-      <SectionDivider />
-
-      {/* Services - Emerald Glow */}
-      <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/45 via-emerald-400/20 to-transparent"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-emerald-500/40 rounded-full blur-[160px] pointer-events-none"
-          aria-hidden="true"
-        />
+      {/* Section 2: Services Preview - Light Beige Tint */}
+      <section className="relative overflow-hidden bg-[#EDE8DC] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
         <div className="relative z-10">
-          <ShowcaseGrid />
+          <ClientLogos />
         </div>
       </section>
 
       <SectionDivider />
 
-      {/* Featured Projects Grid - Electric Blue Glow */}
-      <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600/45 via-cyan-400/20 to-transparent"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-blue-500/40 rounded-full blur-[160px] pointer-events-none"
-          aria-hidden="true"
-        />
+      {/* Section 3: Featured Projects - Muted Warm Taupe */}
+      <section className="relative overflow-hidden bg-[#D8CDBC] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
         <div className="relative z-10">
+          <ShowcaseGrid />
           <FeaturedWork />
         </div>
       </section>
 
       <SectionDivider />
 
-      {/* Pricing - Vibrant Rose Glow */}
-      <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-500/45 via-pink-400/20 to-transparent"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-rose-500/40 rounded-full blur-[160px] pointer-events-none"
-          aria-hidden="true"
-        />
-        <div className="relative z-10">
-          <PricingPreview />
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* CTA & Footer - Indigo Glow */}
-      <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-600/45 via-slate-400/20 to-transparent"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[800px] bg-indigo-500/40 rounded-full blur-[160px] pointer-events-none"
-          aria-hidden="true"
-        />
+      {/* Section 4: CTA & Footer - Deep Warm Sand */}
+      <section className="relative overflow-hidden bg-[#BBAE97] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
         <div className="relative z-10">
           <ContactCTA />
           <Footer />

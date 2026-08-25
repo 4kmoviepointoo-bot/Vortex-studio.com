@@ -55,102 +55,11 @@ const techStack = [
 
 export default function AboutPage() {
   return (
-    <div className="relative overflow-hidden bg-slate-50 min-h-screen px-4 pt-24 pb-16 z-0">
-      {/* High-Visibility Warm Amber Radial Glow */}
-      <div
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/45 via-orange-400/20 to-transparent blur-[160px] pointer-events-none -z-10"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[1200px] lg:w-[1400px] h-[750px] lg:h-[850px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/35 via-yellow-400/15 to-transparent blur-[160px] pointer-events-none -z-10"
-        aria-hidden="true"
-      />
-      <div className="max-w-4xl mx-auto relative z-10">
-
-        <div className="mb-8">
-          <Link href="/">
-            <motion.span
-              whileHover={{ scale: 1.03, y: -1 }}
-              whileTap={{ scale: 0.94 }}
-              transition={spring}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-slate-900 text-white hover:bg-slate-800 transition-colors cursor-pointer group/btn"
-            >
-              Back to Home
-              <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
-            </motion.span>
-          </Link>
-        </div>
-
-        <section className="text-center py-16">
-          <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-4 inline-block">
-            Who We Are
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6 bg-[linear-gradient(110deg,#0f172a,45%,#f59e0b,55%,#0f172a)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer">
-            Crafting modern web software with engineering rigor
-          </h1>
-          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Vortex Studio was built on a simple premise: enterprise web software should be as dynamic,
-            fast, and visually arresting as high-end consumer products. We combine modern design systems
-            with tight Next.js architectures.
-          </p>
-        </section>
-
-        <section className="my-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {principles.map((principle, i) => (
-              <motion.div
-                key={principle.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ ...spring, delay: i * 0.1 }}
-                whileHover={{ y: -4 }}
-                className="bg-white/90 border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300"
-              >
-                <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4">
-                  {principle.icon}
-                </div>
-                <h3 className="text-lg font-bold text-slate-950 mb-2">{principle.title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">{principle.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-
-        <section className="my-16 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight mb-8">
-            Our Tech Stack
-          </h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {techStack.map((tech, i) => (
-              <motion.span
-                key={tech}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ ...spring, delay: i * 0.05 }}
-                whileHover={{ scale: 1.05, y: -2 }}
-                className="px-5 py-2.5 rounded-full text-sm font-medium bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300 cursor-default"
-              >
-                {tech}
-              </motion.span>
-            ))}
-          </div>
-        </section>
-
-        <section className="my-16 text-center">
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact">
-              <motion.span
-                whileHover={{ scale: 1.03, y: -1 }}
-                whileTap={{ scale: 0.94 }}
-                transition={spring}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-slate-900 text-white hover:bg-slate-800 transition-colors cursor-pointer group/btn"
-              >
-                Get in Touch
-                <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
-              </motion.span>
-            </Link>
+    <div className="min-h-screen px-4 pt-24 pb-16">
+      {/* Section 1: Page Top - Very Light Mint */}
+      <div className="relative overflow-hidden bg-[#EBF5EE] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)] py-8 -mx-4 -mt-24 px-4">
+        <div className="max-w-4xl mx-auto relative z-10">
+          <div className="mb-8">
             <Link href="/">
               <motion.span
                 whileHover={{ scale: 1.03, y: -1 }}
@@ -163,8 +72,106 @@ export default function AboutPage() {
               </motion.span>
             </Link>
           </div>
-        </section>
 
+          <section className="text-center py-16">
+            <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-4 inline-block">
+              Who We Are
+            </span>
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6 bg-[linear-gradient(110deg,#0f172a,45%,#f59e0b,55%,#0f172a)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer">
+              Crafting modern web software with engineering rigor
+            </h1>
+            <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+              Vortex Studio was built on a simple premise: enterprise web software should be as dynamic,
+              fast, and visually arresting as high-end consumer products. We combine modern design systems
+              with tight Next.js architectures.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      {/* Section 2: Principles - Soft Sage Green */}
+      <div className="relative overflow-hidden bg-[#A6D8B5] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+        <div className="max-w-4xl mx-auto relative z-10">
+          <section className="my-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {principles.map((principle, i) => (
+                <motion.div
+                  key={principle.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ ...spring, delay: i * 0.1 }}
+                  whileHover={{ y: -4 }}
+                  className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4">
+                    {principle.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-950 mb-2">{principle.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{principle.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* Section 3: Tech Stack - Medium Emerald Green */}
+      <div className="relative overflow-hidden bg-[#54B074] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+        <div className="max-w-4xl mx-auto relative z-10">
+          <section className="my-16 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-8">
+              Our Tech Stack
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {techStack.map((tech, i) => (
+                <motion.span
+                  key={tech}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ ...spring, delay: i * 0.05 }}
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-white/95 backdrop-blur-md text-slate-700 border border-slate-200 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300 cursor-default"
+                >
+                  {tech}
+                </motion.span>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* Section 4: CTA - Deep Forest Emerald */}
+      <div className="relative overflow-hidden bg-[#1D5E35] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+        <div className="max-w-4xl mx-auto relative z-10">
+          <section className="my-16 text-center">
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/contact">
+                <motion.span
+                  whileHover={{ scale: 1.03, y: -1 }}
+                  whileTap={{ scale: 0.94 }}
+                  transition={spring}
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-white text-[#0F172A] hover:bg-slate-100 transition-colors cursor-pointer group/btn"
+                >
+                  Get in Touch
+                  <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
+                </motion.span>
+              </Link>
+              <Link href="/">
+                <motion.span
+                  whileHover={{ scale: 1.03, y: -1 }}
+                  whileTap={{ scale: 0.94 }}
+                  transition={spring}
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-white text-[#0F172A] hover:bg-slate-100 transition-colors cursor-pointer group/btn"
+                >
+                  Back to Home
+                  <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
+                </motion.span>
+              </Link>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   )
