@@ -117,7 +117,7 @@ export default function PricingPage() {
       <div className="w-full bg-[#EDE8DC]">
         <div className="max-w-6xl mx-auto px-4">
           <div id="pricing" className="grid grid-cols-1 md:grid-cols-3 gap-8 py-16">
-            {tiers.map((tier) => {
+            {tiers.map((tier, i) => {
               const isLoading = loadingTier === tier.id
               const isDisabled = loadingTier !== null && !isLoading
 
@@ -125,13 +125,17 @@ export default function PricingPage() {
                 <motion.div
                   key={tier.id}
                   id={tier.id}
-                  whileHover={isDisabled ? {} : { y: -6 }}
-                  transition={spring}
-                  className={`relative flex flex-col p-8 rounded-2xl border transition-opacity duration-300 scroll-mt-24 ${
+                  initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ ...spring, delay: i * 0.1 }}
+                  whileHover={isDisabled ? {} : { y: -8, scale: 1.02 }}
+                  className={`relative flex flex-col p-8 rounded-2xl border will-change-transform scroll-mt-24 ${
                     tier.highlighted
-                      ? 'border-slate-800 shadow-lg shadow-black/5 bg-white'
-                      : 'border-stone-200/80 bg-white'
+                      ? 'border-slate-800 bg-white shadow-lg shadow-emerald-500/10 animate-pulse'
+                      : 'border-stone-200/80 bg-white hover:border-slate-400/60 hover:shadow-lg'
                   } ${isDisabled ? 'opacity-50' : ''}`}
+                  style={{ transition: 'border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1)' }}
                 >
                   {tier.badge && (
                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-medium text-white bg-slate-900 rounded-full">

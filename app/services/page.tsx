@@ -114,6 +114,13 @@ const services = [
 
 import HeroHeader from '@/components/ui/hero-header'
 
+const serviceAccents = [
+  'hover:shadow-indigo-500/10 hover:border-indigo-300',
+  'hover:shadow-emerald-500/10 hover:border-emerald-300',
+  'hover:shadow-cyan-500/10 hover:border-cyan-300',
+  'hover:shadow-violet-500/10 hover:border-violet-300',
+]
+
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
@@ -140,11 +147,12 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ ...spring, delay: i * 0.1 }}
-                className="scroll-mt-24 bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-300 group"
+                className={`scroll-mt-24 bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm will-change-transform group ${serviceAccents[i % serviceAccents.length]}`}
+                style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
               >
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
                   <div className="flex-1">
-                    <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-slate-200">
+                    <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-slate-200 group-hover:scale-110 transition-transform duration-300">
                       {service.index}
                     </span>
 
@@ -168,7 +176,7 @@ export default function ServicesPage() {
                     </div>
                   </div>
 
-                  <div className="hidden lg:block shrink-0 pointer-events-none">
+                  <div className="hidden lg:block shrink-0 pointer-events-none group-hover:scale-105 transition-transform duration-500 ease-out">
                     {service.graphic}
                   </div>
                 </div>

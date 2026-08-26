@@ -28,19 +28,27 @@ export default function WorkPage() {
         <div className="px-4 py-20">
           <div className="max-w-5xl mx-auto">
             <section id="aether-saas" className="mb-20 scroll-mt-24">
-            <div className="bg-white/95 border border-stone-200/80 rounded-2xl overflow-hidden shadow-sm">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ ...spring }}
+              className="bg-white/95 border border-stone-200/80 rounded-2xl overflow-hidden shadow-sm will-change-transform group"
+              style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
+            >
               <div className="relative h-56 sm:h-64 bg-gradient-to-br from-slate-900 to-slate-800 p-6 overflow-hidden">
-                <div className="flex items-center gap-1.5 mb-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 group-hover:scale-105 transition-transform duration-500 ease-out" />
+                <div className="relative z-10 flex items-center gap-1.5 mb-4">
                   <span className="w-2 h-2 rounded-full bg-red-500/60" />
                   <span className="w-2 h-2 rounded-full bg-amber-500/60" />
                   <span className="w-2 h-2 rounded-full bg-emerald-500/60" />
                 </div>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="relative z-10 grid grid-cols-3 gap-3">
                   <div className="h-24 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10" />
                   <div className="h-24 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10" />
                   <div className="h-24 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10" />
                 </div>
-                <div className="mt-4 h-8 w-3/4 rounded bg-white/5 border border-white/10" />
+                <div className="relative z-10 mt-4 h-8 w-3/4 rounded bg-white/5 border border-white/10" />
               </div>
               <div className="p-8">
                 <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -84,19 +92,32 @@ export default function WorkPage() {
                     </span>
                   ))}
                 </div>
+                <div className="mt-6">
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 group-hover:gap-3 transition-all duration-300">
+                    View Case Study <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  </span>
+                </div>
               </div>
-            </div>
+            </motion.div>
           </section>
 
           <section id="fin-pulse" className="mb-20 scroll-mt-24">
-            <div className="bg-white/95 border border-stone-200/80 rounded-2xl overflow-hidden shadow-sm">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ ...spring, delay: 0.1 }}
+              className="bg-white/95 border border-stone-200/80 rounded-2xl overflow-hidden shadow-sm will-change-transform group"
+              style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
+            >
               <div className="relative h-56 sm:h-64 bg-gradient-to-br from-emerald-900 to-slate-900 p-6 overflow-hidden">
-                <div className="flex items-center gap-1.5 mb-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 to-slate-900 group-hover:scale-105 transition-transform duration-500 ease-out" />
+                <div className="relative z-10 flex items-center gap-1.5 mb-4">
                   <span className="w-2 h-2 rounded-full bg-red-500/60" />
                   <span className="w-2 h-2 rounded-full bg-amber-500/60" />
                   <span className="w-2 h-2 rounded-full bg-emerald-500/60" />
                 </div>
-                <div className="flex gap-3">
+                <div className="relative z-10 flex gap-3">
                   <div className="w-1/3 h-28 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10" />
                   <div className="flex-1 flex flex-col gap-2">
                     <div className="h-12 rounded-lg bg-white/10 backdrop-blur-sm border border-white/10" />

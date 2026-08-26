@@ -113,6 +113,13 @@ const services = [
   },
 ]
 
+const serviceAccents = [
+  'hover:shadow-indigo-500/10 hover:border-indigo-300',
+  'hover:shadow-emerald-500/10 hover:border-emerald-300',
+  'hover:shadow-cyan-500/10 hover:border-cyan-300',
+  'hover:shadow-violet-500/10 hover:border-violet-300',
+]
+
 export default function ShowcaseGrid() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto">
@@ -143,11 +150,12 @@ export default function ShowcaseGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ ...spring, delay: i * 0.1 }}
-            className="bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-300 group"
+            className={`bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm will-change-transform group ${serviceAccents[i % serviceAccents.length]}`}
+            style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
           >
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
               <div className="flex-1">
-                <span className="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-emerald-200/60">
+                <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-slate-200 group-hover:scale-110 transition-transform duration-300">
                   {service.index}
                 </span>
 
@@ -172,10 +180,10 @@ export default function ShowcaseGrid() {
 
                 <Link href={service.href}>
                   <motion.span
-                    whileHover={{ scale: 1.03, y: -1 }}
+                    whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.94 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 15 }}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 shadow-md transition-all duration-300 cursor-pointer group/btn"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 shadow-md cursor-pointer group/btn"
                   >
                     Learn more
                     <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
@@ -183,7 +191,7 @@ export default function ShowcaseGrid() {
                 </Link>
               </div>
 
-              <div className="hidden lg:block shrink-0 pointer-events-none">
+              <div className="hidden lg:block shrink-0 pointer-events-none group-hover:scale-105 transition-transform duration-500 ease-out">
                 {service.graphic}
               </div>
             </div>

@@ -81,10 +81,11 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ ...spring, delay: i * 0.1 }}
-                  whileHover={{ y: -4 }}
-                  className="bg-white/95 border border-stone-200/80 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300"
+                  whileHover={{ y: -6, scale: 1.02 }}
+                  className="bg-white/95 border border-stone-200/80 rounded-2xl p-6 shadow-sm will-change-transform group"
+                  style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
                 >
-                  <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4 group-hover:scale-110 transition-transform duration-300">
                     {principle.icon}
                   </div>
                   <h3 className="text-lg font-bold text-slate-950 mb-2">{principle.title}</h3>
@@ -110,9 +111,10 @@ export default function AboutPage() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ ...spring, delay: i * 0.05 }}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-white/95 border border-stone-200/80 text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300 cursor-default"
+                  transition={{ ...spring, delay: i * 0.08 }}
+                  whileHover={{ scale: 1.08, y: -3 }}
+                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-white/95 border border-stone-200/80 text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 will-change-transform cursor-default"
+                  style={{ transition: 'background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1)' }}
                 >
                   {tech}
                 </motion.span>
