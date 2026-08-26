@@ -112,25 +112,20 @@ const services = [
   },
 ]
 
+import HeroHeader from '@/components/ui/hero-header'
+
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen py-20">
-      {/* Section 1: Page Top - Very Light Mint */}
-      <div className="w-full bg-[#EBF5EE] py-12">
-        <div className="px-4 max-w-5xl mx-auto">
-          <div className="text-center pt-8">
-            <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-6 inline-block">
-              Services
-            </span>
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4 tracking-tight">
-              What We Do
-            </h1>
-            <p className="max-w-xl text-slate-600 text-lg mx-auto">
-              We design and build digital products that scale. From brand identity to full-stack applications,
-              our team delivers end-to-end solutions for ambitious companies.
-            </p>
-          </div>
-        </div>
+    <div className="min-h-screen">
+      {/* Section 1: Hero Header - Very Light Mint */}
+      <div className="w-full bg-[#EBF5EE]">
+        <HeroHeader
+          badge="Services"
+          title="Engineered for high-scale digital impact"
+          subtitle="End-to-end design and engineering tailored for ambitious tech companies."
+          primaryButton={{ label: 'Book a Discovery Call', href: '/contact' }}
+          secondaryButton={{ label: 'View Case Studies', href: '/work' }}
+        />
       </div>
 
       {/* Section 2: Main Grid - Soft Sage Green */}

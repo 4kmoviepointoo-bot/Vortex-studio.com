@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import WorkShowcase from '@/components/work'
+import HeroHeader from '@/components/ui/hero-header'
 
 const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
@@ -11,23 +12,15 @@ export default function WorkPage() {
     <div className="min-h-screen">
       <WorkShowcase />
 
-      {/* Section 1: Page Top - Very Light Mint */}
+      {/* Section 1: Hero Header - Very Light Mint */}
       <div className="w-full bg-[#EBF5EE]">
-        <div className="px-4 py-20">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-20">
-              <span className="inline-flex items-center px-3 py-1 text-xs font-medium text-[#0F172A] bg-slate-100 rounded-full mb-6">
-                Case Studies
-              </span>
-              <h1 className="text-4xl sm:text-5xl font-bold text-[#0F172A] mb-4 tracking-tight">
-                Deep Dives
-              </h1>
-              <p className="max-w-xl text-slate-600 text-lg mx-auto">
-                Detailed breakdowns of our featured projects, processes, and results.
-              </p>
-            </div>
-          </div>
-        </div>
+        <HeroHeader
+          badge="Case Studies"
+          title="Crafted for market leaders"
+          subtitle="Explore our latest digital product transformations and design systems."
+          primaryButton={{ label: 'Start Your Project', href: '/signup' }}
+          secondaryButton={{ label: 'View Tech Stack', href: '/services' }}
+        />
       </div>
 
       {/* Section 2: Case Studies - Soft Sage Green */}

@@ -86,31 +86,37 @@ export default function PricingPage() {
     }, 800)
   }
 
+import HeroHeader from '@/components/ui/hero-header'
+
+export default function PricingPage() {
+  const router = useRouter()
+  const [loadingTier, setLoadingTier] = useState<string | null>(null)
+
+  const handleSelect = (tierId: string) => {
+    if (loadingTier) return
+    setLoadingTier(tierId)
+    setTimeout(() => {
+      router.push('/signup')
+    }, 800)
+  }
+
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16">
-      {/* Section 1: Page Top - Very Light Mint */}
-      <div className="w-full bg-[#EBF5EE] py-8 -mx-4 -mt-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="inline-flex items-center px-3 py-1 text-xs font-medium text-[#0F172A] bg-slate-100 rounded-full mb-6">
-              Investment & Plans
-            </span>
-
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight bg-[linear-gradient(110deg,#0f172a,45%,#e11d48,55%,#0f172a)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer">
-              Transparent models for every ambition
-            </h1>
-
-            <p className="max-w-xl mx-auto text-slate-600 text-lg">
-              Choose between flexible project sprints or dedicated engineering partnerships.
-            </p>
-          </div>
-        </div>
+    <div className="min-h-screen">
+      {/* Section 1: Hero Header - Very Light Mint */}
+      <div className="w-full bg-[#EBF5EE]">
+        <HeroHeader
+          badge="Investment & Plans"
+          title="Transparent models for every ambition"
+          subtitle="Choose between flexible project sprints or dedicated engineering partnerships."
+          primaryButton={{ label: 'Choose Plan', href: '#pricing' }}
+          secondaryButton={{ label: 'Talk to Sales', href: '/contact' }}
+        />
       </div>
 
       {/* Section 2: Pricing Cards - Soft Sage Green */}
       <div className="w-full bg-[#A6D8B5]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div id="pricing" className="grid grid-cols-1 md:grid-cols-3 gap-8 py-16">
             {tiers.map((tier) => {
               const isLoading = loadingTier === tier.id
               const isDisabled = loadingTier !== null && !isLoading

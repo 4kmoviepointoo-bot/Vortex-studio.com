@@ -53,46 +53,26 @@ const techStack = [
   'MongoDB',
 ]
 
+import HeroHeader from '@/components/ui/hero-header'
+
 export default function AboutPage() {
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16">
-      {/* Section 1: Page Top - Very Light Mint */}
-      <div className="w-full bg-[#EBF5EE] py-8 -mx-4 -mt-24 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-8">
-            <Link href="/">
-              <motion.span
-                whileHover={{ scale: 1.03, y: -1 }}
-                whileTap={{ scale: 0.94 }}
-                transition={spring}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-slate-900 text-white hover:bg-slate-800 transition-colors cursor-pointer group/btn"
-              >
-                Back to Home
-                <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
-              </motion.span>
-            </Link>
-          </div>
-
-          <section className="text-center py-16">
-            <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-4 inline-block">
-              Who We Are
-            </span>
-            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight mb-6 bg-[linear-gradient(110deg,#0f172a,45%,#f59e0b,55%,#0f172a)] bg-[length:200%_100%] bg-clip-text text-transparent animate-shimmer">
-              Crafting modern web software with engineering rigor
-            </h1>
-            <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Vortex Studio was built on a simple premise: enterprise web software should be as dynamic,
-              fast, and visually arresting as high-end consumer products. We combine modern design systems
-              with tight Next.js architectures.
-            </p>
-          </section>
-        </div>
+    <div className="min-h-screen">
+      {/* Section 1: Hero Header - Very Light Mint */}
+      <div className="w-full bg-[#EBF5EE]">
+        <HeroHeader
+          badge="Who We Are"
+          title="Crafting modern web software with engineering rigor"
+          subtitle="Enterprise web software built with speed, precision, and tight Next.js architectures."
+          primaryButton={{ label: 'Get in Touch', href: '/contact' }}
+          secondaryButton={{ label: 'View Open Roles', href: '/about#team' }}
+        />
       </div>
 
       {/* Section 2: Principles - Soft Sage Green */}
       <div className="w-full bg-[#A6D8B5]">
-        <div className="max-w-4xl mx-auto">
-          <section className="my-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {principles.map((principle, i) => (
                 <motion.div
