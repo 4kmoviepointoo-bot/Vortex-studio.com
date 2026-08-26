@@ -102,8 +102,8 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Section 1: Hero Header - Very Light Mint */}
-      <div className="w-full bg-[#EBF5EE]">
+      {/* Section 1: Hero Header - Off-White Base */}
+      <div className="w-full bg-[#F9F8F3]">
         <HeroHeader
           badge="Investment & Plans"
           title="Transparent models for every ambition"
@@ -113,8 +113,8 @@ export default function PricingPage() {
         />
       </div>
 
-      {/* Section 2: Pricing Cards - Soft Sage Green */}
-      <div className="w-full bg-[#A6D8B5]">
+      {/* Section 2: Pricing Cards - Light Beige Tint */}
+      <div className="w-full bg-[#EDE8DC]">
         <div className="max-w-6xl mx-auto px-4">
           <div id="pricing" className="grid grid-cols-1 md:grid-cols-3 gap-8 py-16">
             {tiers.map((tier) => {
@@ -130,11 +130,11 @@ export default function PricingPage() {
                   className={`relative flex flex-col p-8 rounded-2xl border transition-opacity duration-300 scroll-mt-24 ${
                     tier.highlighted
                       ? 'border-slate-800 shadow-lg shadow-black/5 bg-white'
-                      : 'border-slate-200 bg-white'
+                      : 'border-stone-200/80 bg-white'
                   } ${isDisabled ? 'opacity-50' : ''}`}
                 >
                   {tier.badge && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-medium text-white bg-[#0F172A] rounded-full">
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-medium text-white bg-slate-900 rounded-full">
                       {tier.badge}
                     </span>
                   )}
@@ -142,11 +142,11 @@ export default function PricingPage() {
                   <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">{tier.tag}</p>
 
                   <div className="mb-6">
-                    <h3 className="text-lg font-semibold text-[#0F172A] mb-2">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
                       {tier.name}
                     </h3>
                     <div className="flex items-baseline gap-1">
-                      <span className="text-4xl font-bold text-[#0F172A]">
+                      <span className="text-4xl font-bold text-slate-900">
                         {tier.price}
                       </span>
                       {tier.period && (
@@ -180,8 +180,8 @@ export default function PricingPage() {
                       isLoading
                         ? 'opacity-80 cursor-wait'
                         : tier.highlighted
-                          ? 'text-white bg-[#0F172A] hover:bg-slate-800 cursor-pointer'
-                          : 'text-[#0F172A] bg-white border border-slate-200 hover:bg-slate-900 hover:text-white hover:border-slate-900 cursor-pointer'
+                          ? 'text-white bg-slate-900 hover:bg-slate-800 cursor-pointer'
+                          : 'text-slate-900 bg-white border border-stone-200/80 hover:bg-slate-900 hover:text-white hover:border-slate-900 cursor-pointer'
                     }`}
                   >
                     <AnimatePresence mode="wait">
@@ -219,16 +219,16 @@ export default function PricingPage() {
         </div>
       </div>
 
-      {/* Section 3: Bottom CTA - Medium Emerald Green */}
-      <div className="w-full bg-[#54B074]">
-        <div className="max-w-6xl mx-auto">
+      {/* Section 3: Bottom CTA - Deep Warm Sand */}
+      <div className="w-full bg-[#BBAE97]">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center py-12">
             <Link href="/">
               <motion.span
                 whileHover={{ scale: 1.02, y: -1 }}
                 whileTap={{ scale: 0.94 }}
                 transition={spring}
-                className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-[#0F172A] hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+                className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
               >
                 Back to Home
               </motion.span>

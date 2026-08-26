@@ -12,8 +12,8 @@ export default function WorkPage() {
     <div className="min-h-screen">
       <WorkShowcase />
 
-      {/* Section 1: Hero Header - Very Light Mint */}
-      <div className="w-full bg-[#EBF5EE]">
+      {/* Section 1: Hero Header - Off-White Base */}
+      <div className="w-full bg-[#F9F8F3]">
         <HeroHeader
           badge="Case Studies"
           title="Crafted for market leaders"
@@ -23,12 +23,12 @@ export default function WorkPage() {
         />
       </div>
 
-      {/* Section 2: Case Studies - Soft Sage Green */}
-      <div className="w-full bg-[#A6D8B5]">
+      {/* Section 2: Case Studies - Light Beige Tint */}
+      <div className="w-full bg-[#EDE8DC]">
         <div className="px-4 py-20">
           <div className="max-w-5xl mx-auto">
             <section id="aether-saas" className="mb-20 scroll-mt-24">
-            <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm">
+            <div className="bg-white/95 border border-stone-200/80 rounded-2xl overflow-hidden shadow-sm">
               <div className="relative h-56 sm:h-64 bg-gradient-to-br from-slate-900 to-slate-800 p-6 overflow-hidden">
                 <div className="flex items-center gap-1.5 mb-4">
                   <span className="w-2 h-2 rounded-full bg-red-500/60" />
@@ -89,7 +89,7 @@ export default function WorkPage() {
           </section>
 
           <section id="fin-pulse" className="mb-20 scroll-mt-24">
-            <div className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm">
+            <div className="bg-white/95 border border-stone-200/80 rounded-2xl overflow-hidden shadow-sm">
               <div className="relative h-56 sm:h-64 bg-gradient-to-br from-emerald-900 to-slate-900 p-6 overflow-hidden">
                 <div className="flex items-center gap-1.5 mb-4">
                   <span className="w-2 h-2 rounded-full bg-red-500/60" />

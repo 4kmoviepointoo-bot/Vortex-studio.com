@@ -58,8 +58,8 @@ import HeroHeader from '@/components/ui/hero-header'
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      {/* Section 1: Hero Header - Very Light Mint */}
-      <div className="w-full bg-[#EBF5EE]">
+      {/* Section 1: Hero Header - Off-White Base */}
+      <div className="w-full bg-[#F9F8F3]">
         <HeroHeader
           badge="Who We Are"
           title="Crafting modern web software with engineering rigor"
@@ -69,8 +69,8 @@ export default function AboutPage() {
         />
       </div>
 
-      {/* Section 2: Principles - Soft Sage Green */}
-      <div className="w-full bg-[#A6D8B5]">
+      {/* Section 2: Principles - Light Beige Tint */}
+      <div className="w-full bg-[#EDE8DC]">
         <div className="max-w-4xl mx-auto px-4">
           <section className="py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -82,7 +82,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ ...spring, delay: i * 0.1 }}
                   whileHover={{ y: -4 }}
-                  className="bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300"
+                  className="bg-white/95 border border-stone-200/80 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-slate-300 transition-all duration-300"
                 >
                   <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4">
                     {principle.icon}
@@ -96,11 +96,11 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Section 3: Tech Stack - Medium Emerald Green */}
-      <div className="w-full bg-[#54B074]">
-        <div className="max-w-4xl mx-auto">
-          <section className="my-16 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-8">
+      {/* Section 3: Tech Stack - Muted Warm Taupe */}
+      <div className="w-full bg-[#D8CDBC]">
+        <div className="max-w-4xl mx-auto px-4">
+          <section className="py-16 text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-8">
               Our Tech Stack
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ ...spring, delay: i * 0.05 }}
                   whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-white/95 backdrop-blur-md text-slate-700 border border-slate-200 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300 cursor-default"
+                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-white/95 border border-stone-200/80 text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300 cursor-default"
                 >
                   {tech}
                 </motion.span>
@@ -122,17 +122,17 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Section 4: CTA - Deep Forest Emerald */}
-      <div className="w-full bg-[#1D5E35]">
-        <div className="max-w-4xl mx-auto">
-          <section className="my-16 text-center">
+      {/* Section 4: CTA - Deep Warm Sand */}
+      <div className="w-full bg-[#BBAE97]">
+        <div className="max-w-4xl mx-auto px-4">
+          <section className="py-16 text-center">
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact">
                 <motion.span
                   whileHover={{ scale: 1.03, y: -1 }}
                   whileTap={{ scale: 0.94 }}
                   transition={spring}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-white text-[#0F172A] hover:bg-slate-100 transition-colors cursor-pointer group/btn"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-slate-900 text-white hover:bg-slate-800 transition-colors cursor-pointer group/btn"
                 >
                   Get in Touch
                   <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                   whileHover={{ scale: 1.03, y: -1 }}
                   whileTap={{ scale: 0.94 }}
                   transition={spring}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-white text-[#0F172A] hover:bg-slate-100 transition-colors cursor-pointer group/btn"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-sm bg-white/90 border border-stone-200/80 text-slate-700 hover:bg-slate-100 transition-colors cursor-pointer group/btn"
                 >
                   Back to Home
                   <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>

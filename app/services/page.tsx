@@ -117,8 +117,8 @@ import HeroHeader from '@/components/ui/hero-header'
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
-      {/* Section 1: Hero Header - Very Light Mint */}
-      <div className="w-full bg-[#EBF5EE]">
+      {/* Section 1: Hero Header - Off-White Base */}
+      <div className="w-full bg-[#F9F8F3]">
         <HeroHeader
           badge="Services"
           title="Engineered for high-scale digital impact"
@@ -128,8 +128,8 @@ export default function ServicesPage() {
         />
       </div>
 
-      {/* Section 2: Main Grid - Soft Sage Green */}
-      <div className="w-full bg-[#A6D8B5]">
+      {/* Section 2: Main Grid - Light Beige Tint */}
+      <div className="w-full bg-[#EDE8DC]">
         <div className="px-4 max-w-5xl mx-auto">
           <div className="flex flex-col gap-6 py-16">
             {services.map((service, i) => (
@@ -144,7 +144,7 @@ export default function ServicesPage() {
               >
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
                   <div className="flex-1">
-                    <span className="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-emerald-200/60">
+                    <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-slate-200">
                       {service.index}
                     </span>
 
@@ -178,8 +178,8 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* Section 3: Bottom CTA - Medium Emerald Green */}
-      <div className="w-full bg-[#54B074]">
+      {/* Section 3: Bottom CTA - Deep Warm Sand */}
+      <div className="w-full bg-[#BBAE97]">
         <div className="px-4 max-w-5xl mx-auto">
           <div className="text-center py-16">
             <Link href="/">
@@ -187,7 +187,7 @@ export default function ServicesPage() {
                 whileHover={{ scale: 1.02, y: -1 }}
                 whileTap={{ scale: 0.94 }}
                 transition={spring}
-                className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-[#0F172A] hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+                className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
               >
                 Back to Home
               </motion.span>
