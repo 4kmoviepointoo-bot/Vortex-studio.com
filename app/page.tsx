@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       {/* Section 1: Hero - Off-White Base */}
-      <section className="relative overflow-hidden min-h-[600px] flex flex-col justify-center items-center pt-36 pb-20 px-4 max-w-5xl mx-auto text-center bg-[#F9F8F3] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+      <section className="relative overflow-hidden min-h-[600px] flex flex-col justify-center items-center pt-36 pb-20 px-4 max-w-5xl mx-auto text-center bg-[#F9F8F3]">
         <div className="hero-pulse" />
         {[...Array(8)].map((_, i) => (
           <div
@@ -56,6 +56,30 @@ export default function Home() {
         ))}
         <div className="hero-radial" />
         <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-white via-white/70 to-transparent z-[1] pointer-events-none" />
+
+        {/* Floating Status Pills */}
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.8, duration: 0.6, ...spring }}
+          className="absolute top-28 left-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg shadow-slate-900/5"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+          </span>
+          <span className="text-xs font-medium text-slate-700">LIVE 99.9% Optimal Speed</span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1, duration: 0.6, ...spring }}
+          className="absolute top-36 right-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg shadow-slate-900/5"
+        >
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Active</span>
+          <span className="text-xs font-medium text-slate-700">3 Projects Deployed</span>
+        </motion.div>
         <motion.div
           variants={container}
           initial="hidden"
@@ -126,7 +150,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="mt-16 w-full max-w-5xl mx-auto rounded-2xl border border-slate-200/80 bg-white/60 backdrop-blur-md p-4 sm:p-6 shadow-2xl shadow-slate-900/5 relative overflow-hidden"
+          className="mt-16 w-full max-w-5xl mx-auto rounded-2xl border border-slate-200/60 bg-white/60 backdrop-blur-xl p-4 sm:p-6 shadow-2xl shadow-slate-900/5 relative overflow-hidden"
         >
           <motion.div
             animate={{ y: [0, -8, 0] }}
@@ -146,10 +170,11 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+              {/* Live Speed Card - Glassmorphic */}
               <motion.div
-                whileHover={{ y: -4 }}
+                whileHover={{ y: -4, scale: 1.01 }}
                 transition={spring}
-                className="p-5 rounded-xl border border-slate-200/80 bg-white/80 text-left"
+                className="p-5 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-md text-left"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span className="relative flex h-2 w-2">
@@ -186,10 +211,11 @@ export default function Home() {
                 </svg>
               </motion.div>
 
+              {/* Tech Architecture Card - Glassmorphic */}
               <motion.div
-                whileHover={{ y: -4 }}
+                whileHover={{ y: -4, scale: 1.01 }}
                 transition={spring}
-                className="p-5 rounded-xl border border-slate-200/80 bg-white/80 text-left"
+                className="p-5 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-md text-left"
               >
                 <p className="text-xs font-medium text-slate-400 uppercase tracking-wide mb-3">Tech Architecture</p>
                 <div className="flex flex-wrap gap-2">
@@ -206,10 +232,11 @@ export default function Home() {
                 </div>
               </motion.div>
 
+              {/* Client Impact Card - Glassmorphic */}
               <motion.div
-                whileHover={{ y: -4 }}
+                whileHover={{ y: -4, scale: 1.01 }}
                 transition={spring}
-                className="p-5 rounded-xl border border-slate-200/80 bg-white/80 text-left"
+                className="p-5 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-md text-left"
               >
                 <p className="text-xs font-medium text-slate-400 uppercase tracking-wide mb-3">Client Impact</p>
                 <div className="flex flex-col gap-3">

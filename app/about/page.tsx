@@ -69,13 +69,13 @@ export default function AboutPage() {
         />
       </div>
 
-      {/* Section 2: Philosophy Bento Grid - Light Beige Tint */}
+      {/* Section 2: Engineering Philosophy & Metrics Grid - Light Beige Tint */}
       <div className="w-full bg-[#EDE8DC]">
         <div className="max-w-6xl mx-auto px-4 py-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-8 text-center">
             Our Philosophy
           </h2>
-          {/* Asymmetric Bento Grid */}
+          {/* Minimalist 4-Box Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Large Box - Spans 2 columns */}
             <motion.div
@@ -84,11 +84,11 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0 }}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="md:col-span-2 bg-white/80 border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-lg hover:border-indigo-300/60 will-change-transform group"
+              className="md:col-span-2 bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-[2rem] p-8 shadow-sm hover:shadow-lg hover:border-indigo-300/60 will-change-transform group"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-indigo-50 border border-indigo-200/60 flex items-center justify-center text-indigo-600 group-hover:scale-110 transition-transform duration-300 shrink-0">
                   {principles[0]?.icon}
                 </div>
                 <div>
@@ -105,10 +105,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0.1 }}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="bg-white/80 border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-lg hover:border-emerald-300/60 will-change-transform group flex flex-col items-center text-center"
+              className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-[2rem] p-6 shadow-sm hover:shadow-lg hover:border-emerald-300/60 will-change-transform group flex flex-col items-center text-center"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
-              <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200/60 flex items-center justify-center text-emerald-600 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {principles[1]?.icon}
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">{principles[1]?.title}</h3>
@@ -122,10 +122,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0.2 }}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="bg-white/80 border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-lg hover:border-cyan-300/60 will-change-transform group"
+              className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-[2rem] p-6 shadow-sm hover:shadow-lg hover:border-cyan-300/60 will-change-transform group"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
-              <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-200/60 flex items-center justify-center text-cyan-600 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {principles[2]?.icon}
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">{principles[2]?.title}</h3>
@@ -139,11 +139,11 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0.3 }}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="md:col-span-2 bg-white/80 border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-lg hover:border-violet-300/60 will-change-transform group"
+              className="md:col-span-2 bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-[2rem] p-8 shadow-sm hover:shadow-lg hover:border-violet-300/60 will-change-transform group"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-violet-50 border border-violet-200/60 flex items-center justify-center text-violet-600 group-hover:scale-110 transition-transform duration-300 shrink-0">
                   {principles[3]?.icon}
                 </div>
                 <div>
@@ -156,14 +156,14 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Section 3: Tech Stack - Muted Warm Taupe */}
+      {/* Section 3: Interactive Tech Stack - Muted Warm Taupe */}
       <div className="w-full bg-[#D8CDBC]">
         <div className="max-w-4xl mx-auto px-4">
           <section className="py-16 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-8">
               Our Tech Stack
             </h2>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
               {techStack.map((tech, i) => (
                 <motion.span
                   key={tech}
@@ -171,8 +171,8 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ ...spring, delay: i * 0.08 }}
-                  whileHover={{ scale: 1.1, y: -4 }}
-                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-white/80 border border-slate-200 text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 hover:shadow-lg will-change-transform cursor-default"
+                  whileHover={{ scale: 1.05, y: -3 }}
+                  className="px-4 py-3 rounded-xl text-sm font-medium bg-white/70 backdrop-blur-sm border border-slate-200/60 text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 hover:shadow-lg will-change-transform cursor-default text-center"
                   style={{ transition: 'background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1)' }}
                 >
                   {tech}

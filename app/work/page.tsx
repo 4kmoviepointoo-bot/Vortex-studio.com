@@ -23,7 +23,7 @@ export default function WorkPage() {
         />
       </div>
 
-      {/* Section 2: Featured Case Study - Full-Width Split Layout */}
+      {/* Section 2: Sleek Showcase & Case Study Cards */}
       <div className="w-full bg-[#EDE8DC]">
         <div className="px-4 py-20">
           <div className="max-w-6xl mx-auto">
@@ -34,11 +34,11 @@ export default function WorkPage() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ ...spring }}
-                className="grid grid-cols-1 lg:grid-cols-2 rounded-3xl overflow-hidden shadow-lg will-change-transform group"
+                className="grid grid-cols-1 lg:grid-cols-2 rounded-[2rem] overflow-hidden shadow-xl shadow-slate-900/10 will-change-transform group"
               >
-                {/* Dark Side - Preview */}
-                <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 p-8 sm:p-12 text-white min-h-[400px] flex flex-col justify-between">
-                  <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 group-hover:scale-105 transition-transform duration-700 ease-out" />
+                {/* Dark Side - Sleek Preview Container */}
+                <div className="relative bg-slate-900 p-8 sm:p-12 text-white min-h-[400px] flex flex-col justify-between">
+                  <div className="absolute inset-0 bg-slate-900 group-hover:scale-105 transition-transform duration-700 ease-out" />
                   <div className="relative z-10">
                     <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 rounded-full border border-emerald-500/20">
                       Featured Project
@@ -50,10 +50,10 @@ export default function WorkPage() {
                   </div>
                   <div className="relative z-10 mt-8">
                     <div className="flex gap-3">
-                      <div className="w-1/3 h-32 rounded-xl bg-white/5 border border-white/10" />
+                      <div className="w-1/3 h-32 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors duration-500" />
                       <div className="flex-1 flex flex-col gap-3">
-                        <div className="h-14 rounded-xl bg-white/5 border border-white/10" />
-                        <div className="h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20" />
+                        <div className="h-14 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors duration-500" />
+                        <div className="h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors duration-500" />
                       </div>
                     </div>
                   </div>
@@ -70,19 +70,19 @@ export default function WorkPage() {
                       </span>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center">
+                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center hover:shadow-md transition-shadow duration-300">
                         <p className="text-4xl font-bold text-slate-900">300%</p>
                         <p className="text-sm text-slate-500 mt-1">Conversion Growth</p>
                       </div>
-                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center">
+                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center hover:shadow-md transition-shadow duration-300">
                         <p className="text-4xl font-bold text-slate-900">0.8s</p>
                         <p className="text-sm text-slate-500 mt-1">Load Time</p>
                       </div>
-                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center">
+                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center hover:shadow-md transition-shadow duration-300">
                         <p className="text-4xl font-bold text-slate-900">99.9%</p>
                         <p className="text-sm text-slate-500 mt-1">Uptime</p>
                       </div>
-                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center">
+                      <div className="p-5 rounded-2xl bg-[#F9F8F3] border border-stone-200/80 text-center hover:shadow-md transition-shadow duration-300">
                         <p className="text-4xl font-bold text-slate-900">12wk</p>
                         <p className="text-sm text-slate-500 mt-1">Delivery</p>
                       </div>
@@ -105,7 +105,7 @@ export default function WorkPage() {
               </motion.div>
             </section>
 
-            {/* Secondary Projects - Asymmetric 2-Column */}
+            {/* Secondary Projects - Asymmetric 2-Column with Zoom Thumbnails */}
             <section id="fin-pulse" className="scroll-mt-24">
               <motion.div
                 initial={{ opacity: 0, y: 30, scale: 0.97 }}
@@ -114,20 +114,20 @@ export default function WorkPage() {
                 transition={{ ...spring, delay: 0.1 }}
                 className="grid grid-cols-1 lg:grid-cols-5 gap-6"
               >
-                {/* Large Card */}
-                <div className="lg:col-span-3 bg-white/95 border border-stone-200/80 rounded-3xl overflow-hidden shadow-sm group hover:shadow-lg hover:border-slate-300/80 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
+                {/* Large Card with Zoom Thumbnail */}
+                <div className="lg:col-span-3 bg-white/95 border border-stone-200/80 rounded-[2rem] overflow-hidden shadow-sm group hover:shadow-xl hover:border-slate-300/80 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
                   <div className="relative h-48 sm:h-56 bg-gradient-to-br from-emerald-900 to-slate-900 p-6 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 to-slate-900 group-hover:scale-105 transition-transform duration-500 ease-out" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 to-slate-900 group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div className="relative z-10 flex items-center gap-1.5 mb-4">
                       <span className="w-2 h-2 rounded-full bg-red-500/60" />
                       <span className="w-2 h-2 rounded-full bg-amber-500/60" />
                       <span className="w-2 h-2 rounded-full bg-emerald-500/60" />
                     </div>
                     <div className="relative z-10 flex gap-3">
-                      <div className="w-1/3 h-24 rounded-lg bg-white/10 border border-white/10" />
+                      <div className="w-1/3 h-24 rounded-lg bg-white/10 border border-white/10 group-hover:bg-white/15 transition-colors duration-500" />
                       <div className="flex-1 flex flex-col gap-2">
-                        <div className="h-10 rounded-lg bg-white/10 border border-white/10" />
-                        <div className="h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/30" />
+                        <div className="h-10 rounded-lg bg-white/10 border border-white/10 group-hover:bg-white/15 transition-colors duration-500" />
+                        <div className="h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/30 group-hover:bg-emerald-500/30 transition-colors duration-500" />
                       </div>
                     </div>
                   </div>
@@ -160,14 +160,16 @@ export default function WorkPage() {
                   </div>
                 </div>
 
-                {/* Small Metric Cards */}
+                {/* Metric Cards - Elevated Rounded */}
                 <div className="lg:col-span-2 flex flex-col gap-6">
-                  <div className="bg-white/95 border border-stone-200/80 rounded-3xl p-8 shadow-sm flex-1 group hover:shadow-lg hover:border-slate-300/80 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
+                  <div className="bg-white/95 border border-stone-200/80 rounded-[2rem] p-8 shadow-sm flex-1 group hover:shadow-xl hover:border-emerald-300/60 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
+                    <span className="inline-block px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 border border-emerald-200/60 rounded-full mb-4">Performance</span>
                     <p className="text-5xl font-bold text-slate-900 mb-2">3x</p>
                     <p className="text-lg font-medium text-slate-700 mb-1">Faster Load</p>
                     <p className="text-sm text-slate-500">Across all pages</p>
                   </div>
-                  <div className="bg-white/95 border border-stone-200/80 rounded-3xl p-8 shadow-sm flex-1 group hover:shadow-lg hover:border-slate-300/80 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
+                  <div className="bg-white/95 border border-stone-200/80 rounded-[2rem] p-8 shadow-sm flex-1 group hover:shadow-xl hover:border-cyan-300/60 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
+                    <span className="inline-block px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-cyan-600 bg-cyan-50 border border-cyan-200/60 rounded-full mb-4">Throughput</span>
                     <p className="text-5xl font-bold text-slate-900 mb-2">100k+</p>
                     <p className="text-lg font-medium text-slate-700 mb-1">Events/sec</p>
                     <p className="text-sm text-slate-500">Real-time processing</p>

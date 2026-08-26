@@ -134,10 +134,10 @@ export default function ServicesPage() {
         />
       </div>
 
-      {/* Section 2: Main Grid - Light Beige Tint */}
+      {/* Section 2: Interactive Capability Matrix - Light Beige Tint */}
       <div className="w-full bg-[#EDE8DC]">
         <div className="px-4 max-w-5xl mx-auto">
-          <div className="flex flex-col gap-6 py-16">
+          <div className="flex flex-col gap-8 py-16">
             {services.map((service, i) => (
               <motion.div
                 key={service.index}
@@ -146,15 +146,18 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ ...spring, delay: i * 0.1 }}
-                whileHover={{ y: -6 }}
-                className={`scroll-mt-24 bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm hover:shadow-lg will-change-transform group ${serviceAccents[i % serviceAccents.length]}`}
+                whileHover={{ y: -6, scale: 1.005 }}
+                className={`scroll-mt-24 bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-[28px] p-8 sm:p-10 shadow-sm hover:shadow-xl will-change-transform group ${serviceAccents[i % serviceAccents.length]}`}
                 style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
               >
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
                   <div className="flex-1">
-                    <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-slate-200 group-hover:scale-125 group-hover:bg-slate-900 group-hover:text-white group-hover:border-slate-900 transition-all duration-300">
-                      {service.index}
-                    </span>
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="bg-slate-900 text-white text-xs font-bold px-3 py-1 rounded-full group-hover:scale-110 transition-transform duration-300">
+                        {service.index}
+                      </span>
+                      <div className="h-px flex-1 bg-gradient-to-r from-slate-200 to-transparent" />
+                    </div>
 
                     <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
                       {service.title}
@@ -172,6 +175,30 @@ export default function ServicesPage() {
                           style={{ transitionDelay: `${ti * 30}ms` }}
                         >
                           {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Colored Micro-Badges */}
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {i === 0 && ['Figma', 'Storybook', 'Radix UI'].map((b) => (
+                        <span key={b} className="px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-indigo-600 bg-indigo-50 border border-indigo-200/60 rounded-md">
+                          {b}
+                        </span>
+                      ))}
+                      {i === 1 && ['Next.js', 'Prisma', 'Tailwind'].map((b) => (
+                        <span key={b} className="px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 border border-emerald-200/60 rounded-md">
+                          {b}
+                        </span>
+                      ))}
+                      {i === 2 && ['Lighthouse', 'Edge', 'CDN'].map((b) => (
+                        <span key={b} className="px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-cyan-600 bg-cyan-50 border border-cyan-200/60 rounded-md">
+                          {b}
+                        </span>
+                      ))}
+                      {i === 3 && ['GPT-4', 'RAG', 'Agents'].map((b) => (
+                        <span key={b} className="px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-violet-600 bg-violet-50 border border-violet-200/60 rounded-md">
+                          {b}
                         </span>
                       ))}
                     </div>

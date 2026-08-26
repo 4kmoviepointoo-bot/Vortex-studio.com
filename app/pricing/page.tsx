@@ -100,18 +100,18 @@ export default function PricingPage() {
         />
       </div>
 
-      {/* Section 2: Pricing Cards - Elevated Tier Comparison */}
+      {/* Section 2: High-Conversion Tier Comparison */}
       <div className="w-full bg-[#EDE8DC]">
         <div className="max-w-6xl mx-auto px-4">
           <div id="pricing" className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 py-16 items-start">
-            {/* Starter Tier */}
+            {/* Starter Tier - Clean White */}
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 0.96 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="relative flex flex-col p-8 rounded-3xl border border-stone-200/80 bg-white shadow-sm hover:shadow-lg hover:border-slate-400/60 will-change-transform"
+              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-200/90 bg-white shadow-sm hover:shadow-lg hover:border-slate-300 will-change-transform"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
               <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">MVPs & Rapid Launches</p>
@@ -139,7 +139,7 @@ export default function PricingPage() {
               </motion.button>
             </motion.div>
 
-            {/* Pro Tier - Featured Dark Card */}
+            {/* Pro Tier - High-Contrast Dark Slate */}
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 1.0 }}
               whileInView={{ opacity: 1, y: 0, scale: 1.03 }}
@@ -147,7 +147,7 @@ export default function PricingPage() {
               transition={{ ...spring, delay: 0.1 }}
               whileHover={{ y: -12, scale: 1.05 }}
               animate={{ y: [0, -4, 0] }}
-              className="relative flex flex-col p-8 rounded-3xl border border-emerald-500/50 bg-slate-950 text-white shadow-2xl shadow-emerald-500/20 animate-[pulse_3s_ease-in-out_infinite] will-change-transform z-10"
+              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-800 bg-slate-950 text-white shadow-2xl shadow-emerald-500/20 animate-[pulse_3s_ease-in-out_infinite] will-change-transform z-10"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
               {/* Animated Glow Badge */}
@@ -181,14 +181,14 @@ export default function PricingPage() {
               </motion.button>
             </motion.div>
 
-            {/* Enterprise Tier */}
+            {/* Enterprise Tier - Clean White */}
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 0.96 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0.2 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="relative flex flex-col p-8 rounded-3xl border border-stone-200/80 bg-white shadow-sm hover:shadow-lg hover:border-slate-400/60 will-change-transform"
+              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-200/90 bg-white shadow-sm hover:shadow-lg hover:border-slate-300 will-change-transform"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
               <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">High-Scale Systems</p>
