@@ -113,112 +113,119 @@ export default function PricingPage() {
         />
       </div>
 
-      {/* Section 2: Pricing Cards - Light Beige Tint */}
+      {/* Section 2: Pricing Cards - Elevated Tier Comparison */}
       <div className="w-full bg-[#EDE8DC]">
         <div className="max-w-6xl mx-auto px-4">
-          <div id="pricing" className="grid grid-cols-1 md:grid-cols-3 gap-8 py-16">
-            {tiers.map((tier, i) => {
-              const isLoading = loadingTier === tier.id
-              const isDisabled = loadingTier !== null && !isLoading
+          <div id="pricing" className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 py-16 items-start">
+            {/* Starter Tier */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ ...spring, delay: 0 }}
+              whileHover={{ y: -8 }}
+              className="relative flex flex-col p-8 rounded-3xl border border-stone-200/80 bg-white shadow-sm will-change-transform"
+              style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
+            >
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">MVPs & Rapid Launches</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Design Sprint</h3>
+              <div className="flex items-baseline gap-1 mb-6">
+                <span className="text-5xl font-bold text-slate-900">$4,500</span>
+                <span className="text-sm text-slate-500">/ fixed</span>
+              </div>
+              <ul className="flex flex-col gap-3 mb-8 flex-1">
+                {['Full UI/UX design system', 'Interactive prototype', 'Next.js frontend codebase', '2-week delivery'].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <CheckIcon />
+                    <span className="text-sm text-slate-600">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <motion.button
+                onClick={() => handleSelect('sprint')}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={spring}
+                className="w-full py-3 text-sm font-medium text-center rounded-full border border-slate-200 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300"
+              >
+                Get Started →
+              </motion.button>
+            </motion.div>
 
-              return (
-                <motion.div
-                  key={tier.id}
-                  id={tier.id}
-                  initial={{ opacity: 0, scale: 0.95, y: 20 }}
-                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ ...spring, delay: i * 0.1 }}
-                  whileHover={isDisabled ? {} : { y: -8, scale: 1.02 }}
-                  className={`relative flex flex-col p-8 rounded-2xl border will-change-transform scroll-mt-24 ${
-                    tier.highlighted
-                      ? 'border-slate-800 bg-white shadow-lg shadow-emerald-500/10 animate-pulse'
-                      : 'border-stone-200/80 bg-white hover:border-slate-400/60 hover:shadow-lg'
-                  } ${isDisabled ? 'opacity-50' : ''}`}
-                  style={{ transition: 'border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1)' }}
-                >
-                  {tier.badge && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-medium text-white bg-slate-900 rounded-full">
-                      {tier.badge}
-                    </span>
-                  )}
+            {/* Pro Tier - Featured Dark Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30, scale: 1.03 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1.03 }}
+              viewport={{ once: true }}
+              transition={{ ...spring, delay: 0.1 }}
+              whileHover={{ y: -12, scale: 1.05 }}
+              className="relative flex flex-col p-8 rounded-3xl border border-emerald-500/50 bg-slate-950 text-white shadow-2xl shadow-emerald-500/20 will-change-transform z-10"
+              style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
+            >
+              {/* Animated Glow Badge */}
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 shadow-lg shadow-emerald-500/30">
+                  Most Popular
+                </span>
+              </div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2 mt-2">Dedicated Tech Team</p>
+              <h3 className="text-xl font-bold text-white mb-4">Growth Retainer</h3>
+              <div className="flex items-baseline gap-1 mb-6">
+                <span className="text-5xl font-bold text-white">$8,500</span>
+                <span className="text-sm text-slate-400">/ month</span>
+              </div>
+              <ul className="flex flex-col gap-3 mb-8 flex-1">
+                {['Full-stack web application', 'Priority Slack access', 'Continuous speed optimization', 'Custom AI integrations'].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <CheckIcon />
+                    <span className="text-sm text-slate-300">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <motion.button
+                onClick={() => handleSelect('retainer')}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={spring}
+                className="w-full py-3 text-sm font-medium text-center rounded-full bg-white text-slate-950 hover:bg-emerald-400 hover:text-slate-950 transition-all duration-300 shadow-lg"
+              >
+                Claim Partnership →
+              </motion.button>
+            </motion.div>
 
-                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">{tier.tag}</p>
-
-                  <div className="mb-6">
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                      {tier.name}
-                    </h3>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-4xl font-bold text-slate-900">
-                        {tier.price}
-                      </span>
-                      {tier.period && (
-                        <span className="text-sm text-slate-500">
-                          {tier.period}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  <ul className="flex flex-col gap-3 mb-8 flex-1">
-                    {tier.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-3">
-                        <CheckIcon />
-                        <span className="text-sm text-slate-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <motion.button
-                    onClick={() => handleSelect(tier.id)}
-                    whileHover={loadingTier ? {} : { scale: 1.03, y: -1 }}
-                    whileTap={loadingTier ? {} : { scale: 0.94 }}
-                    transition={spring}
-                    disabled={loadingTier !== null}
-                    className={`relative w-full py-2.5 text-sm font-medium text-center rounded-full overflow-hidden transition-all duration-300 group/btn ${
-                      loadingTier !== null && !isLoading
-                        ? 'pointer-events-none'
-                        : ''
-                    } ${
-                      isLoading
-                        ? 'opacity-80 cursor-wait'
-                        : tier.highlighted
-                          ? 'text-white bg-slate-900 hover:bg-slate-800 cursor-pointer'
-                          : 'text-slate-900 bg-white border border-stone-200/80 hover:bg-slate-900 hover:text-white hover:border-slate-900 cursor-pointer'
-                    }`}
-                  >
-                    <AnimatePresence mode="wait">
-                      {isLoading ? (
-                        <motion.span
-                          key="loading"
-                          initial={{ opacity: 0, y: 8 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -8 }}
-                          transition={{ duration: 0.15 }}
-                          className="inline-flex items-center justify-center gap-2"
-                        >
-                          <Spinner />
-                          Processing...
-                        </motion.span>
-                      ) : (
-                        <motion.span
-                          key="idle"
-                          initial={{ opacity: 0, y: 8 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -8 }}
-                          transition={{ duration: 0.15 }}
-                          className="inline-flex items-center gap-2"
-                        >
-                          {tier.buttonText}
-                          <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
-                        </motion.span>
-                      )}
-                    </AnimatePresence>
-                  </motion.button>
-                </motion.div>
-              )
-            })}
+            {/* Enterprise Tier */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ ...spring, delay: 0.2 }}
+              whileHover={{ y: -8 }}
+              className="relative flex flex-col p-8 rounded-3xl border border-stone-200/80 bg-white shadow-sm will-change-transform"
+              style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
+            >
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">High-Scale Systems</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Enterprise Architecture</h3>
+              <div className="flex items-baseline gap-1 mb-6">
+                <span className="text-5xl font-bold text-slate-900">Custom</span>
+              </div>
+              <ul className="flex flex-col gap-3 mb-8 flex-1">
+                {['Multi-region deployment', 'Custom SLA & security', 'Legacy system migration', 'Dedicated technical lead'].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <CheckIcon />
+                    <span className="text-sm text-slate-600">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <motion.button
+                onClick={() => handleSelect('enterprise')}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={spring}
+                className="w-full py-3 text-sm font-medium text-center rounded-full border border-slate-200 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300"
+              >
+                Contact Sales →
+              </motion.button>
+            </motion.div>
           </div>
         </div>
       </div>
