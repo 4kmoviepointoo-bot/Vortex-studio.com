@@ -89,8 +89,8 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen px-4 pt-24 pb-16">
       {/* Section 1: Page Top - Very Light Mint */}
-      <div className="relative overflow-hidden bg-[#EBF5EE] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)] py-8 -mx-4 -mt-24 px-4">
-        <div className="max-w-6xl mx-auto relative z-10">
+      <div className="w-full bg-[#EBF5EE] py-8 -mx-4 -mt-24 px-4">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-flex items-center px-3 py-1 text-xs font-medium text-[#0F172A] bg-slate-100 rounded-full mb-6">
               Investment & Plans
@@ -108,8 +108,8 @@ export default function PricingPage() {
       </div>
 
       {/* Section 2: Pricing Cards - Soft Sage Green */}
-      <div className="relative overflow-hidden bg-[#A6D8B5] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="max-w-6xl mx-auto relative z-10">
+      <div className="w-full bg-[#A6D8B5]">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto py-16">
             {tiers.map((tier) => {
               const isLoading = loadingTier === tier.id
@@ -214,8 +214,8 @@ export default function PricingPage() {
       </div>
 
       {/* Section 3: Bottom CTA - Medium Emerald Green */}
-      <div className="relative overflow-hidden bg-[#54B074] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="max-w-6xl mx-auto relative z-10">
+      <div className="w-full bg-[#54B074]">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center py-12">
             <Link href="/">
               <motion.span

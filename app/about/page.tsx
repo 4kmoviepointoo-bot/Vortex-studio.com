@@ -57,8 +57,8 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen px-4 pt-24 pb-16">
       {/* Section 1: Page Top - Very Light Mint */}
-      <div className="relative overflow-hidden bg-[#EBF5EE] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)] py-8 -mx-4 -mt-24 px-4">
-        <div className="max-w-4xl mx-auto relative z-10">
+      <div className="w-full bg-[#EBF5EE] py-8 -mx-4 -mt-24 px-4">
+        <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <Link href="/">
               <motion.span
@@ -90,8 +90,8 @@ export default function AboutPage() {
       </div>
 
       {/* Section 2: Principles - Soft Sage Green */}
-      <div className="relative overflow-hidden bg-[#A6D8B5] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="max-w-4xl mx-auto relative z-10">
+      <div className="w-full bg-[#A6D8B5]">
+        <div className="max-w-4xl mx-auto">
           <section className="my-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {principles.map((principle, i) => (
@@ -117,8 +117,8 @@ export default function AboutPage() {
       </div>
 
       {/* Section 3: Tech Stack - Medium Emerald Green */}
-      <div className="relative overflow-hidden bg-[#54B074] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="max-w-4xl mx-auto relative z-10">
+      <div className="w-full bg-[#54B074]">
+        <div className="max-w-4xl mx-auto">
           <section className="my-16 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-8">
               Our Tech Stack
@@ -143,8 +143,8 @@ export default function AboutPage() {
       </div>
 
       {/* Section 4: CTA - Deep Forest Emerald */}
-      <div className="relative overflow-hidden bg-[#1D5E35] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="max-w-4xl mx-auto relative z-10">
+      <div className="w-full bg-[#1D5E35]">
+        <div className="max-w-4xl mx-auto">
           <section className="my-16 text-center">
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact">

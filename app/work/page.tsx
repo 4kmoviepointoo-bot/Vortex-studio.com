@@ -12,7 +12,7 @@ export default function WorkPage() {
       <WorkShowcase />
 
       {/* Section 1: Page Top - Very Light Mint */}
-      <div className="relative overflow-hidden bg-[#EBF5EE] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+      <div className="w-full bg-[#EBF5EE]">
         <div className="px-4 py-20">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-20">
@@ -31,7 +31,7 @@ export default function WorkPage() {
       </div>
 
       {/* Section 2: Case Studies - Soft Sage Green */}
-      <div className="relative overflow-hidden bg-[#A6D8B5] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
+      <div className="w-full bg-[#A6D8B5]">
         <div className="px-4 py-20">
           <div className="max-w-5xl mx-auto">
             <section id="aether-saas" className="mb-20 scroll-mt-24">

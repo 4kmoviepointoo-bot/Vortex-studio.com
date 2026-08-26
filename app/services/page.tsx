@@ -116,8 +116,8 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen py-20">
       {/* Section 1: Page Top - Very Light Mint */}
-      <div className="relative overflow-hidden bg-[#EBF5EE] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)] py-12">
-        <div className="px-4 max-w-5xl mx-auto relative z-10">
+      <div className="w-full bg-[#EBF5EE] py-12">
+        <div className="px-4 max-w-5xl mx-auto">
           <div className="text-center pt-8">
             <span className="px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700 shadow-sm mb-6 inline-block">
               Services
@@ -134,8 +134,8 @@ export default function ServicesPage() {
       </div>
 
       {/* Section 2: Main Grid - Soft Sage Green */}
-      <div className="relative overflow-hidden bg-[#A6D8B5] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="px-4 max-w-5xl mx-auto relative z-10">
+      <div className="w-full bg-[#A6D8B5]">
+        <div className="px-4 max-w-5xl mx-auto">
           <div className="flex flex-col gap-6 py-16">
             {services.map((service, i) => (
               <motion.div
@@ -184,8 +184,8 @@ export default function ServicesPage() {
       </div>
 
       {/* Section 3: Bottom CTA - Medium Emerald Green */}
-      <div className="relative overflow-hidden bg-[#54B074] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="px-4 max-w-5xl mx-auto relative z-10">
+      <div className="w-full bg-[#54B074]">
+        <div className="px-4 max-w-5xl mx-auto">
           <div className="text-center py-16">
             <Link href="/">
               <motion.span

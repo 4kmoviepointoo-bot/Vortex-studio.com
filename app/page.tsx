@@ -232,30 +232,24 @@ export default function Home() {
       <SectionDivider accent />
 
       {/* Section 2: Services Preview - Light Beige Tint */}
-      <section className="relative overflow-hidden bg-[#EDE8DC] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="relative z-10">
-          <ClientLogos />
-        </div>
+      <section className="w-full bg-[#EDE8DC]">
+        <ClientLogos />
       </section>
 
       <SectionDivider />
 
       {/* Section 3: Featured Projects - Muted Warm Taupe */}
-      <section className="relative overflow-hidden bg-[#D8CDBC] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="relative z-10">
-          <ShowcaseGrid />
-          <FeaturedWork />
-        </div>
+      <section className="w-full bg-[#D8CDBC]">
+        <ShowcaseGrid />
+        <FeaturedWork />
       </section>
 
       <SectionDivider />
 
       {/* Section 4: CTA & Footer - Deep Warm Sand */}
-      <section className="relative overflow-hidden bg-[#BBAE97] opacity-90 [mask-image:radial-gradient(ellipse_at_center,black_85%,transparent_100%)]">
-        <div className="relative z-10">
-          <ContactCTA />
-          <Footer />
-        </div>
+      <section className="w-full bg-[#BBAE97]">
+        <ContactCTA />
+        <Footer />
       </section>
     </>
   )
