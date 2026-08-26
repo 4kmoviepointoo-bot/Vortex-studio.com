@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import HeroHeader from '@/components/ui/hero-header'
 
 const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
@@ -112,8 +113,6 @@ const services = [
   },
 ]
 
-import HeroHeader from '@/components/ui/hero-header'
-
 const serviceAccents = [
   'hover:shadow-indigo-500/10 hover:border-indigo-300',
   'hover:shadow-emerald-500/10 hover:border-emerald-300',
@@ -143,16 +142,17 @@ export default function ServicesPage() {
               <motion.div
                 key={service.index}
                 id={service.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ ...spring, delay: i * 0.1 }}
-                className={`scroll-mt-24 bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm will-change-transform group ${serviceAccents[i % serviceAccents.length]}`}
+                whileHover={{ y: -6 }}
+                className={`scroll-mt-24 bg-white/95 border border-stone-200/80 rounded-[32px] p-8 sm:p-10 shadow-sm hover:shadow-lg will-change-transform group ${serviceAccents[i % serviceAccents.length]}`}
                 style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
               >
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
                   <div className="flex-1">
-                    <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-slate-200 group-hover:scale-110 transition-transform duration-300">
+                    <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block border border-slate-200 group-hover:scale-125 group-hover:bg-slate-900 group-hover:text-white group-hover:border-slate-900 transition-all duration-300">
                       {service.index}
                     </span>
 
@@ -168,7 +168,8 @@ export default function ServicesPage() {
                       {service.tags.map((tag, ti) => (
                         <span
                           key={tag}
-                          className={`${tagColors[ti % tagColors.length]} text-xs font-medium px-3.5 py-1.5 rounded-full`}
+                          className={`${tagColors[ti % tagColors.length]} text-xs font-medium px-3.5 py-1.5 rounded-full group-hover:translate-y-[-2px] transition-transform duration-300`}
+                          style={{ transitionDelay: `${ti * 30}ms` }}
                         >
                           {tag}
                         </span>

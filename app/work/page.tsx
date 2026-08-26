@@ -30,8 +30,8 @@ export default function WorkPage() {
             {/* Top Featured Project - Split Dark/Light */}
             <section id="aether-saas" className="mb-16 scroll-mt-24">
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ ...spring }}
                 className="grid grid-cols-1 lg:grid-cols-2 rounded-3xl overflow-hidden shadow-lg will-change-transform group"
@@ -95,6 +95,12 @@ export default function WorkPage() {
                       </span>
                     ))}
                   </div>
+                  <div className="mt-8">
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 group-hover:text-emerald-600 transition-colors duration-300 cursor-pointer">
+                      View Case Study
+                      <span className="group-hover:translate-x-1.5 transition-transform duration-300">→</span>
+                    </span>
+                  </div>
                 </div>
               </motion.div>
             </section>
@@ -102,14 +108,14 @@ export default function WorkPage() {
             {/* Secondary Projects - Asymmetric 2-Column */}
             <section id="fin-pulse" className="scroll-mt-24">
               <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ ...spring, delay: 0.1 }}
                 className="grid grid-cols-1 lg:grid-cols-5 gap-6"
               >
                 {/* Large Card */}
-                <div className="lg:col-span-3 bg-white/95 border border-stone-200/80 rounded-3xl overflow-hidden shadow-sm group">
+                <div className="lg:col-span-3 bg-white/95 border border-stone-200/80 rounded-3xl overflow-hidden shadow-sm group hover:shadow-lg hover:border-slate-300/80 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
                   <div className="relative h-48 sm:h-56 bg-gradient-to-br from-emerald-900 to-slate-900 p-6 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 to-slate-900 group-hover:scale-105 transition-transform duration-500 ease-out" />
                     <div className="relative z-10 flex items-center gap-1.5 mb-4">
@@ -145,17 +151,23 @@ export default function WorkPage() {
                         </span>
                       ))}
                     </div>
+                    <div className="mt-4">
+                      <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 group-hover:text-emerald-600 transition-colors duration-300 cursor-pointer">
+                        View Case Study
+                        <span className="group-hover:translate-x-1.5 transition-transform duration-300">→</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
 
                 {/* Small Metric Cards */}
                 <div className="lg:col-span-2 flex flex-col gap-6">
-                  <div className="bg-white/95 border border-stone-200/80 rounded-3xl p-8 shadow-sm flex-1 group hover:shadow-lg transition-shadow duration-300">
+                  <div className="bg-white/95 border border-stone-200/80 rounded-3xl p-8 shadow-sm flex-1 group hover:shadow-lg hover:border-slate-300/80 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
                     <p className="text-5xl font-bold text-slate-900 mb-2">3x</p>
                     <p className="text-lg font-medium text-slate-700 mb-1">Faster Load</p>
                     <p className="text-sm text-slate-500">Across all pages</p>
                   </div>
-                  <div className="bg-white/95 border border-stone-200/80 rounded-3xl p-8 shadow-sm flex-1 group hover:shadow-lg transition-shadow duration-300">
+                  <div className="bg-white/95 border border-stone-200/80 rounded-3xl p-8 shadow-sm flex-1 group hover:shadow-lg hover:border-slate-300/80 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
                     <p className="text-5xl font-bold text-slate-900 mb-2">100k+</p>
                     <p className="text-lg font-medium text-slate-700 mb-1">Events/sec</p>
                     <p className="text-sm text-slate-500">Real-time processing</p>
