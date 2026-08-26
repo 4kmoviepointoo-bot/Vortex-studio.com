@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
+import HeroHeader from '@/components/ui/hero-header'
 import { useState } from 'react'
 
 const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
@@ -73,20 +74,6 @@ const tiers = [
     buttonText: 'Contact Sales',
   },
 ]
-
-export default function PricingPage() {
-  const router = useRouter()
-  const [loadingTier, setLoadingTier] = useState<string | null>(null)
-
-  const handleSelect = (tierId: string) => {
-    if (loadingTier) return
-    setLoadingTier(tierId)
-    setTimeout(() => {
-      router.push('/signup')
-    }, 800)
-  }
-
-import HeroHeader from '@/components/ui/hero-header'
 
 export default function PricingPage() {
   const router = useRouter()
