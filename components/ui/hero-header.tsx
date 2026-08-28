@@ -58,11 +58,11 @@ export default function HeroHeader({
         {badge && (
           <motion.div
             variants={item}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-slate-200 bg-white/80 text-xs font-medium text-slate-700 shadow-sm mb-6"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E5E7EB] bg-white/80 text-xs font-medium text-[#667085] shadow-sm mb-6"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-600" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8B7355] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8B7355]" />
             </span>
             {badge}
           </motion.div>
@@ -70,14 +70,14 @@ export default function HeroHeader({
 
         <motion.h1
           variants={item}
-          className="text-4xl sm:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]"
+          className="text-4xl sm:text-6xl font-bold tracking-tight text-[#171A1F] leading-[1.1]"
         >
           {title}
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed"
+          className="mt-4 text-lg text-[#667085] max-w-2xl mx-auto leading-relaxed"
         >
           {subtitle}
         </motion.p>
@@ -91,7 +91,7 @@ export default function HeroHeader({
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
               transition={spring}
-              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 rounded-full transition-all shadow-sm cursor-pointer"
+              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-[#3D3026] hover:bg-[#6F5A43] rounded-full transition-all shadow-sm cursor-pointer"
             >
               {primaryButton.label}
             </motion.span>
@@ -102,7 +102,7 @@ export default function HeroHeader({
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
               transition={spring}
-              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-slate-700 bg-white/80 border border-slate-200 hover:bg-slate-100 rounded-full transition-all cursor-pointer"
+              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-[#667085] bg-white/80 border border-[#E5E7EB] hover:bg-[#F3F1EC] rounded-full transition-all cursor-pointer"
             >
               {secondaryButton.label}
             </motion.span>

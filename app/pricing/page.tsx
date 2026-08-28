@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import HeroHeader from '@/components/ui/hero-header'
 import { useState } from 'react'
 
@@ -10,19 +10,9 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 function CheckIcon() {
   return (
-    <svg className="w-5 h-5 text-amber-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <svg className="w-5 h-5 text-[#8B7355] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
     </svg>
-  )
-}
-
-function Spinner() {
-  return (
-    <motion.span
-      className="w-4 h-4 border-2 border-current/30 border-t-current rounded-full"
-      animate={{ rotate: 360 }}
-      transition={{ duration: 0.75, repeat: Infinity, ease: 'linear' }}
-    />
   )
 }
 
@@ -89,8 +79,8 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Section 1: Hero Header - Off-White Base */}
-      <div className="w-full bg-[#F9F8F3]">
+      {/* Section 1: Hero Header */}
+      <div className="w-full bg-[#FAF9F6]">
         <HeroHeader
           badge="Investment & Plans"
           title="Transparent models for every ambition"
@@ -101,30 +91,30 @@ export default function PricingPage() {
       </div>
 
       {/* Section 2: High-Conversion Tier Comparison */}
-      <div className="w-full bg-[#EDE8DC]">
+      <div className="w-full bg-[#F3F1EC]">
         <div className="max-w-6xl mx-auto px-4">
           <div id="pricing" className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 py-16 items-start">
-            {/* Starter Tier - Clean White */}
+            {/* Starter Tier */}
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 0.96 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-200/90 bg-white shadow-sm hover:shadow-lg hover:border-slate-300 will-change-transform"
+              className="relative flex flex-col p-8 rounded-[2rem] border border-[#E5E7EB] bg-white shadow-sm hover:shadow-lg hover:border-[#8B7355]/30 will-change-transform"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">MVPs & Rapid Launches</p>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Design Sprint</h3>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#667085] mb-2">MVPs & Rapid Launches</p>
+              <h3 className="text-xl font-bold text-[#171A1F] mb-4">Design Sprint</h3>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-5xl font-bold text-slate-900">$4,500</span>
-                <span className="text-sm text-slate-500">/ fixed</span>
+                <span className="text-5xl font-bold text-[#171A1F]">$4,500</span>
+                <span className="text-sm text-[#667085]">/ fixed</span>
               </div>
               <ul className="flex flex-col gap-3 mb-8 flex-1">
                 {['Full UI/UX design system', 'Interactive prototype', 'Next.js frontend codebase', '2-week delivery'].map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <CheckIcon />
-                    <span className="text-sm text-slate-600">{feature}</span>
+                    <span className="text-sm text-[#667085]">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -133,13 +123,13 @@ export default function PricingPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={spring}
-                className="w-full py-3 text-sm font-medium text-center rounded-full border border-slate-200 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300"
+                className="w-full py-3 text-sm font-medium text-center rounded-full border border-[#E5E7EB] text-[#171A1F] hover:bg-[#3D3026] hover:text-white hover:border-[#3D3026] transition-all duration-300"
               >
                 Get Started →
               </motion.button>
             </motion.div>
 
-            {/* Pro Tier - High-Contrast Dark Slate */}
+            {/* Pro Tier - Highlighted */}
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 1.0 }}
               whileInView={{ opacity: 1, y: 0, scale: 1.03 }}
@@ -147,26 +137,26 @@ export default function PricingPage() {
               transition={{ ...spring, delay: 0.1 }}
               whileHover={{ y: -12, scale: 1.05 }}
               animate={{ y: [0, -4, 0] }}
-              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-800 bg-slate-950 text-white shadow-2xl shadow-amber-500/20 animate-[pulse_3s_ease-in-out_infinite] will-change-transform z-10"
+              className="relative flex flex-col p-8 rounded-[2rem] border border-[#3D3026] bg-[#171A1F] text-white shadow-2xl shadow-[#8B7355]/20 animate-[pulse_3s_ease-in-out_infinite] will-change-transform z-10"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
               {/* Animated Glow Badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white rounded-full bg-gradient-to-r from-amber-600 to-amber-500 shadow-lg shadow-amber-500/30">
+                <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white rounded-full bg-gradient-to-r from-[#8B7355] to-[#6F5A43] shadow-lg shadow-[#8B7355]/30">
                   Most Popular
                 </span>
               </div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-amber-600 mb-2 mt-2">Dedicated Tech Team</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#8B7355] mb-2 mt-2">Dedicated Tech Team</p>
               <h3 className="text-xl font-bold text-white mb-4">Growth Retainer</h3>
               <div className="flex items-baseline gap-1 mb-6">
                 <span className="text-5xl font-bold text-white">$8,500</span>
-                <span className="text-sm text-slate-400">/ month</span>
+                <span className="text-sm text-[#667085]">/ month</span>
               </div>
               <ul className="flex flex-col gap-3 mb-8 flex-1">
                 {['Full-stack web application', 'Priority Slack access', 'Continuous speed optimization', 'Custom AI integrations'].map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <CheckIcon />
-                    <span className="text-sm text-slate-300">{feature}</span>
+                    <span className="text-sm text-[#E5E7EB]">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -175,32 +165,32 @@ export default function PricingPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={spring}
-                className="w-full py-3 text-sm font-medium text-center rounded-full bg-white text-slate-950 hover:bg-amber-500 hover:text-slate-950 transition-all duration-300 shadow-lg"
+                className="w-full py-3 text-sm font-medium text-center rounded-full bg-white text-[#171A1F] hover:bg-[#E8DCCB] hover:text-[#171A1F] transition-all duration-300 shadow-lg"
               >
                 Claim Partnership →
               </motion.button>
             </motion.div>
 
-            {/* Enterprise Tier - Clean White */}
+            {/* Enterprise Tier */}
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 0.96 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0.2 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-200/90 bg-white shadow-sm hover:shadow-lg hover:border-slate-300 will-change-transform"
+              className="relative flex flex-col p-8 rounded-[2rem] border border-[#E5E7EB] bg-white shadow-sm hover:shadow-lg hover:border-[#8B7355]/30 will-change-transform"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">High-Scale Systems</p>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Enterprise Architecture</h3>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#667085] mb-2">High-Scale Systems</p>
+              <h3 className="text-xl font-bold text-[#171A1F] mb-4">Enterprise Architecture</h3>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-5xl font-bold text-slate-900">Custom</span>
+                <span className="text-5xl font-bold text-[#171A1F]">Custom</span>
               </div>
               <ul className="flex flex-col gap-3 mb-8 flex-1">
                 {['Multi-region deployment', 'Custom SLA & security', 'Legacy system migration', 'Dedicated technical lead'].map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <CheckIcon />
-                    <span className="text-sm text-slate-600">{feature}</span>
+                    <span className="text-sm text-[#667085]">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -209,7 +199,7 @@ export default function PricingPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={spring}
-                className="w-full py-3 text-sm font-medium text-center rounded-full border border-slate-200 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300"
+                className="w-full py-3 text-sm font-medium text-center rounded-full border border-[#E5E7EB] text-[#171A1F] hover:bg-[#3D3026] hover:text-white hover:border-[#3D3026] transition-all duration-300"
               >
                 Contact Sales →
               </motion.button>
@@ -218,8 +208,8 @@ export default function PricingPage() {
         </div>
       </div>
 
-      {/* Section 3: Bottom CTA - Warm Taupe */}
-      <div className="w-full bg-[#D8CDBC]">
+      {/* Section 3: Bottom CTA */}
+      <div className="w-full bg-[#E8DCCB]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center py-12">
             <Link href="/">
@@ -227,7 +217,7 @@ export default function PricingPage() {
                 whileHover={{ scale: 1.02, y: -1 }}
                 whileTap={{ scale: 0.94 }}
                 transition={spring}
-                className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+                className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-[#3D3026] hover:bg-[#6F5A43] rounded-lg transition-colors cursor-pointer"
               >
                 Back to Home
               </motion.span>

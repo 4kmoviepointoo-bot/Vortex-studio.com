@@ -9,7 +9,7 @@ export default function ContactCTA() {
   return (
     <section className="py-16 sm:py-24 px-4 bg-transparent">
       <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-14 max-w-5xl mx-auto shadow-2xl relative overflow-hidden border border-slate-800">
-        <div className="bg-amber-500/10 blur-3xl rounded-full absolute -top-20 -right-20 w-80 h-80 pointer-events-none" />
+        <div className="bg-[#8B7355]/10 blur-3xl rounded-full absolute -top-20 -right-20 w-80 h-80 pointer-events-none" />
         <span className="px-3.5 py-1.5 rounded-full border border-slate-700 bg-slate-800 text-xs text-slate-300 font-medium mb-4 inline-block relative z-10">
           Ready to Start?
         </span>
@@ -25,7 +25,7 @@ export default function ContactCTA() {
               whileHover={{ scale: 1.03, y: -1 }}
               whileTap={{ scale: 0.94 }}
               transition={spring}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-white text-slate-950 hover:bg-slate-100 transition-colors cursor-pointer group/btn"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-white text-[#171A1F] hover:bg-[#F3F1EC] transition-colors cursor-pointer group/btn"
             >
               Book a Discovery Call
               <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>

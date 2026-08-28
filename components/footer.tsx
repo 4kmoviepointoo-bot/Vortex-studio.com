@@ -7,7 +7,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 function FooterLink({ href, label, external = false }: { href: string; label: string; external?: boolean }) {
   const content = (
-    <span className="group inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-amber-500 transition-colors duration-200 py-1">
+    <span className="group inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-[#E8DCCB] transition-colors duration-200 py-1">
       {label}
     </span>
   )
@@ -47,7 +47,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-lg font-bold text-white mb-3">Vortex Studio <span className="text-amber-500 font-normal text-xs bg-amber-500/10 px-2 py-0.5 rounded-full border border-amber-500/20">v1</span></h3>
+            <h3 className="text-lg font-bold text-white mb-3">Vortex Studio <span className="text-[#E8DCCB] font-normal text-xs bg-[#E8DCCB]/10 px-2 py-0.5 rounded-full border border-[#E8DCCB]/20">v1</span></h3>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
               A modern tech studio delivering premium digital products, from concept to launch.
             </p>

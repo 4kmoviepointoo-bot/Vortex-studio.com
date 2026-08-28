@@ -1,200 +1,169 @@
 'use client'
 
 import { useRef } from 'react'
-import Link from 'next/link'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import ShinyText from '@/components/ui/ShinyText'
+import { useScroll, useTransform, motion } from 'framer-motion'
 
 const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 const projects = [
   {
-    id: 'nexus-ai',
-    title: 'Nexus AI Dashboard',
-    category: 'AI & Machine Learning',
-    badge: '40% Time Saved',
-    description: 'Enterprise AI model monitoring dashboard with real-time inference tracking, cost optimization, and team collaboration tools.',
-    tags: ['Python', 'FastAPI', 'React', 'D3.js'],
-    metrics: [
-      { label: 'Models Tracked', value: '50+' },
-      { label: 'Cost Reduction', value: '40%' },
-    ],
-    href: '/work#nexus-ai',
+    name: 'NovaPay',
+    category: 'FinTech · Payments',
+    year: '2026',
+    description: 'Next-gen payment processing platform with real-time fraud detection and multi-currency support.',
+    metrics: ['40% faster checkout', '$2.1B processed', '99.99% uptime'],
+    status: 'Live',
+    tech: ['Next.js', 'Node.js', 'PostgreSQL'],
+    color: '#8B7355',
   },
   {
-    id: 'aether-saas',
-    title: 'Aether SaaS Platform',
-    category: 'UI/UX & Next.js App',
-    badge: '300% Conversion Growth',
-    description: 'End-to-end product redesign and full-stack rebuild for a B2B analytics platform. Migrated from legacy monolith to modern microservices.',
-    tags: ['Next.js', 'Prisma', 'Stripe', 'PostgreSQL'],
-    metrics: [
-      { label: 'Faster Load', value: '3x' },
-      { label: 'Uptime SLA', value: '99.9%' },
-    ],
-    href: '/work#aether-saas',
+    name: 'HealthSync',
+    category: 'HealthTech · SaaS',
+    year: '2025',
+    description: 'Unified health records platform connecting 500+ clinics with patient-controlled data sharing.',
+    metrics: ['500+ clinics', '2M patients', 'HIPAA compliant'],
+    status: 'Live',
+    tech: ['React', 'Go', 'MongoDB'],
+    color: '#6F5A43',
   },
   {
-    id: 'fin-pulse',
-    title: 'Fin Pulse Engine',
-    category: 'FinTech & Real-time Analytics',
-    badge: '0.1s Latency Infrastructure',
-    description: 'High-performance real-time trading dashboard with sub-second data pipelines and custom WebSocket architecture.',
-    tags: ['React', 'Node.js', 'Redis', 'WebSocket'],
-    metrics: [
-      { label: 'Events/sec', value: '100k+' },
-      { label: 'Latency', value: '<1ms' },
-    ],
-    href: '/work#fin-pulse',
+    name: 'UrbanFlow',
+    category: 'PropTech · Marketplace',
+    year: '2025',
+    description: 'AI-powered commercial real estate marketplace with predictive analytics and virtual tours.',
+    metrics: ['12K listings', '35% conversion', '8s load time'],
+    status: 'Live',
+    tech: ['Next.js', 'Python', 'Redis'],
+    color: '#E8DCCB',
   },
   {
-    id: 'pulse-health',
-    title: 'Pulse Health',
-    category: 'HealthTech & Mobile',
-    badge: '10k+ Active Users',
-    description: 'Patient engagement platform with appointment scheduling, telehealth integration, and automated follow-up workflows.',
-    tags: ['React Native', 'Node.js', 'MongoDB', 'Twilio'],
-    metrics: [
-      { label: 'Active Users', value: '10k+' },
-      { label: 'NPS Score', value: '72' },
-    ],
-    href: '/work#pulse-health',
+    name: 'FleetOS',
+    category: 'Logistics · IoT',
+    year: '2024',
+    description: 'Real-time fleet management system with route optimization and predictive maintenance.',
+    metrics: ['10K vehicles', '22% fuel savings', 'Real-time GPS'],
+    status: 'Live',
+    tech: ['Vue.js', 'Rust', 'TimescaleDB'],
+    color: '#8B7355',
   },
 ]
 
-function CardContent({ project }: { project: typeof projects[number] }) {
-  return (
-    <>
-      <div>
-        <div className="h-24 sm:h-32 bg-slate-100 rounded-xl p-3 mb-3 overflow-hidden">
-          <div className="flex items-center gap-1.5 mb-2">
-            <span className="w-2 h-2 rounded-full bg-red-400" />
-            <span className="w-2 h-2 rounded-full bg-amber-400" />
-            <span className="w-2 h-2 rounded-full bg-amber-500" />
-          </div>
-          <div className="grid grid-cols-3 gap-2">
-            <div className="h-10 sm:h-12 rounded-lg bg-slate-200 border border-slate-300/60" />
-            <div className="h-10 sm:h-12 rounded-lg bg-slate-200 border border-slate-300/60" />
-            <div className="h-10 sm:h-12 rounded-lg bg-slate-200 border border-slate-300/60" />
-          </div>
-          <div className="mt-2 h-4 w-2/3 rounded bg-slate-300/60" />
-        </div>
-
-        <div className="flex flex-wrap gap-2 items-center mb-3">
-          <span className="inline-flex items-center text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-200/80 text-slate-700 whitespace-nowrap">
-            {project.category}
-          </span>
-          <span className="inline-flex items-center text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-800 border border-amber-500/20 whitespace-nowrap tracking-wide">
-            {project.badge}
-          </span>
-        </div>
-
-        <h3 className="text-lg sm:text-xl font-bold text-slate-900 my-1.5">{project.title}</h3>
-        <p className="text-xs sm:text-sm text-slate-600 line-clamp-3 mb-3">{project.description}</p>
-
-        <div className="flex flex-wrap gap-1.5 sm:gap-2">
-          {project.tags.map((tag) => (
-            <span key={tag} className="px-2 sm:px-2.5 py-1 text-[10px] font-medium text-slate-700 bg-slate-200/70 border border-slate-300/60 rounded-full">
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      <div className="flex items-center justify-between w-full mt-4">
-        <div className="flex gap-4 sm:gap-6">
-          {project.metrics.map((m) => (
-            <div key={m.label}>
-              <p className="text-base sm:text-lg font-bold text-slate-900">{m.value}</p>
-              <p className="text-[9px] sm:text-[10px] text-slate-500 uppercase tracking-wider">{m.label}</p>
-            </div>
-          ))}
-        </div>
-
-        <Link href={project.href}>
-          <motion.span
-            whileHover={{ scale: 1.05, x: 4 }}
-            whileTap={{ scale: 0.95 }}
-            transition={spring}
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium bg-amber-600 text-slate-950 hover:bg-amber-500 transition-colors cursor-pointer"
-          >
-            View Case Study
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </motion.span>
-        </Link>
-      </div>
-    </>
-  )
-}
+const metrics = [
+  { value: '47+', label: 'Projects Shipped', description: 'Across 12 industries' },
+  { value: '99.9%', label: 'Uptime Average', description: 'Last 12 months' },
+  { value: '<200ms', label: 'Response Time', description: 'P95 globally' },
+  { value: '4.9/5', label: 'Client Rating', description: 'On Clutch & Google' },
+]
 
 export default function WorkShowcase() {
   const targetRef = useRef<HTMLDivElement>(null)
-
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ['start start', 'end end'],
   })
 
-  const x = useTransform(scrollYProgress, [0, 1], ['0%', '-75%'])
-
-  const progressWidth = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-75%'])
 
   return (
-    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#EDE8DC]">
-      <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
-        <div className="flex items-center justify-between px-6 sm:px-12 mb-4 z-10">
-          <span className="text-xs font-bold tracking-[0.2em] uppercase flex items-center gap-2">
-            <ShinyText
-              text="FEATURED WORK"
-              speed={3}
-              color="#059669"
-              shineColor="#ffffff"
-              spread={100}
-              direction="left"
-            />
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-600 animate-pulse" />
-          </span>
-          <div className="w-20 sm:w-24 h-1 bg-slate-200 rounded-full overflow-hidden">
-            <motion.div
-              style={{ width: progressWidth }}
-              className="h-full bg-amber-600 rounded-full origin-left"
-            />
-          </div>
-        </div>
-        <p className="text-xs text-slate-500 mb-4 px-6 sm:px-12 z-10">Scroll to explore</p>
+    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#F3F1EC]">
+      <div className="sticky top-0 h-screen overflow-hidden">
+        <motion.div style={{ y }} className="h-full">
+          <div className="h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {projects.map((project, i) => (
+                <motion.div
+                  key={project.name}
+                  initial={{ opacity: 0, y: 20, scale: 0.97 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ ...spring, delay: i * 0.1 }}
+                  whileHover={{ y: -6, scale: 1.015 }}
+                  className="group relative bg-white rounded-2xl border border-[#E5E7EB] p-6 shadow-sm hover:shadow-xl hover:border-[#8B7355]/30 transition-all duration-500 will-change-transform"
+                >
+                  {/* Top accent line */}
+                  <div
+                    className="absolute top-0 left-6 right-6 h-[2px] rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                    style={{ backgroundColor: project.color }}
+                  />
 
-        <motion.div style={{ x }} className="flex gap-6 px-6 sm:px-12">
-          {projects.map((project, i) => (
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl font-bold text-[#171A1F] group-hover:text-[#8B7355] transition-colors duration-300">
+                        {project.name}
+                      </h3>
+                      <p className="text-xs font-medium text-[#667085] mt-1 tracking-wide uppercase">
+                        {project.category}
+                      </p>
+                    </div>
+                    <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#8B7355] bg-[#F3F1EC] border border-[#E5E7EB] rounded-full">
+                      {project.year}
+                    </span>
+                  </div>
+
+                  <p className="text-sm text-[#667085] mb-5 leading-relaxed line-clamp-2">
+                    {project.description}
+                  </p>
+
+                  {/* Metrics */}
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {project.metrics.map((metric) => (
+                      <span
+                        key={metric}
+                        className="px-2.5 py-1 text-[10px] font-semibold rounded-md bg-[#F3F1EC] text-[#8B7355] border border-[#E5E7EB]/60"
+                      >
+                        {metric}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Tech stack */}
+                  <div className="flex items-center gap-2 mb-4">
+                    {project.tech.map((t) => (
+                      <span key={t} className="text-[10px] font-medium text-[#667085] bg-[#F3F1EC] px-2 py-0.5 rounded">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Status + CTA */}
+                  <div className="flex items-center justify-between pt-4 border-t border-[#E5E7EB]/60">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                      <span className="text-xs font-medium text-[#667085]">{project.status}</span>
+                    </div>
+                    <span className="text-xs font-semibold text-[#8B7355] group-hover:text-[#6F5A43] transition-colors cursor-pointer">
+                      View Case Study →
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  )
+}
+
+export function WorkMetrics() {
+  return (
+    <div className="w-full bg-[#E8DCCB]">
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {metrics.map((metric, i) => (
             <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 40 }}
+              key={metric.label}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true }}
               transition={{ ...spring, delay: i * 0.1 }}
-              className="w-[85vw] max-w-[320px] sm:max-w-[420px] h-[480px] shrink-0 bg-white border border-slate-200/90 rounded-3xl p-5 sm:p-6 shadow-xl flex flex-col justify-between overflow-hidden"
+              className="text-center"
             >
-              <CardContent project={project} />
+              <div className="text-3xl sm:text-4xl font-bold text-[#3D3026] mb-2">{metric.value}</div>
+              <div className="text-sm font-semibold text-[#171A1F] mb-1">{metric.label}</div>
+              <div className="text-xs text-[#667085]">{metric.description}</div>
             </motion.div>
           ))}
-        </motion.div>
-
-        <div className="flex items-center justify-center gap-2 mt-6 z-10">
-          {[0, 1, 2, 3].map((i) => {
-            const dotProgress = useTransform(
-              scrollYProgress,
-              [i * 0.25, i * 0.25 + 0.25],
-              [0.3, 1]
-            )
-            return (
-              <motion.div
-                key={i}
-                style={{ opacity: dotProgress }}
-                className="w-2 h-2 rounded-full bg-amber-600"
-              />
-            )
-          })}
         </div>
       </div>
     </div>

@@ -45,12 +45,12 @@ export default function BookCallPopup() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 50, scale: 0.9 }}
           transition={spring}
-          className="fixed bottom-6 right-6 z-50 max-w-sm w-full bg-white/95 backdrop-blur-xl border border-slate-200 shadow-2xl rounded-2xl p-6"
+          className="fixed bottom-6 right-6 z-50 max-w-sm w-full bg-white/95 backdrop-blur-xl border border-[#E5E7EB] shadow-2xl rounded-2xl p-6"
         >
           <button
             onClick={handleClose}
             aria-label="Close popup"
-            className="absolute top-4 right-4 w-7 h-7 flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition-colors cursor-pointer"
+            className="absolute top-4 right-4 w-7 h-7 flex items-center justify-center rounded-full bg-[#F3F1EC] hover:bg-[#E5E7EB] text-[#667085] hover:text-[#171A1F] transition-colors cursor-pointer"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -66,13 +66,13 @@ export default function BookCallPopup() {
                 exit={{ opacity: 0, scale: 0.8 }}
                 className="flex flex-col items-center py-6 text-center"
               >
-                <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-4">
-                  <svg className="w-8 h-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <div className="w-16 h-16 rounded-full bg-[#F3F1EC] flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8 text-[#8B7355]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-slate-950 mb-2">Request Received!</h3>
-                <p className="text-sm text-slate-600 max-w-xs">
+                <h3 className="text-lg font-bold text-[#171A1F] mb-2">Request Received!</h3>
+                <p className="text-sm text-[#667085] max-w-xs">
                   We will send you a calendar invite shortly.
                 </p>
               </motion.div>
@@ -87,12 +87,12 @@ export default function BookCallPopup() {
               >
                 <div className="flex items-center gap-3 mb-1">
                   <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-600" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8B7355] opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#8B7355]" />
                   </span>
                   <div>
-                    <h3 className="text-base font-bold text-slate-950 leading-tight">Schedule a Strategy Call</h3>
-                    <p className="text-xs text-slate-500">Book a 15-min discovery call with our tech lead.</p>
+                    <h3 className="text-base font-bold text-[#171A1F] leading-tight">Schedule a Strategy Call</h3>
+                    <p className="text-xs text-[#667085]">Book a 15-min discovery call with our tech lead.</p>
                   </div>
                 </div>
 
@@ -102,7 +102,7 @@ export default function BookCallPopup() {
                   required
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all placeholder:text-slate-400"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-[#E5E7EB] bg-white focus:outline-none focus:ring-2 focus:ring-[#8B7355]/20 focus:border-[#8B7355] transition-all placeholder:text-[#667085]"
                 />
 
                 <input
@@ -111,7 +111,7 @@ export default function BookCallPopup() {
                   required
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all placeholder:text-slate-400"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-[#E5E7EB] bg-white focus:outline-none focus:ring-2 focus:ring-[#8B7355]/20 focus:border-[#8B7355] transition-all placeholder:text-[#667085]"
                 />
 
                 <div className="flex flex-wrap gap-2">
@@ -122,8 +122,8 @@ export default function BookCallPopup() {
                       onClick={() => setSelectedService(selectedService === service ? null : service)}
                       className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all cursor-pointer ${
                         selectedService === service
-                          ? 'bg-amber-600 text-white border-amber-600'
-                          : 'bg-slate-50 text-slate-600 border-slate-200 hover:border-slate-300'
+                          ? 'bg-[#8B7355] text-white border-[#8B7355]'
+                          : 'bg-[#F3F1EC] text-[#667085] border-[#E5E7EB] hover:border-[#8B7355]/30'
                       }`}
                     >
                       {service}
@@ -136,7 +136,7 @@ export default function BookCallPopup() {
                   rows={2}
                   value={form.note}
                   onChange={(e) => setForm({ ...form, note: e.target.value })}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all placeholder:text-slate-400 resize-none"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-[#E5E7EB] bg-white focus:outline-none focus:ring-2 focus:ring-[#8B7355]/20 focus:border-[#8B7355] transition-all placeholder:text-[#667085] resize-none"
                 />
 
                 <div className="absolute opacity-0 h-0 overflow-hidden" aria-hidden="true">
@@ -157,7 +157,7 @@ export default function BookCallPopup() {
                   disabled={isSubmitting}
                   whileTap={{ scale: 0.95 }}
                   transition={spring}
-                  className="w-full py-3 rounded-full bg-amber-600 text-slate-950 font-semibold flex items-center justify-center gap-2 hover:bg-amber-500 transition-all disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+                  className="w-full py-3 rounded-full bg-[#3D3026] text-white font-semibold flex items-center justify-center gap-2 hover:bg-[#6F5A43] transition-all disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>

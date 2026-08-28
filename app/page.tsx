@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       {/* Section 1: Hero - Off-White Base */}
-      <section className="relative overflow-hidden min-h-[600px] flex flex-col justify-center items-center pt-36 pb-20 px-4 max-w-5xl mx-auto text-center bg-[#F9F8F3]">
+      <section className="relative overflow-hidden min-h-[600px] flex flex-col justify-center items-center pt-36 pb-20 px-4 max-w-5xl mx-auto text-center bg-[#FAF9F6]">
         <div className="hero-pulse" />
         {[...Array(8)].map((_, i) => (
           <div
@@ -55,30 +55,30 @@ export default function Home() {
           />
         ))}
         <div className="hero-radial" />
-        <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-[#EDE8DC] via-[#F9F8F3]/70 to-transparent z-[1] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-[#F3F1EC] via-[#FAF9F6]/70 to-transparent z-[1] pointer-events-none" />
 
         {/* Floating Status Pills */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.8, duration: 0.6, ...spring }}
-          className="absolute top-28 left-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg shadow-slate-900/5"
+          className="absolute top-28 left-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-[#E5E7EB]/60 shadow-lg shadow-slate-900/5"
         >
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-600" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8B7355] opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8B7355]" />
           </span>
-          <span className="text-xs font-medium text-slate-700">LIVE 99.9% Optimal Speed</span>
+          <span className="text-xs font-medium text-[#171A1F]">LIVE 99.9% Optimal Speed</span>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1, duration: 0.6, ...spring }}
-          className="absolute top-36 right-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg shadow-slate-900/5"
+          className="absolute top-36 right-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-[#E5E7EB]/60 shadow-lg shadow-slate-900/5"
         >
-          <span className="text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full">Active</span>
-          <span className="text-xs font-medium text-slate-700">3 Projects Deployed</span>
+          <span className="text-xs font-medium text-[#8B7355] bg-[#F3F1EC] px-2 py-0.5 rounded-full">Active</span>
+          <span className="text-xs font-medium text-[#171A1F]">3 Projects Deployed</span>
         </motion.div>
         <motion.div
           variants={container}
@@ -88,11 +88,11 @@ export default function Home() {
         >
           <motion.div
             variants={item}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-slate-200 bg-white/80 text-xs font-medium text-slate-700 shadow-sm mb-6"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E5E7EB] bg-white/80 text-xs font-medium text-[#667085] shadow-sm mb-6"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-600" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8B7355] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8B7355]" />
             </span>
             Digital Product & Tech Agency
           </motion.div>
@@ -104,8 +104,8 @@ export default function Home() {
             <ShinyText
               text="Crafting digital systems that scale your ambition."
               speed={3}
-              color="#0F172A"
-              shineColor="#10b981"
+              color="#171A1F"
+              shineColor="#8B7355"
               spread={100}
               direction="left"
             />
@@ -113,7 +113,7 @@ export default function Home() {
 
           <motion.p
             variants={item}
-            className="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl font-normal leading-relaxed"
+            className="mt-6 text-lg sm:text-xl text-[#667085] max-w-2xl font-normal leading-relaxed"
           >
             We partner with ambitious teams to design, build, and launch enterprise-grade web applications with precision.
           </motion.p>
@@ -127,7 +127,7 @@ export default function Home() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.95 }}
                 transition={spring}
-                className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 rounded-full transition-all shadow-md hover:shadow-lg cursor-pointer"
+                className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium text-white bg-[#3D3026] hover:bg-[#6F5A43] rounded-full transition-all shadow-md hover:shadow-lg cursor-pointer"
               >
                 Start a Project
               </motion.span>
@@ -138,7 +138,7 @@ export default function Home() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.95 }}
                 transition={spring}
-                className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium text-slate-700 border border-slate-300 hover:bg-slate-100 rounded-full transition-all cursor-pointer"
+                className="inline-flex items-center justify-center px-7 py-3.5 text-sm font-medium text-[#667085] border border-[#E5E7EB] hover:bg-[#F3F1EC] rounded-full transition-all cursor-pointer"
               >
                 Explore Services
               </motion.span>
@@ -150,20 +150,20 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="mt-16 w-full max-w-5xl mx-auto rounded-2xl border border-slate-200/60 bg-white/60 backdrop-blur-xl p-4 sm:p-6 shadow-2xl shadow-slate-900/5 relative overflow-hidden"
+          className="mt-16 w-full max-w-5xl mx-auto rounded-2xl border border-[#E5E7EB]/60 bg-white/60 backdrop-blur-xl p-4 sm:p-6 shadow-2xl shadow-slate-900/5 relative overflow-hidden"
         >
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-100">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-[#F3F1EC]">
               <div className="flex items-center gap-1.5">
                 <span className="w-3 h-3 rounded-full bg-red-400" />
                 <span className="w-3 h-3 rounded-full bg-amber-400" />
                 <span className="w-3 h-3 rounded-full bg-amber-500" />
               </div>
               <div className="flex-1 flex justify-center">
-                <div className="px-4 py-1.5 text-xs text-slate-400 bg-slate-50 rounded-full border border-slate-100">
+                <div className="px-4 py-1.5 text-xs text-[#667085] bg-[#F3F1EC] rounded-full border border-[#E5E7EB]">
                   vortex.studio/dashboard
                 </div>
               </div>
@@ -174,21 +174,21 @@ export default function Home() {
               <motion.div
                 whileHover={{ y: -4, scale: 1.01 }}
                 transition={spring}
-                className="p-5 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-md text-left"
+                className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white/50 backdrop-blur-md text-left"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-600" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8B7355] opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8B7355]" />
                   </span>
-                  <span className="text-xs font-medium text-amber-700 uppercase tracking-wide">Live</span>
+                  <span className="text-xs font-medium text-[#8B7355] uppercase tracking-wide">Live</span>
                 </div>
-                <p className="text-2xl font-bold text-slate-950 mb-1">99.9%</p>
-                <p className="text-sm text-slate-500 mb-4">Optimal Speed</p>
+                <p className="text-2xl font-bold text-[#171A1F] mb-1">99.9%</p>
+                <p className="text-sm text-[#667085] mb-4">Optimal Speed</p>
                 <svg className="w-full h-12" viewBox="0 0 200 50" fill="none">
                   <motion.path
                     d="M0 40 Q25 35 50 30 T100 20 T150 15 T200 10"
-                    stroke="#10b981"
+                    stroke="#8B7355"
                     strokeWidth="2"
                     strokeLinecap="round"
                     initial={{ pathLength: 0 }}
@@ -204,8 +204,8 @@ export default function Home() {
                   />
                   <defs>
                     <linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#10b981" />
-                      <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
+                      <stop offset="0%" stopColor="#8B7355" />
+                      <stop offset="100%" stopColor="#8B7355" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -215,16 +215,16 @@ export default function Home() {
               <motion.div
                 whileHover={{ y: -4, scale: 1.01 }}
                 transition={spring}
-                className="p-5 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-md text-left"
+                className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white/50 backdrop-blur-md text-left"
               >
-                <p className="text-xs font-medium text-slate-400 uppercase tracking-wide mb-3">Tech Architecture</p>
+                <p className="text-xs font-medium text-[#667085] uppercase tracking-wide mb-3">Tech Architecture</p>
                 <div className="flex flex-wrap gap-2">
                   {techTags.map((tag) => (
                     <motion.span
                       key={tag}
                       whileHover={{ scale: 1.05, rotate: 1 }}
                       transition={spring}
-                      className="px-3 py-1.5 text-xs font-medium text-slate-700 bg-slate-100 border border-slate-200 rounded-full cursor-default"
+                      className="px-3 py-1.5 text-xs font-medium text-[#171A1F] bg-[#F3F1EC] border border-[#E5E7EB] rounded-full cursor-default"
                     >
                       {tag}
                     </motion.span>
@@ -236,18 +236,18 @@ export default function Home() {
               <motion.div
                 whileHover={{ y: -4, scale: 1.01 }}
                 transition={spring}
-                className="p-5 rounded-2xl border border-slate-200/50 bg-white/50 backdrop-blur-md text-left"
+                className="p-5 rounded-2xl border border-[#E5E7EB]/50 bg-white/50 backdrop-blur-md text-left"
               >
-                <p className="text-xs font-medium text-slate-400 uppercase tracking-wide mb-3">Client Impact</p>
+                <p className="text-xs font-medium text-[#667085] uppercase tracking-wide mb-3">Client Impact</p>
                 <div className="flex flex-col gap-3">
                   <div>
-                    <p className="text-2xl font-bold text-slate-950">10x</p>
-                    <p className="text-sm text-slate-500">Faster Deployment</p>
+                    <p className="text-2xl font-bold text-[#171A1F]">10x</p>
+                    <p className="text-sm text-[#667085]">Faster Deployment</p>
                   </div>
-                  <div className="h-px bg-slate-100" />
+                  <div className="h-px bg-[#F3F1EC]" />
                   <div>
-                    <p className="text-2xl font-bold text-slate-950">0.2s</p>
-                    <p className="text-sm text-slate-500">Page Load</p>
+                    <p className="text-2xl font-bold text-[#171A1F]">0.2s</p>
+                    <p className="text-sm text-[#667085]">Page Load</p>
                   </div>
                 </div>
               </motion.div>
@@ -259,14 +259,14 @@ export default function Home() {
       <SectionDivider accent />
 
       {/* Section 2: Services Preview - Light Beige */}
-      <section className="w-full bg-[#EDE8DC]">
+      <section className="w-full bg-[#F3F1EC]">
         <ClientLogos />
       </section>
 
       <SectionDivider />
 
       {/* Section 3: Featured Projects - Light Beige */}
-      <section className="w-full bg-[#EDE8DC]">
+      <section className="w-full bg-[#F3F1EC]">
         <ShowcaseGrid />
         <FeaturedWork />
       </section>
@@ -274,7 +274,7 @@ export default function Home() {
       <SectionDivider />
 
       {/* Section 4: CTA & Footer */}
-      <section className="w-full bg-[#D8CDBC]">
+      <section className="w-full bg-[#E8DCCB]">
         <ContactCTA />
       </section>
 
