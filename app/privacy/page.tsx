@@ -7,47 +7,47 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen px-4 pt-24 pb-16">
+    <div className="min-h-screen px-4 pt-24 pb-16 bg-[#E3F2FD]">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-[#171A1F] mb-8">Privacy Policy</h1>
+        <h1 className="text-4xl font-bold text-[#0D47A1] mb-8">Privacy Policy</h1>
 
         <div className="prose prose-slate max-w-none">
-          <p className="text-[#667085] mb-6">
+          <p className="text-[#0D47A1]/80 mb-6">
             <strong>Last updated:</strong> August 23, 2026
           </p>
 
-          <h2 className="text-2xl font-bold text-[#171A1F] mt-8 mb-4">1. Information We Collect</h2>
-          <p className="text-[#667085] mb-4">
+          <h2 className="text-2xl font-bold text-[#0D47A1] mt-8 mb-4">1. Information We Collect</h2>
+          <p className="text-[#0D47A1]/80 mb-4">
             When you visit Vortex Studio, we may collect certain information automatically, including your IP address, browser type, operating system, and browsing behavior. We also collect information you voluntarily provide, such as your name, email address, and project details when you fill out our contact or inquiry forms.
           </p>
 
-          <h2 className="text-2xl font-bold text-[#171A1F] mt-8 mb-4">2. How We Use Your Information</h2>
-          <p className="text-[#667085] mb-4">
+          <h2 className="text-2xl font-bold text-[#0D47A1] mt-8 mb-4">2. How We Use Your Information</h2>
+          <p className="text-[#0D47A1]/80 mb-4">
             We use the information we collect to respond to your inquiries, provide our services, improve our website, and send occasional marketing communications (with your consent). We do not sell or rent your personal information to third parties.
           </p>
 
-          <h2 className="text-2xl font-bold text-[#171A1F] mt-8 mb-4">3. Cookies and Tracking</h2>
-          <p className="text-[#667085] mb-4">
+          <h2 className="text-2xl font-bold text-[#0D47A1] mt-8 mb-4">3. Cookies and Tracking</h2>
+          <p className="text-[#0D47A1]/80 mb-4">
             We use cookies and similar tracking technologies to enhance your experience on our website. You can control cookie settings through your browser preferences. Essential cookies required for the website to function cannot be disabled.
           </p>
 
-          <h2 className="text-2xl font-bold text-[#171A1F] mt-8 mb-4">4. Data Security</h2>
-          <p className="text-[#667085] mb-4">
+          <h2 className="text-2xl font-bold text-[#0D47A1] mt-8 mb-4">4. Data Security</h2>
+          <p className="text-[#0D47A1]/80 mb-4">
             We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.
           </p>
 
-          <h2 className="text-2xl font-bold text-[#171A1F] mt-8 mb-4">5. Your Rights</h2>
-          <p className="text-[#667085] mb-4">
+          <h2 className="text-2xl font-bold text-[#0D47A1] mt-8 mb-4">5. Your Rights</h2>
+          <p className="text-[#0D47A1]/80 mb-4">
             You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at{' '}
-            <a href="mailto:asgah960@gmail.com" className="text-[#8B7355] hover:text-[#6F5A43]">
+            <a href="mailto:asgah960@gmail.com" className="text-[#2196F3] hover:text-[#1565C0]">
               asgah960@gmail.com
             </a>.
           </p>
 
-          <h2 className="text-2xl font-bold text-[#171A1F] mt-8 mb-4">6. Contact Us</h2>
-          <p className="text-[#667085] mb-4">
+          <h2 className="text-2xl font-bold text-[#0D47A1] mt-8 mb-4">6. Contact Us</h2>
+          <p className="text-[#0D47A1]/80 mb-4">
             If you have questions about this Privacy Policy, please contact us at{' '}
-            <a href="mailto:asgah960@gmail.com" className="text-[#8B7355] hover:text-[#6F5A43]">
+            <a href="mailto:asgah960@gmail.com" className="text-[#2196F3] hover:text-[#1565C0]">
               asgah960@gmail.com</a>.
           </p>
         </div>

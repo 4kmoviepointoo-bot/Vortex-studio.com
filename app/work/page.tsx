@@ -10,7 +10,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 export default function WorkPage() {
   return (
     <div className="min-h-screen">
-      <div className="w-full bg-[#FAF9F6]">
+      <div className="w-full bg-[#E3F2FD]">
         <HeroHeader
           badge="Selected Work"
           title="Case studies from real client engagements"
@@ -27,7 +27,7 @@ export default function WorkPage() {
       <WorkMetrics />
 
       {/* CTA Section */}
-      <div className="w-full bg-[#F3F1EC]">
+      <div className="w-full bg-[#E3F2FD]">
         <div className="max-w-4xl mx-auto px-4 py-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -35,10 +35,10 @@ export default function WorkPage() {
             viewport={{ once: true }}
             transition={spring}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#171A1F] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0D47A1] mb-4">
               Ready to build something exceptional?
             </h2>
-            <p className="text-[#667085] mb-8 max-w-xl mx-auto">
+            <p className="text-[#0D47A1]/80 mb-8 max-w-xl mx-auto">
               We partner with ambitious teams to ship high-performance digital products.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -47,7 +47,7 @@ export default function WorkPage() {
                   whileHover={{ scale: 1.03, y: -1 }}
                   whileTap={{ scale: 0.94 }}
                   transition={spring}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm bg-[#3D3026] text-white hover:bg-[#6F5A43] transition-colors cursor-pointer group/btn"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm bg-[#0D47A1] text-white hover:bg-[#1565C0] transition-colors cursor-pointer group/btn"
                 >
                   Start a Project
                   <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>
@@ -58,7 +58,7 @@ export default function WorkPage() {
                   whileHover={{ scale: 1.03, y: -1 }}
                   whileTap={{ scale: 0.94 }}
                   transition={spring}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm bg-white border border-[#E5E7EB] text-[#667085] hover:bg-[#F3F1EC] transition-colors cursor-pointer group/btn"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm bg-white border border-[#90CAF9]/30 text-[#0D47A1]/80 hover:bg-[#E3F2FD] transition-colors cursor-pointer group/btn"
                 >
                   View Pricing
                   <span className="transition-transform duration-300 group-hover/btn:translate-x-1.5">→</span>

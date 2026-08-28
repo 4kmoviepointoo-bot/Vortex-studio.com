@@ -14,7 +14,7 @@ const projects = [
     metrics: ['40% faster checkout', '$2.1B processed', '99.99% uptime'],
     status: 'Live',
     tech: ['Next.js', 'Node.js', 'PostgreSQL'],
-    color: '#8B7355',
+    color: '#2196F3',
   },
   {
     name: 'HealthSync',
@@ -24,7 +24,7 @@ const projects = [
     metrics: ['500+ clinics', '2M patients', 'HIPAA compliant'],
     status: 'Live',
     tech: ['React', 'Go', 'MongoDB'],
-    color: '#6F5A43',
+    color: '#1565C0',
   },
   {
     name: 'UrbanFlow',
@@ -34,7 +34,7 @@ const projects = [
     metrics: ['12K listings', '35% conversion', '8s load time'],
     status: 'Live',
     tech: ['Next.js', 'Python', 'Redis'],
-    color: '#E8DCCB',
+    color: '#90CAF9',
   },
   {
     name: 'FleetOS',
@@ -44,7 +44,7 @@ const projects = [
     metrics: ['10K vehicles', '22% fuel savings', 'Real-time GPS'],
     status: 'Live',
     tech: ['Vue.js', 'Rust', 'TimescaleDB'],
-    color: '#8B7355',
+    color: '#2196F3',
   },
 ]
 
@@ -65,7 +65,7 @@ export default function WorkShowcase() {
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '-75%'])
 
   return (
-    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#F3F1EC]">
+    <div ref={targetRef} className="relative h-[300vh] w-full bg-[#E3F2FD]">
       <div className="sticky top-0 h-screen overflow-hidden">
         <motion.div style={{ y }} className="h-full">
           <div className="h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -78,7 +78,7 @@ export default function WorkShowcase() {
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ ...spring, delay: i * 0.1 }}
                   whileHover={{ y: -6, scale: 1.015 }}
-                  className="group relative bg-white rounded-2xl border border-[#E5E7EB] p-6 shadow-sm hover:shadow-xl hover:border-[#8B7355]/30 transition-all duration-500 will-change-transform"
+                  className="group relative bg-white rounded-2xl border border-[#90CAF9]/30 p-6 shadow-sm hover:shadow-xl hover:border-[#2196F3]/30 transition-all duration-500 will-change-transform"
                 >
                   {/* Top accent line */}
                   <div
@@ -88,19 +88,19 @@ export default function WorkShowcase() {
 
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-[#171A1F] group-hover:text-[#8B7355] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-[#0D47A1] group-hover:text-[#2196F3] transition-colors duration-300">
                         {project.name}
                       </h3>
-                      <p className="text-xs font-medium text-[#667085] mt-1 tracking-wide uppercase">
+                      <p className="text-xs font-medium text-[#0D47A1]/60 mt-1 tracking-wide uppercase">
                         {project.category}
                       </p>
                     </div>
-                    <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#8B7355] bg-[#F3F1EC] border border-[#E5E7EB] rounded-full">
+                    <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-[#2196F3] bg-[#E3F2FD] border border-[#90CAF9]/30 rounded-full">
                       {project.year}
                     </span>
                   </div>
 
-                  <p className="text-sm text-[#667085] mb-5 leading-relaxed line-clamp-2">
+                  <p className="text-sm text-[#0D47A1]/80 mb-5 leading-relaxed line-clamp-2">
                     {project.description}
                   </p>
 
@@ -109,7 +109,7 @@ export default function WorkShowcase() {
                     {project.metrics.map((metric) => (
                       <span
                         key={metric}
-                        className="px-2.5 py-1 text-[10px] font-semibold rounded-md bg-[#F3F1EC] text-[#8B7355] border border-[#E5E7EB]/60"
+                        className="px-2.5 py-1 text-[10px] font-semibold rounded-md bg-[#E3F2FD] text-[#2196F3] border border-[#90CAF9]/30"
                       >
                         {metric}
                       </span>
@@ -119,19 +119,19 @@ export default function WorkShowcase() {
                   {/* Tech stack */}
                   <div className="flex items-center gap-2 mb-4">
                     {project.tech.map((t) => (
-                      <span key={t} className="text-[10px] font-medium text-[#667085] bg-[#F3F1EC] px-2 py-0.5 rounded">
+                      <span key={t} className="text-[10px] font-medium text-[#0D47A1]/60 bg-[#E3F2FD] px-2 py-0.5 rounded">
                         {t}
                       </span>
                     ))}
                   </div>
 
                   {/* Status + CTA */}
-                  <div className="flex items-center justify-between pt-4 border-t border-[#E5E7EB]/60">
+                  <div className="flex items-center justify-between pt-4 border-t border-[#90CAF9]/20">
                     <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                      <span className="text-xs font-medium text-[#667085]">{project.status}</span>
+                      <span className="text-xs font-medium text-[#0D47A1]/60">{project.status}</span>
                     </div>
-                    <span className="text-xs font-semibold text-[#8B7355] group-hover:text-[#6F5A43] transition-colors cursor-pointer">
+                    <span className="text-xs font-semibold text-[#2196F3] group-hover:text-[#1565C0] transition-colors cursor-pointer">
                       View Case Study →
                     </span>
                   </div>
@@ -147,7 +147,7 @@ export default function WorkShowcase() {
 
 export function WorkMetrics() {
   return (
-    <div className="w-full bg-[#E8DCCB]">
+    <div className="w-full bg-[#90CAF9]/20">
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {metrics.map((metric, i) => (
@@ -159,9 +159,9 @@ export function WorkMetrics() {
               transition={{ ...spring, delay: i * 0.1 }}
               className="text-center"
             >
-              <div className="text-3xl sm:text-4xl font-bold text-[#3D3026] mb-2">{metric.value}</div>
-              <div className="text-sm font-semibold text-[#171A1F] mb-1">{metric.label}</div>
-              <div className="text-xs text-[#667085]">{metric.description}</div>
+              <div className="text-3xl sm:text-4xl font-bold text-[#0D47A1] mb-2">{metric.value}</div>
+              <div className="text-sm font-semibold text-[#0D47A1] mb-1">{metric.label}</div>
+              <div className="text-xs text-[#0D47A1]/80">{metric.description}</div>
             </motion.div>
           ))}
         </div>

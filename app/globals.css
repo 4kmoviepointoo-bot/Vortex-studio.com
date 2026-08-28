@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 23, 26, 31;
-  --background-start-rgb: 250, 249, 246;
-  --background-end-rgb: 250, 249, 246;
+  --foreground-rgb: 13, 71, 161;
+  --background-start-rgb: 227, 242, 253;
+  --background-end-rgb: 227, 242, 253;
 }
 
 body {
@@ -42,14 +42,14 @@ body {
 .hero-pulse::before {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(139, 115, 85, 0.08) 0%, rgba(139, 115, 85, 0.02) 40%, transparent 70%);
+  background: radial-gradient(circle, rgba(33, 150, 243, 0.08) 0%, rgba(33, 150, 243, 0.02) 40%, transparent 70%);
   animation: pulse-ring 4s ease-in-out infinite;
 }
 
 .hero-pulse::after {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(232, 220, 203, 0.12) 0%, rgba(139, 115, 85, 0.02) 40%, transparent 70%);
+  background: radial-gradient(circle, rgba(144, 202, 249, 0.12) 0%, rgba(33, 150, 243, 0.02) 40%, transparent 70%);
   animation: pulse-ring 4s ease-in-out infinite 2s;
 }
 
@@ -61,7 +61,7 @@ body {
 .hero-cable {
   position: absolute;
   width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(139, 115, 85, 0.15), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(33, 150, 243, 0.15), transparent);
   animation: cable-flow 4s ease-in-out infinite;
 }
 
@@ -73,7 +73,7 @@ body {
 .hero-radial {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 30%, rgba(250, 249, 246, 1) 100%);
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(227, 242, 253, 1) 100%);
   pointer-events: none;
 }
 

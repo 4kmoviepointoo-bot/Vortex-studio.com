@@ -36,10 +36,10 @@ export default function CookieConsent() {
           transition={spring}
           className="fixed bottom-4 left-4 right-4 sm:left-6 sm:right-6 sm:max-w-md z-50"
         >
-          <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5 shadow-xl">
-            <p className="text-sm text-[#667085] mb-4 leading-relaxed">
+          <div className="bg-white border border-[#90CAF9]/30 rounded-2xl p-5 shadow-xl">
+            <p className="text-sm text-[#0D47A1]/80 mb-4 leading-relaxed">
               We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.{' '}
-              <a href="/privacy" className="text-[#8B7355] hover:text-[#6F5A43] underline">
+              <a href="/privacy" className="text-[#2196F3] hover:text-[#1565C0] underline">
                 Privacy Policy
               </a>
             </p>
@@ -50,7 +50,7 @@ export default function CookieConsent() {
                 transition={spring}
                 onClick={accept}
                 aria-label="Accept cookies"
-                className="flex-1 px-4 py-2.5 text-sm font-medium text-white bg-[#3D3026] hover:bg-[#6F5A43] rounded-full transition-all"
+                className="flex-1 px-4 py-2.5 text-sm font-medium text-white bg-[#0D47A1] hover:bg-[#1565C0] rounded-full transition-all"
               >
                 Accept
               </motion.button>
@@ -60,7 +60,7 @@ export default function CookieConsent() {
                 transition={spring}
                 onClick={decline}
                 aria-label="Decline cookies"
-                className="flex-1 px-4 py-2.5 text-sm font-medium text-[#667085] border border-[#E5E7EB] hover:bg-[#F3F1EC] rounded-full transition-all"
+                className="flex-1 px-4 py-2.5 text-sm font-medium text-[#0D47A1]/60 border border-[#90CAF9]/30 hover:bg-[#E3F2FD] rounded-full transition-all"
               >
                 Decline
               </motion.button>

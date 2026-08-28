@@ -45,7 +45,7 @@ export default function HeroHeader({
     <section className="relative overflow-hidden min-h-[500px] flex flex-col justify-center items-center pt-32 pb-20 px-4 w-full">
       {/* Background Grid Pattern */}
       <div
-        className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1)] bg-[size:24px_24px]"
+        className="absolute inset-0 bg-[linear-gradient(to_right,#90CAF912_1px,transparent_1px),linear-gradient(to_bottom,#90CAF912_1px,transparent_1)] bg-[size:24px_24px]"
         aria-hidden="true"
       />
 
@@ -58,11 +58,11 @@ export default function HeroHeader({
         {badge && (
           <motion.div
             variants={item}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E5E7EB] bg-white/80 text-xs font-medium text-[#667085] shadow-sm mb-6"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#90CAF9]/30 bg-white/80 text-xs font-medium text-[#0D47A1]/80 shadow-sm mb-6"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8B7355] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8B7355]" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2196F3] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2196F3]" />
             </span>
             {badge}
           </motion.div>
@@ -70,14 +70,14 @@ export default function HeroHeader({
 
         <motion.h1
           variants={item}
-          className="text-4xl sm:text-6xl font-bold tracking-tight text-[#171A1F] leading-[1.1]"
+          className="text-4xl sm:text-6xl font-bold tracking-tight text-[#0D47A1] leading-[1.1]"
         >
           {title}
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="mt-4 text-lg text-[#667085] max-w-2xl mx-auto leading-relaxed"
+          className="mt-4 text-lg text-[#0D47A1]/80 max-w-2xl mx-auto leading-relaxed"
         >
           {subtitle}
         </motion.p>
@@ -91,7 +91,7 @@ export default function HeroHeader({
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
               transition={spring}
-              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-[#3D3026] hover:bg-[#6F5A43] rounded-full transition-all shadow-sm cursor-pointer"
+              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-[#0D47A1] hover:bg-[#1565C0] rounded-full transition-all shadow-sm cursor-pointer"
             >
               {primaryButton.label}
             </motion.span>
@@ -102,7 +102,7 @@ export default function HeroHeader({
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
               transition={spring}
-              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-[#667085] bg-white/80 border border-[#E5E7EB] hover:bg-[#F3F1EC] rounded-full transition-all cursor-pointer"
+              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-[#0D47A1]/80 bg-white/80 border border-[#90CAF9]/30 hover:bg-[#E3F2FD] rounded-full transition-all cursor-pointer"
             >
               {secondaryButton.label}
             </motion.span>

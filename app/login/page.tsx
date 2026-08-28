@@ -24,7 +24,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-24">
+    <div className="min-h-screen flex items-center justify-center px-4 py-24 bg-[#E3F2FD]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,22 +38,22 @@ export default function LoginPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="text-center bg-white rounded-[2rem] border border-[#E5E7EB] p-12 shadow-sm"
+              className="text-center bg-white rounded-[2rem] border border-[#90CAF9]/30 p-12 shadow-sm"
             >
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#F3F1EC] flex items-center justify-center">
-                <svg className="w-8 h-8 text-[#8B7355]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#E3F2FD] flex items-center justify-center">
+                <svg className="w-8 h-8 text-[#2196F3]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h1 className="text-2xl font-bold text-[#171A1F] mb-3">Message Sent</h1>
-              <p className="text-[#667085] mb-8">
+              <h1 className="text-2xl font-bold text-[#0D47A1] mb-3">Message Sent</h1>
+              <p className="text-[#0D47A1]/80 mb-8">
                 We&apos;ll get back to you within 24 hours. Check your inbox for a confirmation.
               </p>
               <Link href="/">
                 <motion.span
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm bg-[#3D3026] text-white hover:bg-[#6F5A43] transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm bg-[#0D47A1] text-white hover:bg-[#1565C0] transition-colors cursor-pointer"
                 >
                   Back to Home
                 </motion.span>
@@ -65,34 +65,34 @@ export default function LoginPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-white rounded-[2rem] border border-[#E5E7EB] p-10 shadow-sm"
+              className="bg-white rounded-[2rem] border border-[#90CAF9]/30 p-10 shadow-sm"
             >
-              <h1 className="text-2xl font-bold text-[#171A1F] mb-2 text-center">Contact Us</h1>
-              <p className="text-sm text-[#667085] mb-8 text-center">
+              <h1 className="text-2xl font-bold text-[#0D47A1] mb-2 text-center">Contact Us</h1>
+              <p className="text-sm text-[#0D47A1]/80 mb-8 text-center">
                 Have a question? Send us a message and we&apos;ll respond within 24 hours.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="block text-sm font-medium text-[#171A1F] mb-1.5">Email</label>
+                  <label className="block text-sm font-medium text-[#0D47A1] mb-1.5">Email</label>
                   <input
                     type="email"
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl border border-[#E5E7EB] bg-white text-[#171A1F] focus:outline-none focus:ring-2 focus:ring-[#8B7355]/30 focus:border-[#8B7355] transition-all text-sm"
+                    className="w-full px-4 py-2.5 rounded-xl border border-[#90CAF9]/30 bg-white text-[#0D47A1] focus:outline-none focus:ring-2 focus:ring-[#2196F3]/30 focus:border-[#2196F3] transition-all text-sm"
                     placeholder="john@company.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[#171A1F] mb-1.5">Message</label>
+                  <label className="block text-sm font-medium text-[#0D47A1] mb-1.5">Message</label>
                   <textarea
                     required
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl border border-[#E5E7EB] bg-white text-[#171A1F] focus:outline-none focus:ring-2 focus:ring-[#8B7355]/30 focus:border-[#8B7355] transition-all text-sm resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl border border-[#90CAF9]/30 bg-white text-[#0D47A1] focus:outline-none focus:ring-2 focus:ring-[#2196F3]/30 focus:border-[#2196F3] transition-all text-sm resize-none"
                     placeholder="How can we help?"
                   />
                 </div>
@@ -103,7 +103,7 @@ export default function LoginPage() {
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.99 }}
                   transition={spring}
-                  className="w-full py-3 rounded-full font-medium text-sm bg-[#3D3026] text-white hover:bg-[#6F5A43] transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+                  className="w-full py-3 rounded-full font-medium text-sm bg-[#0D47A1] text-white hover:bg-[#1565C0] transition-all disabled:opacity-50 flex items-center justify-center gap-2"
                 >
                   {loading ? (
                     <motion.span
@@ -117,8 +117,8 @@ export default function LoginPage() {
                 </motion.button>
               </form>
 
-              <p className="text-xs text-center text-[#667085] mt-6">
-                <Link href="/forgot-password" className="text-[#8B7355] hover:text-[#6F5A43] font-medium">Forgot password?</Link>
+              <p className="text-xs text-center text-[#0D47A1]/60 mt-6">
+                <Link href="/forgot-password" className="text-[#2196F3] hover:text-[#1565C0] font-medium">Forgot password?</Link>
               </p>
             </motion.div>
           )}

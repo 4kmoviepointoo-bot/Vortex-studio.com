@@ -7,7 +7,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 function FooterLink({ href, label, external = false }: { href: string; label: string; external?: boolean }) {
   const content = (
-    <span className="group inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-[#E8DCCB] transition-colors duration-200 py-1">
+    <span className="group inline-flex items-center gap-1.5 text-sm text-[#90CAF9] hover:text-white transition-colors duration-200 py-1">
       {label}
     </span>
   )
@@ -43,18 +43,18 @@ function FooterLink({ href, label, external = false }: { href: string; label: st
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 border-t border-slate-800/80 pt-16 pb-12">
+    <footer className="bg-[#0D47A1] text-[#90CAF9] border-t border-[#1565C0] pt-16 pb-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
-            <h3 className="text-lg font-bold text-white mb-3">Vortex Studio <span className="text-[#E8DCCB] font-normal text-xs bg-[#E8DCCB]/10 px-2 py-0.5 rounded-full border border-[#E8DCCB]/20">v1</span></h3>
-            <p className="text-sm text-slate-400 leading-relaxed mb-4">
+            <h3 className="text-lg font-bold text-white mb-3">Vortex Studio <span className="text-[#90CAF9] font-normal text-xs bg-[#90CAF9]/10 px-2 py-0.5 rounded-full border border-[#90CAF9]/20">v1</span></h3>
+            <p className="text-sm text-[#90CAF9] leading-relaxed mb-4">
               A modern tech studio delivering premium digital products, from concept to launch.
             </p>
           </div>
 
           <div>
-            <h4 className="text-slate-200 font-semibold mb-4 text-sm uppercase tracking-wider">Capabilities</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Capabilities</h4>
             <ul className="flex flex-col gap-1">
               {[
                 { label: 'UI/UX Design', href: '/services#ui-ux' },
@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-slate-200 font-semibold mb-4 text-sm uppercase tracking-wider">Portfolio</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Portfolio</h4>
             <ul className="flex flex-col gap-1">
               {[
                 { label: 'Aether SaaS Platform', href: '/work#aether-saas' },
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-slate-200 font-semibold mb-4 text-sm uppercase tracking-wider">Company</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Company</h4>
             <ul className="flex flex-col gap-1">
               <li>
                 <FooterLink href="/about" label="About Us" />
@@ -103,8 +103,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between items-center mt-16 pt-8 border-t border-slate-900">
-          <p className="text-xs text-slate-500">
+        <div className="flex flex-wrap justify-between items-center mt-16 pt-8 border-t border-[#1565C0]">
+          <p className="text-xs text-[#90CAF9]/70">
             &copy; {new Date().getFullYear()} Vortex Studio. Built with precision.
           </p>
           <motion.button
@@ -112,7 +112,7 @@ export default function Footer() {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.94 }}
             transition={spring}
-            className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-white transition-colors cursor-pointer"
+            className="inline-flex items-center gap-1.5 text-xs text-[#90CAF9]/70 hover:text-white transition-colors cursor-pointer"
           >
             Back to top
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
