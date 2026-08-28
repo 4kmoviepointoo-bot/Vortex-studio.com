@@ -65,8 +65,8 @@ export default function Home() {
           className="absolute top-28 left-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg shadow-slate-900/5"
         >
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-600" />
           </span>
           <span className="text-xs font-medium text-slate-700">LIVE 99.9% Optimal Speed</span>
         </motion.div>
@@ -77,7 +77,7 @@ export default function Home() {
           transition={{ delay: 1, duration: 0.6, ...spring }}
           className="absolute top-36 right-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-lg shadow-slate-900/5"
         >
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">Active</span>
+          <span className="text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full">Active</span>
           <span className="text-xs font-medium text-slate-700">3 Projects Deployed</span>
         </motion.div>
         <motion.div
@@ -91,8 +91,8 @@ export default function Home() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-slate-200 bg-white/80 text-xs font-medium text-slate-700 shadow-sm mb-6"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-600" />
             </span>
             Digital Product & Tech Agency
           </motion.div>
@@ -160,7 +160,7 @@ export default function Home() {
               <div className="flex items-center gap-1.5">
                 <span className="w-3 h-3 rounded-full bg-red-400" />
                 <span className="w-3 h-3 rounded-full bg-amber-400" />
-                <span className="w-3 h-3 rounded-full bg-emerald-400" />
+                <span className="w-3 h-3 rounded-full bg-amber-500" />
               </div>
               <div className="flex-1 flex justify-center">
                 <div className="px-4 py-1.5 text-xs text-slate-400 bg-slate-50 rounded-full border border-slate-100">
@@ -178,10 +178,10 @@ export default function Home() {
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-600" />
                   </span>
-                  <span className="text-xs font-medium text-emerald-600 uppercase tracking-wide">Live</span>
+                  <span className="text-xs font-medium text-amber-700 uppercase tracking-wide">Live</span>
                 </div>
                 <p className="text-2xl font-bold text-slate-950 mb-1">99.9%</p>
                 <p className="text-sm text-slate-500 mb-4">Optimal Speed</p>

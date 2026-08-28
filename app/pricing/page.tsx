@@ -10,7 +10,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 function CheckIcon() {
   return (
-    <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <svg className="w-5 h-5 text-amber-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
     </svg>
   )
@@ -147,16 +147,16 @@ export default function PricingPage() {
               transition={{ ...spring, delay: 0.1 }}
               whileHover={{ y: -12, scale: 1.05 }}
               animate={{ y: [0, -4, 0] }}
-              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-800 bg-slate-950 text-white shadow-2xl shadow-emerald-500/20 animate-[pulse_3s_ease-in-out_infinite] will-change-transform z-10"
+              className="relative flex flex-col p-8 rounded-[2rem] border border-slate-800 bg-slate-950 text-white shadow-2xl shadow-amber-500/20 animate-[pulse_3s_ease-in-out_infinite] will-change-transform z-10"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
               {/* Animated Glow Badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 shadow-lg shadow-emerald-500/30">
+                <span className="px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white rounded-full bg-gradient-to-r from-amber-600 to-amber-500 shadow-lg shadow-amber-500/30">
                   Most Popular
                 </span>
               </div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2 mt-2">Dedicated Tech Team</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-amber-600 mb-2 mt-2">Dedicated Tech Team</p>
               <h3 className="text-xl font-bold text-white mb-4">Growth Retainer</h3>
               <div className="flex items-baseline gap-1 mb-6">
                 <span className="text-5xl font-bold text-white">$8,500</span>
@@ -175,7 +175,7 @@ export default function PricingPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={spring}
-                className="w-full py-3 text-sm font-medium text-center rounded-full bg-white text-slate-950 hover:bg-emerald-400 hover:text-slate-950 transition-all duration-300 shadow-lg"
+                className="w-full py-3 text-sm font-medium text-center rounded-full bg-white text-slate-950 hover:bg-amber-500 hover:text-slate-950 transition-all duration-300 shadow-lg"
               >
                 Claim Partnership →
               </motion.button>

@@ -44,7 +44,7 @@ export default function TermsPage() {
           <h2 className="text-2xl font-bold text-slate-950 mt-8 mb-4">6. Contact</h2>
           <p className="text-slate-600 mb-4">
             For questions about these Terms, contact us at{' '}
-            <a href="mailto:asgah960@gmail.com" className="text-emerald-600 hover:text-emerald-700">
+            <a href="mailto:asgah960@gmail.com" className="text-amber-700 hover:text-amber-800">
               asgah960@gmail.com</a>.
           </p>
         </div>

@@ -8,7 +8,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 const tagColors = [
   'bg-blue-100/70 text-blue-900 border border-blue-200/80',
-  'bg-emerald-100/70 text-emerald-900 border border-emerald-200/80',
+  'bg-amber-100/70 text-amber-900 border border-amber-200/80',
   'bg-purple-100/70 text-purple-900 border border-purple-200/80',
   'bg-amber-100/70 text-amber-900 border border-amber-200/80',
   'bg-pink-100/70 text-pink-900 border border-pink-200/80',
@@ -115,7 +115,7 @@ const services = [
 
 const serviceAccents = [
   'hover:shadow-indigo-500/10 hover:border-indigo-300',
-  'hover:shadow-emerald-500/10 hover:border-emerald-300',
+  'hover:shadow-amber-500/10 hover:border-amber-300',
   'hover:shadow-cyan-500/10 hover:border-cyan-300',
   'hover:shadow-violet-500/10 hover:border-violet-300',
 ]

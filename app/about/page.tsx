@@ -105,10 +105,10 @@ export default function AboutPage() {
               viewport={{ once: true }}
               transition={{ ...spring, delay: 0.1 }}
               whileHover={{ y: -4, scale: 1.01 }}
-              className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-[2rem] p-6 shadow-sm hover:shadow-lg hover:border-emerald-300/60 will-change-transform group flex flex-col items-center text-center"
+              className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-[2rem] p-6 shadow-sm hover:shadow-lg hover:border-amber-300/60 will-change-transform group flex flex-col items-center text-center"
               style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}
             >
-              <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200/60 flex items-center justify-center text-emerald-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200/60 flex items-center justify-center text-amber-700 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {principles[1]?.icon}
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">{principles[1]?.title}</h3>

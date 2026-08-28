@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           <h2 className="text-2xl font-bold text-slate-950 mt-8 mb-4">5. Your Rights</h2>
           <p className="text-slate-600 mb-4">
             You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at{' '}
-            <a href="mailto:asgah960@gmail.com" className="text-emerald-600 hover:text-emerald-700">
+            <a href="mailto:asgah960@gmail.com" className="text-amber-700 hover:text-amber-800">
               asgah960@gmail.com
             </a>.
           </p>
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           <h2 className="text-2xl font-bold text-slate-950 mt-8 mb-4">6. Contact Us</h2>
           <p className="text-slate-600 mb-4">
             If you have questions about this Privacy Policy, please contact us at{' '}
-            <a href="mailto:asgah960@gmail.com" className="text-emerald-600 hover:text-emerald-700">
+            <a href="mailto:asgah960@gmail.com" className="text-amber-700 hover:text-amber-800">
               asgah960@gmail.com</a>.
           </p>
         </div>

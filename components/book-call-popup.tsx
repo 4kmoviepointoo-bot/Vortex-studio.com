@@ -66,8 +66,8 @@ export default function BookCallPopup() {
                 exit={{ opacity: 0, scale: 0.8 }}
                 className="flex flex-col items-center py-6 text-center"
               >
-                <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-4">
-                  <svg className="w-8 h-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
@@ -87,8 +87,8 @@ export default function BookCallPopup() {
               >
                 <div className="flex items-center gap-3 mb-1">
                   <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-600" />
                   </span>
                   <div>
                     <h3 className="text-base font-bold text-slate-950 leading-tight">Schedule a Strategy Call</h3>
@@ -102,7 +102,7 @@ export default function BookCallPopup() {
                   required
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all placeholder:text-slate-400"
                 />
 
                 <input
@@ -111,7 +111,7 @@ export default function BookCallPopup() {
                   required
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all placeholder:text-slate-400"
                 />
 
                 <div className="flex flex-wrap gap-2">
@@ -122,7 +122,7 @@ export default function BookCallPopup() {
                       onClick={() => setSelectedService(selectedService === service ? null : service)}
                       className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-all cursor-pointer ${
                         selectedService === service
-                          ? 'bg-emerald-500 text-white border-emerald-500'
+                          ? 'bg-amber-600 text-white border-amber-600'
                           : 'bg-slate-50 text-slate-600 border-slate-200 hover:border-slate-300'
                       }`}
                     >
@@ -136,7 +136,7 @@ export default function BookCallPopup() {
                   rows={2}
                   value={form.note}
                   onChange={(e) => setForm({ ...form, note: e.target.value })}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-slate-400 resize-none"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all placeholder:text-slate-400 resize-none"
                 />
 
                 <div className="absolute opacity-0 h-0 overflow-hidden" aria-hidden="true">
@@ -157,7 +157,7 @@ export default function BookCallPopup() {
                   disabled={isSubmitting}
                   whileTap={{ scale: 0.95 }}
                   transition={spring}
-                  className="w-full py-3 rounded-full bg-emerald-500 text-slate-950 font-semibold flex items-center justify-center gap-2 hover:bg-emerald-400 transition-all disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+                  className="w-full py-3 rounded-full bg-amber-600 text-slate-950 font-semibold flex items-center justify-center gap-2 hover:bg-amber-500 transition-all disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>

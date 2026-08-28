@@ -79,12 +79,12 @@ export default function FeaturedWork() {
           whileHover={{ y: -6 }}
           className="group relative bg-white/90 border border-slate-200/80 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-slate-300 transition-all duration-300 flex flex-col"
         >
-          <div className="h-48 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100 border border-emerald-200/50 mb-6 flex items-center justify-center overflow-hidden">
+          <div className="h-48 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200/50 mb-6 flex items-center justify-center overflow-hidden">
             <div className="text-center">
-              <div className="w-16 h-16 rounded-2xl bg-emerald-600 flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-16 rounded-2xl bg-amber-700 flex items-center justify-center mx-auto mb-3">
                 <span className="text-2xl font-bold text-white">FP</span>
               </div>
-              <p className="text-sm font-medium text-emerald-700">FinPulse</p>
+              <p className="text-sm font-medium text-amber-800">FinPulse</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-2 mb-4">

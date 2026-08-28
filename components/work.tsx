@@ -70,7 +70,7 @@ function CardContent({ project }: { project: typeof projects[number] }) {
           <div className="flex items-center gap-1.5 mb-2">
             <span className="w-2 h-2 rounded-full bg-red-400" />
             <span className="w-2 h-2 rounded-full bg-amber-400" />
-            <span className="w-2 h-2 rounded-full bg-emerald-400" />
+            <span className="w-2 h-2 rounded-full bg-amber-500" />
           </div>
           <div className="grid grid-cols-3 gap-2">
             <div className="h-10 sm:h-12 rounded-lg bg-slate-200 border border-slate-300/60" />
@@ -84,7 +84,7 @@ function CardContent({ project }: { project: typeof projects[number] }) {
           <span className="inline-flex items-center text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-200/80 text-slate-700 whitespace-nowrap">
             {project.category}
           </span>
-          <span className="inline-flex items-center text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-700 border border-emerald-500/20 whitespace-nowrap tracking-wide">
+          <span className="inline-flex items-center text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-800 border border-amber-500/20 whitespace-nowrap tracking-wide">
             {project.badge}
           </span>
         </div>
@@ -116,7 +116,7 @@ function CardContent({ project }: { project: typeof projects[number] }) {
             whileHover={{ scale: 1.05, x: 4 }}
             whileTap={{ scale: 0.95 }}
             transition={spring}
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium bg-emerald-500 text-slate-950 hover:bg-emerald-400 transition-colors cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium bg-amber-600 text-slate-950 hover:bg-amber-500 transition-colors cursor-pointer"
           >
             View Case Study
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -154,12 +154,12 @@ export default function WorkShowcase() {
               spread={100}
               direction="left"
             />
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-600 animate-pulse" />
           </span>
           <div className="w-20 sm:w-24 h-1 bg-slate-200 rounded-full overflow-hidden">
             <motion.div
               style={{ width: progressWidth }}
-              className="h-full bg-emerald-500 rounded-full origin-left"
+              className="h-full bg-amber-600 rounded-full origin-left"
             />
           </div>
         </div>
@@ -191,7 +191,7 @@ export default function WorkShowcase() {
               <motion.div
                 key={i}
                 style={{ opacity: dotProgress }}
-                className="w-2 h-2 rounded-full bg-emerald-500"
+                className="w-2 h-2 rounded-full bg-amber-600"
               />
             )
           })}

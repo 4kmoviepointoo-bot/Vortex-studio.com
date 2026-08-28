@@ -39,7 +39,7 @@ export default function CookieConsent() {
           <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xl">
             <p className="text-sm text-slate-600 mb-4 leading-relaxed">
               We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.{' '}
-              <a href="/privacy" className="text-emerald-600 hover:text-emerald-700 underline">
+              <a href="/privacy" className="text-amber-700 hover:text-amber-800 underline">
                 Privacy Policy
               </a>
             </p>

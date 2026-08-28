@@ -40,7 +40,7 @@ export default function WorkPage() {
                 <div className="relative bg-slate-900 p-8 sm:p-12 text-white min-h-[400px] flex flex-col justify-between">
                   <div className="absolute inset-0 bg-slate-900 group-hover:scale-105 transition-transform duration-700 ease-out" />
                   <div className="relative z-10">
-                    <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 rounded-full border border-emerald-500/20">
+                    <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-500/10 rounded-full border border-amber-500/20">
                       Featured Project
                     </span>
                     <h2 className="text-3xl sm:text-4xl font-bold mt-6 mb-4">Aether SaaS Platform</h2>
@@ -53,7 +53,7 @@ export default function WorkPage() {
                       <div className="w-1/3 h-32 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors duration-500" />
                       <div className="flex-1 flex flex-col gap-3">
                         <div className="h-14 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white/10 transition-colors duration-500" />
-                        <div className="h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors duration-500" />
+                        <div className="h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 group-hover:bg-amber-500/20 transition-colors duration-500" />
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@ export default function WorkPage() {
                       <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-500 bg-slate-100 rounded-full">
                         UI/UX & Next.js
                       </span>
-                      <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 rounded-full">
+                      <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-800 bg-amber-50 rounded-full">
                         300% Growth
                       </span>
                     </div>
@@ -96,7 +96,7 @@ export default function WorkPage() {
                     ))}
                   </div>
                   <div className="mt-8">
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 group-hover:text-emerald-600 transition-colors duration-300 cursor-pointer">
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 group-hover:text-amber-700 transition-colors duration-300 cursor-pointer">
                       View Case Study
                       <span className="group-hover:translate-x-1.5 transition-transform duration-300">→</span>
                     </span>
@@ -116,18 +116,18 @@ export default function WorkPage() {
               >
                 {/* Large Card with Zoom Thumbnail */}
                 <div className="lg:col-span-3 bg-white/95 border border-stone-200/80 rounded-[2rem] overflow-hidden shadow-sm group hover:shadow-xl hover:border-slate-300/80 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
-                  <div className="relative h-48 sm:h-56 bg-gradient-to-br from-emerald-900 to-slate-900 p-6 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 to-slate-900 group-hover:scale-110 transition-transform duration-700 ease-out" />
+                  <div className="relative h-48 sm:h-56 bg-gradient-to-br from-amber-900 to-slate-900 p-6 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-amber-900 to-slate-900 group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div className="relative z-10 flex items-center gap-1.5 mb-4">
                       <span className="w-2 h-2 rounded-full bg-red-500/60" />
                       <span className="w-2 h-2 rounded-full bg-amber-500/60" />
-                      <span className="w-2 h-2 rounded-full bg-emerald-500/60" />
+                      <span className="w-2 h-2 rounded-full bg-amber-500/60" />
                     </div>
                     <div className="relative z-10 flex gap-3">
                       <div className="w-1/3 h-24 rounded-lg bg-white/10 border border-white/10 group-hover:bg-white/15 transition-colors duration-500" />
                       <div className="flex-1 flex flex-col gap-2">
                         <div className="h-10 rounded-lg bg-white/10 border border-white/10 group-hover:bg-white/15 transition-colors duration-500" />
-                        <div className="h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/30 group-hover:bg-emerald-500/30 transition-colors duration-500" />
+                        <div className="h-10 rounded-lg bg-amber-500/20 border border-amber-500/30 group-hover:bg-amber-500/30 transition-colors duration-500" />
                       </div>
                     </div>
                   </div>
@@ -136,7 +136,7 @@ export default function WorkPage() {
                       <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-500 bg-slate-100 rounded-full">
                         FinTech
                       </span>
-                      <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 rounded-full">
+                      <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-800 bg-amber-50 rounded-full">
                         0.1s Latency
                       </span>
                     </div>
@@ -152,7 +152,7 @@ export default function WorkPage() {
                       ))}
                     </div>
                     <div className="mt-4">
-                      <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 group-hover:text-emerald-600 transition-colors duration-300 cursor-pointer">
+                      <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 group-hover:text-amber-700 transition-colors duration-300 cursor-pointer">
                         View Case Study
                         <span className="group-hover:translate-x-1.5 transition-transform duration-300">→</span>
                       </span>
@@ -162,8 +162,8 @@ export default function WorkPage() {
 
                 {/* Metric Cards - Elevated Rounded */}
                 <div className="lg:col-span-2 flex flex-col gap-6">
-                  <div className="bg-white/95 border border-stone-200/80 rounded-[2rem] p-8 shadow-sm flex-1 group hover:shadow-xl hover:border-emerald-300/60 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
-                    <span className="inline-block px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 border border-emerald-200/60 rounded-full mb-4">Performance</span>
+                  <div className="bg-white/95 border border-stone-200/80 rounded-[2rem] p-8 shadow-sm flex-1 group hover:shadow-xl hover:border-amber-300/60 hover:-translate-y-1 transition-all duration-400" style={{ transition: 'box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
+                    <span className="inline-block px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 border border-amber-200/60 rounded-full mb-4">Performance</span>
                     <p className="text-5xl font-bold text-slate-900 mb-2">3x</p>
                     <p className="text-lg font-medium text-slate-700 mb-1">Faster Load</p>
                     <p className="text-sm text-slate-500">Across all pages</p>

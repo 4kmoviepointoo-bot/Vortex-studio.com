@@ -38,7 +38,7 @@ export default function PricingPreview() {
           <ul className="flex flex-col gap-3 mb-8 flex-1">
             {['Full UI/UX design system', 'Interactive prototype', 'Next.js frontend codebase', '2-week delivery'].map((feature) => (
               <li key={feature} className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-5 h-5 text-amber-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-sm text-slate-600">{feature}</span>
@@ -66,7 +66,7 @@ export default function PricingPreview() {
           whileHover={{ y: -6 }}
           className="bg-slate-900 text-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col relative overflow-hidden"
         >
-          <span className="absolute top-4 right-4 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-slate-900 bg-emerald-400 rounded-full">
+          <span className="absolute top-4 right-4 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-slate-900 bg-amber-500 rounded-full">
             Most Popular
           </span>
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Dedicated Tech Team</p>
@@ -78,7 +78,7 @@ export default function PricingPreview() {
           <ul className="flex flex-col gap-3 mb-8 flex-1">
             {['Full-stack web application', 'Priority Slack access', 'Continuous speed optimization', 'Custom AI integrations'].map((feature) => (
               <li key={feature} className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-5 h-5 text-amber-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-sm text-slate-300">{feature}</span>
@@ -114,7 +114,7 @@ export default function PricingPreview() {
           <ul className="flex flex-col gap-3 mb-8 flex-1">
             {['Multi-region deployment', 'Custom SLA & security', 'Legacy system migration', 'Dedicated technical lead'].map((feature) => (
               <li key={feature} className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="w-5 h-5 text-amber-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-sm text-slate-600">{feature}</span>
