@@ -222,8 +222,8 @@ export default function Header() {
         className="fixed z-50 border border-slate-200/80 overflow-hidden"
         style={{
           background: scrolled
-            ? 'rgba(250, 250, 249, 0.8)'
-            : '#FAFAF9',
+            ? 'rgba(249, 248, 243, 0.8)'
+            : '#F9F8F3',
           backdropFilter: scrolled ? 'blur(12px)' : 'blur(0px)',
           WebkitBackdropFilter: scrolled ? 'blur(12px)' : 'blur(0px)',
         }}
@@ -358,7 +358,7 @@ export default function Header() {
               transition={spring}
               className="fixed inset-0 z-50 md:hidden overflow-y-auto overflow-x-hidden"
             >
-              <div className="min-h-full bg-[#FAFAF9] flex flex-col">
+              <div className="min-h-full bg-[#F9F8F3] flex flex-col">
                 <div className="flex items-center justify-between h-14 sm:h-16 px-6 border-b border-slate-100">
                   <Link href="/" className="flex items-center gap-2 group" onClick={() => setMobileMenuOpen(false)}>
                     <span className="text-[#0F172A] text-xl font-semibold tracking-tight">

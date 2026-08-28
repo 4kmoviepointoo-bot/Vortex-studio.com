@@ -20,8 +20,8 @@ export default function ClientLogos() {
       </p>
 
       <div className="relative">
-        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#FAFAF9] via-transparent to-[#FAFAF9] z-10 pointer-events-none" />
-        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#FAFAF9] via-transparent to-[#FAFAF9] z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#EDE8DC] via-transparent to-[#EDE8DC] z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#EDE8DC] via-transparent to-[#EDE8DC] z-10 pointer-events-none" />
 
         <div className="flex overflow-hidden">
           <div className="flex shrink-0 min-w-full items-center justify-around gap-12 animate-marquee">

@@ -55,7 +55,7 @@ export default function Home() {
           />
         ))}
         <div className="hero-radial" />
-        <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-white via-white/70 to-transparent z-[1] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-36 bg-gradient-to-t from-[#EDE8DC] via-[#F9F8F3]/70 to-transparent z-[1] pointer-events-none" />
 
         {/* Floating Status Pills */}
         <motion.div
@@ -258,26 +258,27 @@ export default function Home() {
 
       <SectionDivider accent />
 
-      {/* Section 2: Services Preview - Light Beige Tint */}
+      {/* Section 2: Services Preview - Light Beige */}
       <section className="w-full bg-[#EDE8DC]">
         <ClientLogos />
       </section>
 
       <SectionDivider />
 
-      {/* Section 3: Featured Projects - Muted Warm Taupe */}
-      <section className="w-full bg-[#D8CDBC]">
+      {/* Section 3: Featured Projects - Light Beige */}
+      <section className="w-full bg-[#EDE8DC]">
         <ShowcaseGrid />
         <FeaturedWork />
       </section>
 
       <SectionDivider />
 
-      {/* Section 4: CTA & Footer - Deep Warm Sand */}
-      <section className="w-full bg-[#BBAE97]">
+      {/* Section 4: CTA & Footer */}
+      <section className="w-full bg-[#D8CDBC]">
         <ContactCTA />
-        <Footer />
       </section>
+
+      <Footer />
     </>
   )
 }

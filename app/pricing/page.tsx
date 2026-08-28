@@ -218,8 +218,8 @@ export default function PricingPage() {
         </div>
       </div>
 
-      {/* Section 3: Bottom CTA - Deep Warm Sand */}
-      <div className="w-full bg-[#BBAE97]">
+      {/* Section 3: Bottom CTA - Warm Taupe */}
+      <div className="w-full bg-[#D8CDBC]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center py-12">
             <Link href="/">

@@ -7,7 +7,7 @@ const spring = { type: 'spring', stiffness: 400, damping: 17 } as const
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-[#FAFAF9]">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-[#F9F8F3]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

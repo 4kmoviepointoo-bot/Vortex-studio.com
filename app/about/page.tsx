@@ -183,8 +183,8 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Section 4: CTA - Deep Warm Sand */}
-      <div className="w-full bg-[#BBAE97]">
+      {/* Section 4: CTA - Warm Taupe */}
+      <div className="w-full bg-[#D8CDBC]">
         <div className="max-w-4xl mx-auto px-4">
           <section className="py-16 text-center">
             <div className="flex flex-wrap justify-center gap-4">

@@ -214,8 +214,8 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* Section 3: Bottom CTA - Deep Warm Sand */}
-      <div className="w-full bg-[#BBAE97]">
+      {/* Section 3: Bottom CTA - Warm Taupe */}
+      <div className="w-full bg-[#D8CDBC]">
         <div className="px-4 max-w-5xl mx-auto">
           <div className="text-center py-16">
             <Link href="/">
